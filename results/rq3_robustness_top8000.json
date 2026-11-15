@@ -1,0 +1,27 @@
+{
+  "R1_upstream_lifted_after_release": {
+    "n_pairs": 34,
+    "n_after": 25,
+    "share_after": 0.7352941176470589,
+    "sign_test_p_one_sided": 0.004520592745393515,
+    "lag_days_median": 53.98087893280671
+  },
+  "R2_permutation": {
+    "observed_share": 0.927461139896373,
+    "null_mean": 0.5189286800800189,
+    "null_95_range": [
+      0.4619289340101523,
+      0.576530612244898
+    ],
+    "p_one_sided": 0.0001999600079984003,
+    "draws": 5000,
+    "seed": 0
+  },
+  "top_upstreams": {
+    "pandas": 50,
+    "scipy": 45,
+    "matplotlib": 25,
+    "scikit-learn": 20,
+    "transformers": 9
+  }
+}

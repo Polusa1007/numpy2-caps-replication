@@ -1,0 +1,14 @@
+{
+  "uv_version": "uv 0.13.7 (316c827e0 2026-11-03 x86_64-pc-windows-msvc)",
+  "distinct_requirement_sets": 1322,
+  "releases": 27949,
+  "agree_sets": 1322,
+  "agree_releases": 27949,
+  "by_status": {
+    "capped": 3178,
+    "compatible": 12306,
+    "none": 12017,
+    "other": 448
+  },
+  "disagreements": []
+}

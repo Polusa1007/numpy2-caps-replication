@@ -1,0 +1,491 @@
+{
+  "github_strict": {
+    "signatures": {
+      "cannot be run in NumPy 2": "ABI",
+      "_ARRAY_API not found": "ABI",
+      "was removed in the NumPy 2.0 release": "API"
+    },
+    "searchable": 574,
+    "capped_n": 162,
+    "never_n": 412,
+    "capped_reported": 28,
+    "never_reported": 40,
+    "share_capped": 0.1728395061728395,
+    "share_never": 0.0970873786407767,
+    "diff": 0.0757521275320628,
+    "diff_95ci": [
+      0.01576992380642718,
+      0.14596629656988078
+    ],
+    "OR": 1.9432835820895522,
+    "OR_95ci": [
+      1.1532992433340012,
+      3.2743896280569653
+    ],
+    "fisher_p": 0.01454886309582195,
+    "adj_OR": 1.8352420110244636,
+    "adj_OR_95ci": [
+      0.9485387209879286,
+      3.5508442243887903
+    ],
+    "never_reported_abi": 15,
+    "never_reported_api": 26,
+    "dropped_by_strict": 52,
+    "dropped_by_strict_never": 30
+  },
+  "runtime_origin": {
+    "failures": [
+      {
+        "package": "sklearndf",
+        "version": "2.3.0",
+        "declared": "capped",
+        "kind": "ABI",
+        "pure_python": true,
+        "origin": "dependency"
+      },
+      {
+        "package": "embedding-reader",
+        "version": "1.7.0",
+        "declared": "capped",
+        "kind": "ABI",
+        "pure_python": true,
+        "origin": "dependency"
+      },
+      {
+        "package": "transformer-smaller-training-vocab",
+        "version": "0.4.0",
+        "declared": "capped",
+        "kind": "other",
+        "pure_python": true,
+        "origin": "dependency"
+      },
+      {
+        "package": "autofaiss",
+        "version": "2.17.0",
+        "declared": "capped",
+        "kind": "ABI",
+        "pure_python": true,
+        "origin": "dependency"
+      },
+      {
+        "package": "pylibjpeg-openjpeg",
+        "version": "2.2.1",
+        "declared": "capped",
+        "kind": "ABI",
+        "pure_python": false,
+        "origin": "own"
+      },
+      {
+        "package": "pytensor",
+        "version": "2.23.0",
+        "declared": "capped",
+        "kind": "API",
+        "pure_python": false,
+        "origin": "own"
+      },
+      {
+        "package": "colour-science",
+        "version": "0.4.4",
+        "declared": "capped",
+        "kind": "API",
+        "pure_python": true,
+        "origin": "own"
+      },
+      {
+        "package": "prophet",
+        "version": "1.1.5",
+        "declared": "compatible",
+        "kind": "API",
+        "pure_python": false,
+        "origin": "own"
+      },
+      {
+        "package": "rawpy",
+        "version": "0.21.0",
+        "declared": "compatible",
+        "kind": "ABI",
+        "pure_python": false,
+        "origin": "own"
+      },
+      {
+        "package": "nudenet",
+        "version": "3.0.8",
+        "declared": "compatible",
+        "kind": "other",
+        "pure_python": true,
+        "origin": "dependency"
+      },
+      {
+        "package": "spacy-pkuseg",
+        "version": "0.0.33",
+        "declared": "compatible",
+        "kind": "ABI",
+        "pure_python": false,
+        "origin": "own"
+      }
+    ],
+    "capped": {
+      "sampled": 50,
+      "not_testable": 14,
+      "tested": 36,
+      "own_failures": 3,
+      "dependency_failures": 4,
+      "own_share": 0.08333333333333333,
+      "own_95ci": [
+        0.028748611335993407,
+        0.2182669124927264
+      ]
+    },
+    "compatible": {
+      "sampled": 50,
+      "not_testable": 11,
+      "tested": 39,
+      "own_failures": 3,
+      "dependency_failures": 1,
+      "own_share": 0.07692307692307693,
+      "own_95ci": [
+        0.026507395303779754,
+        0.20321071167954996
+      ]
+    },
+    "attrition_fisher_p": 0.6447297305745392,
+    "own_fisher_p": 1.0,
+    "kind_by_origin": [
+      {
+        "kind": "ABI",
+        "origin": "dependency",
+        "n": 3
+      },
+      {
+        "kind": "ABI",
+        "origin": "own",
+        "n": 3
+      },
+      {
+        "kind": "API",
+        "origin": "own",
+        "n": 3
+      },
+      {
+        "kind": "other",
+        "origin": "dependency",
+        "n": 2
+      }
+    ]
+  },
+  "holm": {
+    "rq1_cap_rate": {
+      "build": {
+        "p": 1.0,
+        "p_holm": 1.0
+      },
+      "compiled": {
+        "p": 0.7065780637346594,
+        "p_holm": 1.0
+      },
+      "core": {
+        "p": 0.06079432428685881,
+        "p_holm": 0.24317729714743525
+      },
+      "binary": {
+        "p": 0.15061098254388455,
+        "p_holm": 0.45183294763165366
+      }
+    },
+    "early_adaptation": {
+      "build": {
+        "p": 0.0016232393850295931,
+        "p_holm": 0.0032464787700591862
+      },
+      "compiled": {
+        "p": 0.00020322222107507413,
+        "p_holm": 0.0006096666632252224
+      },
+      "core": {
+        "p": 8.12240891738628e-05,
+        "p_holm": 0.0003248963566954512
+      },
+      "binary": {
+        "p": 0.0024744926999938697,
+        "p_holm": 0.0032464787700591862
+      }
+    }
+  },
+  "runtime_origin_linux": {
+    "failures": [
+      {
+        "package": "apache-beam",
+        "version": "2.56.0",
+        "declared": "capped",
+        "kind": "other",
+        "pure_python": false,
+        "origin": "unknown"
+      },
+      {
+        "package": "sklearndf",
+        "version": "2.3.0",
+        "declared": "capped",
+        "kind": "ABI",
+        "pure_python": true,
+        "origin": "dependency"
+      },
+      {
+        "package": "embedding-reader",
+        "version": "1.7.0",
+        "declared": "capped",
+        "kind": "ABI",
+        "pure_python": true,
+        "origin": "dependency"
+      },
+      {
+        "package": "transformer-smaller-training-vocab",
+        "version": "0.4.0",
+        "declared": "capped",
+        "kind": "other",
+        "pure_python": true,
+        "origin": "dependency"
+      },
+      {
+        "package": "autofaiss",
+        "version": "2.17.0",
+        "declared": "capped",
+        "kind": "ABI",
+        "pure_python": true,
+        "origin": "dependency"
+      },
+      {
+        "package": "pylibjpeg-openjpeg",
+        "version": "2.2.1",
+        "declared": "capped",
+        "kind": "ABI",
+        "pure_python": false,
+        "origin": "own"
+      },
+      {
+        "package": "langchain-chroma",
+        "version": "0.1.1",
+        "declared": "capped",
+        "kind": "API",
+        "pure_python": true,
+        "origin": "dependency"
+      },
+      {
+        "package": "pytensor",
+        "version": "2.23.0",
+        "declared": "capped",
+        "kind": "API",
+        "pure_python": false,
+        "origin": "own"
+      },
+      {
+        "package": "colour-science",
+        "version": "0.4.4",
+        "declared": "capped",
+        "kind": "API",
+        "pure_python": true,
+        "origin": "own"
+      },
+      {
+        "package": "pylibjpeg-libjpeg",
+        "version": "2.1.0",
+        "declared": "capped",
+        "kind": "ABI",
+        "pure_python": false,
+        "origin": "own"
+      },
+      {
+        "package": "xpress",
+        "version": "9.4.1",
+        "declared": "capped",
+        "kind": "ABI",
+        "pure_python": false,
+        "origin": "own"
+      },
+      {
+        "package": "prophet",
+        "version": "1.1.5",
+        "declared": "compatible",
+        "kind": "API",
+        "pure_python": false,
+        "origin": "own"
+      },
+      {
+        "package": "ml-insights",
+        "version": "1.0.3",
+        "declared": "compatible",
+        "kind": "ABI",
+        "pure_python": true,
+        "origin": "dependency"
+      },
+      {
+        "package": "rawpy",
+        "version": "0.21.0",
+        "declared": "compatible",
+        "kind": "ABI",
+        "pure_python": false,
+        "origin": "own"
+      },
+      {
+        "package": "nudenet",
+        "version": "3.0.8",
+        "declared": "compatible",
+        "kind": "other",
+        "pure_python": true,
+        "origin": "dependency"
+      },
+      {
+        "package": "scikit-surprise",
+        "version": "1.1.4",
+        "declared": "compatible",
+        "kind": "ABI",
+        "pure_python": true,
+        "origin": "dependency"
+      },
+      {
+        "package": "spacy-pkuseg",
+        "version": "0.0.33",
+        "declared": "compatible",
+        "kind": "ABI",
+        "pure_python": false,
+        "origin": "own"
+      },
+      {
+        "package": "scikit-survival",
+        "version": "0.22.2",
+        "declared": "compatible",
+        "kind": "ABI",
+        "pure_python": false,
+        "origin": "own"
+      },
+      {
+        "package": "osqp",
+        "version": "0.6.7",
+        "declared": "compatible",
+        "kind": "ABI",
+        "pure_python": false,
+        "origin": "own"
+      },
+      {
+        "package": "pygam",
+        "version": "0.9.1",
+        "declared": "compatible",
+        "kind": "ABI",
+        "pure_python": true,
+        "origin": "dependency"
+      },
+      {
+        "package": "scs",
+        "version": "3.2.4.post2",
+        "declared": "compatible",
+        "kind": "ABI",
+        "pure_python": false,
+        "origin": "own"
+      },
+      {
+        "package": "pandavro",
+        "version": "1.8.0",
+        "declared": "compatible",
+        "kind": "API",
+        "pure_python": true,
+        "origin": "own"
+      },
+      {
+        "package": "pmdarima",
+        "version": "2.0.4",
+        "declared": "compatible",
+        "kind": "ABI",
+        "pure_python": false,
+        "origin": "own"
+      }
+    ],
+    "capped": {
+      "sampled": 74,
+      "not_testable": 17,
+      "tested": 57,
+      "own_failures": 5,
+      "dependency_failures": 5,
+      "own_share": 0.08771929824561403,
+      "own_95ci": [
+        0.03805167177792225,
+        0.1894487709955867
+      ]
+    },
+    "compatible": {
+      "sampled": 100,
+      "not_testable": 14,
+      "tested": 86,
+      "own_failures": 8,
+      "dependency_failures": 4,
+      "own_share": 0.09302325581395349,
+      "own_95ci": [
+        0.04789228421527052,
+        0.17295741124986852
+      ]
+    },
+    "attrition_fisher_p": 0.1608788382982912,
+    "own_fisher_p": 1.0,
+    "kind_by_origin": [
+      {
+        "kind": "ABI",
+        "origin": "dependency",
+        "n": 6
+      },
+      {
+        "kind": "ABI",
+        "origin": "own",
+        "n": 9
+      },
+      {
+        "kind": "API",
+        "origin": "dependency",
+        "n": 1
+      },
+      {
+        "kind": "API",
+        "origin": "own",
+        "n": 4
+      },
+      {
+        "kind": "other",
+        "origin": "dependency",
+        "n": 2
+      },
+      {
+        "kind": "other",
+        "origin": "unknown",
+        "n": 1
+      }
+    ]
+  },
+  "windows_vs_linux": {
+    "overlap": 100,
+    "tested_both": 74,
+    "agree": 74,
+    "crosstab": {
+      "not-testable": {
+        "not-testable": 20,
+        "runtime-compatible": 1,
+        "runtime-incompatible": 4
+      },
+      "runtime-compatible": {
+        "not-testable": 1,
+        "runtime-compatible": 63,
+        "runtime-incompatible": 0
+      },
+      "runtime-incompatible": {
+        "not-testable": 0,
+        "runtime-compatible": 0,
+        "runtime-incompatible": 11
+      }
+    },
+    "disagree": []
+  },
+  "runtime_population": {
+    "packages": 674,
+    "with_pre_event_release": 594,
+    "compatible": 454,
+    "capped": 74,
+    "none": 55,
+    "other": 11
+  }
+}

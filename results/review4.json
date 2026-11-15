@@ -1,0 +1,251 @@
+{
+  "bookkeeping": {
+    "capped": 188,
+    "capped_unknown_build": 19,
+    "capped_known_build": 169,
+    "still_capped": 19,
+    "early": 29,
+    "early_compiled": 17,
+    "early_build_numpy": 9,
+    "early_unknown_build": 3,
+    "early_core": 9,
+    "capped_core": 16
+  },
+  "early_by_rc1": {
+    "before_rc1": 9,
+    "rc1_to_release": 20,
+    "core_before_rc1": 1,
+    "core_rc1_to_release": 8
+  },
+  "km_periphery": {
+    "n": 152,
+    "events": 133,
+    "median": 158.79833593125,
+    "median_95ci": [
+      131.01175814050927,
+      177.88664795378475
+    ],
+    "adapted_at": {
+      "30d": 0.18434856671224642,
+      "90d": 0.3079564168260819,
+      "180d": 0.5868304262079189,
+      "365d": 0.8117362419354385
+    }
+  },
+  "km_core": {
+    "n": 7,
+    "events": 7,
+    "median": 78.9292087854051,
+    "median_95ci": [
+      37.62936236471065,
+      131.00985590099535
+    ],
+    "adapted_at": {
+      "30d": 0.0,
+      "90d": 0.6,
+      "180d": 1.0,
+      "365d": 1.0
+    }
+  },
+  "core_threshold": {
+    "3": {
+      "n_core": 62,
+      "cox_HR": 1.3167489897045324,
+      "cox_HR_95ci": [
+        0.6228252370636338,
+        2.7838112502669223
+      ],
+      "early_core": "11 of 24",
+      "early_periphery": "18 of 164"
+    },
+    "5": {
+      "n_core": 38,
+      "cox_HR": 2.2025333380044985,
+      "cox_HR_95ci": [
+        0.897505523510947,
+        5.405151253046376
+      ],
+      "early_core": "9 of 16",
+      "early_periphery": "20 of 172"
+    },
+    "10": {
+      "n_core": 20,
+      "cox_HR": 1.0967815576240527,
+      "cox_HR_95ci": [
+        0.23837077448676353,
+        5.046465061559133
+      ],
+      "early_core": "8 of 10",
+      "early_periphery": "21 of 178"
+    }
+  },
+  "firth": {
+    "n": 169,
+    "events": 26,
+    "terms": {
+      "capi_i": {
+        "OR": 2.0866820591581208,
+        "OR_95ci": [
+          0.6001411403093265,
+          7.255363319648607
+        ]
+      },
+      "core_i": {
+        "OR": 3.3366987647437023,
+        "OR_95ci": [
+          0.6531033353919214,
+          17.047162437106525
+        ]
+      },
+      "log_downloads": {
+        "OR": 1.8114052981608,
+        "OR_95ci": [
+          0.9899695467890836,
+          3.3144344337130263
+        ]
+      }
+    }
+  },
+  "firth_frame": {
+    "terms": {
+      "capi_i": {
+        "OR": 1.6462857665049682,
+        "OR_95ci": [
+          0.4466633166124614,
+          6.067784669562088
+        ]
+      },
+      "log_frame_indeg": {
+        "OR": 6.184331492151691,
+        "OR_95ci": [
+          1.5207637249876174,
+          25.149176940770722
+        ]
+      },
+      "log_downloads": {
+        "OR": 1.1610290679087278,
+        "OR_95ci": [
+          0.5563506428314959,
+          2.4229117264402618
+        ]
+      }
+    }
+  },
+  "collinearity": {
+    "corr_downloads_core": 0.4378190449583926,
+    "vif": {
+      "capi_i": 1.0743406097565777,
+      "capi_unknown_i": 1.0889819159903762,
+      "poetry_i": 1.071265382708324,
+      "log_downloads": 1.3870096247142065,
+      "core_i": 1.2707151422572518,
+      "releases_2023_per10": 1.0610084329804037,
+      "age_years_at_event": 1.229416569562169
+    }
+  },
+  "github_diff": {
+    "diff": 0.3273809523809524,
+    "ci95": [
+      0.03718475942737565,
+      0.5518675290859069
+    ]
+  },
+  "stepwise": [
+    {
+      "step": "A planned",
+      "frame": "2026",
+      "events": "all releases, release-day origin",
+      "popularity": "2026",
+      "capped": 175,
+      "cohort": 158,
+      "still_capped": 5,
+      "median": 150.56835470150463,
+      "median_95ci": [
+        127.36144140923611,
+        167.033000466875
+      ],
+      "HR_downloads": 1.7917717960275368,
+      "HR_downloads_95ci": [
+        1.353315655552208,
+        2.3722818515165645
+      ]
+    },
+    {
+      "step": "B + mainline",
+      "frame": "2026",
+      "events": "mainline, release-day origin",
+      "popularity": "2026",
+      "capped": 173,
+      "cohort": 156,
+      "still_capped": 5,
+      "median": 150.85457443204862,
+      "median_95ci": [
+        130.7055063062963,
+        169.66760176357639
+      ],
+      "HR_downloads": 1.7034123766291511,
+      "HR_downloads_95ci": [
+        1.2837159111529381,
+        2.2603238766802844
+      ]
+    },
+    {
+      "step": "C + delayed entry",
+      "frame": "2026",
+      "events": "mainline, delayed entry",
+      "popularity": "2026",
+      "capped": 173,
+      "cohort": 156,
+      "still_capped": 5,
+      "median": 116.47546236429397,
+      "median_95ci": [
+        93.56805789116898,
+        137.57990173658564
+      ],
+      "HR_downloads": 1.4986356189783128,
+      "HR_downloads_95ci": [
+        1.1282901965680991,
+        1.9905417288051
+      ]
+    },
+    {
+      "step": "D + pre-event frame",
+      "frame": "2024",
+      "events": "mainline, delayed entry",
+      "popularity": "2026 (+indicator if below top 15,000)",
+      "capped": 188,
+      "cohort": 159,
+      "still_capped": 19,
+      "median": 154.9357860598727,
+      "median_95ci": [
+        116.47546236429397,
+        164.85782121636575
+      ],
+      "HR_downloads": 1.5422889618286715,
+      "HR_downloads_95ci": [
+        1.23717958614185,
+        1.922643461323516
+      ]
+    },
+    {
+      "step": "E + pre-event popularity",
+      "frame": "2024",
+      "events": "mainline, delayed entry",
+      "popularity": "2024",
+      "capped": 188,
+      "cohort": 159,
+      "still_capped": 19,
+      "median": 154.9357860598727,
+      "median_95ci": [
+        116.47546236429397,
+        164.85782121636575
+      ],
+      "HR_downloads": 1.3765550328582277,
+      "HR_downloads_95ci": [
+        1.078722137453406,
+        1.7566189593185801
+      ]
+    }
+  ],
+  "below_2026_list_capped": 26
+}

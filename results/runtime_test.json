@@ -1,0 +1,22 @@
+{
+  "population_at_release": {
+    "compatible": 454,
+    "capped": 74
+  },
+  "sampled": 100,
+  "crosstab": {
+    "capped": {
+      "not-testable": 14,
+      "runtime-compatible": 29,
+      "runtime-incompatible": 7
+    },
+    "compatible": {
+      "not-testable": 11,
+      "runtime-compatible": 35,
+      "runtime-incompatible": 4
+    }
+  },
+  "exclude_newer": "2024-07-01T00:00:00Z",
+  "platform": "win32",
+  "seed": 31
+}

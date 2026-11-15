@@ -1,0 +1,19 @@
+{
+  "pool": 7043,
+  "sampled": 1000,
+  "seed": 23,
+  "dependent": 0,
+  "capped": 0,
+  "dependent_packages": [],
+  "capped_packages": [],
+  "est_missed_dependent": 0,
+  "est_missed_dependent_95": [
+    0,
+    26
+  ],
+  "est_missed_capped": 0,
+  "est_missed_capped_95": [
+    0,
+    26
+  ]
+}

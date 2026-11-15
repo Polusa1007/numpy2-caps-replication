@@ -1,0 +1,46 @@
+{
+  "packages": 674,
+  "with_repo": 600,
+  "searchable": 574,
+  "capped_searchable": 162,
+  "never_capped_searchable": 412,
+  "capped_reported": 50,
+  "never_capped_reported": 70,
+  "share_capped": 0.30864197530864196,
+  "share_never": 0.16990291262135923,
+  "diff": 0.13873906268728273,
+  "diff_95ci": [
+    0.06192857467401436,
+    0.22063522803453672
+  ],
+  "OR": 2.181122448979592,
+  "OR_95ci": [
+    1.4316718872657863,
+    3.322894847455751
+  ],
+  "fisher_p": 0.0003780113150274456,
+  "kinds_never_capped": {
+    "ABI": 44,
+    "API": 23,
+    "ABI;API": 3
+  },
+  "kinds_capped": {
+    "ABI": 41,
+    "API": 8,
+    "ABI;API": 1
+  },
+  "never_capped_reported_compiled": 29,
+  "reactive_reported": 21,
+  "reactive_report_before_cap": 11,
+  "window": [
+    "2024-03-01",
+    "2025-12-31"
+  ],
+  "signatures": {
+    "cannot be run in NumPy 2": "ABI",
+    "_ARRAY_API not found": "ABI",
+    "numpy.core.multiarray failed to import": "ABI",
+    "numpy.dtype size changed": "ABI",
+    "was removed in the NumPy 2.0 release": "API"
+  }
+}

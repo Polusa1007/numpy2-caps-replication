@@ -1,0 +1,24 @@
+{
+  "capped": 188,
+  "with_pyproject": 115,
+  "source_counts": {
+    "pyproject": 115,
+    "no-pyproject": 44,
+    "no-sdist": 29
+  },
+  "agree": 115,
+  "wheel_yes_src_yes": 31,
+  "wheel_yes_src_no": 0,
+  "wheel_no_src_yes": 0,
+  "poetry_caret_numpy": 21,
+  "crosstab": {
+    "False": {
+      "False": 84,
+      "True": 0
+    },
+    "True": {
+      "False": 0,
+      "True": 31
+    }
+  }
+}

@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this replication package, please cite it as below."
+title: "Replication package: Version Caps in the NumPy 2.0 Transition"
+authors:
+  - family-names: "Sie"
+    given-names: "Jia-You"
+    affiliation: "Independent Researcher, Taiwan"
+  - family-names: "Huang"
+    given-names: "Ching-Cheng"
+    affiliation: "Independent Researcher, Taiwan"
+version: "1.0"
+date-released: "2026-11-09"
+doi: "TODO: Zenodo DOI"
+license:
+  - MIT
+  - CC-BY-4.0

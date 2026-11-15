@@ -1,0 +1,244 @@
+{
+  "primary": {
+    "n": 158,
+    "events": 153,
+    "km_median_days": 150.0,
+    "km_median_95ci": [
+      127.0,
+      167.0
+    ],
+    "cox": {
+      "compiled_i": {
+        "HR": 1.161,
+        "HR_95ci": [
+          0.817,
+          1.651
+        ],
+        "p_holm": 0.40507483500900376
+      },
+      "log_downloads": {
+        "HR": 1.793,
+        "HR_95ci": [
+          1.354,
+          2.374
+        ],
+        "p_holm": 0.00018456180563770715
+      },
+      "releases_2023": {
+        "HR": 1.011,
+        "HR_95ci": [
+          1.0,
+          1.022
+        ],
+        "p_holm": 0.15532169040291283
+      },
+      "age_years_at_event": {
+        "HR": 1.039,
+        "HR_95ci": [
+          0.994,
+          1.086
+        ],
+        "p_holm": 0.18370211814659523
+      }
+    }
+  },
+  "S1_drop_late_caps": {
+    "n": 147,
+    "events": 144,
+    "km_median_days": 139.0,
+    "km_median_95ci": [
+      116.0,
+      162.0
+    ],
+    "cox": {
+      "compiled_i": {
+        "HR": 1.07,
+        "HR_95ci": [
+          0.749,
+          1.529
+        ],
+        "p_holm": 0.7983920754692551
+      },
+      "log_downloads": {
+        "HR": 1.658,
+        "HR_95ci": [
+          1.241,
+          2.216
+        ],
+        "p_holm": 0.0025000340086165397
+      },
+      "releases_2023": {
+        "HR": 1.01,
+        "HR_95ci": [
+          0.998,
+          1.021
+        ],
+        "p_holm": 0.28197365345479397
+      },
+      "age_years_at_event": {
+        "HR": 1.021,
+        "HR_95ci": [
+          0.973,
+          1.07
+        ],
+        "p_holm": 0.7983920754692551
+      }
+    }
+  },
+  "S2_drop_born_after_event": {
+    "n": 148,
+    "events": 145,
+    "km_median_days": 145.0,
+    "km_median_95ci": [
+      116.0,
+      164.0
+    ],
+    "cox": {
+      "compiled_i": {
+        "HR": 1.166,
+        "HR_95ci": [
+          0.813,
+          1.673
+        ],
+        "p_holm": 0.8067936533197182
+      },
+      "log_downloads": {
+        "HR": 1.775,
+        "HR_95ci": [
+          1.333,
+          2.362
+        ],
+        "p_holm": 0.000335787203514181
+      },
+      "releases_2023": {
+        "HR": 1.008,
+        "HR_95ci": [
+          0.996,
+          1.02
+        ],
+        "p_holm": 0.5501851208311985
+      },
+      "age_years_at_event": {
+        "HR": 1.012,
+        "HR_95ci": [
+          0.963,
+          1.064
+        ],
+        "p_holm": 0.8067936533197182
+      }
+    }
+  },
+  "S3_drop_both": {
+    "n": 142,
+    "events": 139,
+    "km_median_days": 137.0,
+    "km_median_95ci": [
+      116.0,
+      161.0
+    ],
+    "cox": {
+      "compiled_i": {
+        "HR": 1.087,
+        "HR_95ci": [
+          0.754,
+          1.566
+        ],
+        "p_holm": 1.0
+      },
+      "log_downloads": {
+        "HR": 1.61,
+        "HR_95ci": [
+          1.201,
+          2.157
+        ],
+        "p_holm": 0.005763411177726109
+      },
+      "releases_2023": {
+        "HR": 1.009,
+        "HR_95ci": [
+          0.998,
+          1.02
+        ],
+        "p_holm": 0.3642971458296882
+      },
+      "age_years_at_event": {
+        "HR": 1.017,
+        "HR_95ci": [
+          0.968,
+          1.068
+        ],
+        "p_holm": 1.0
+      }
+    }
+  },
+  "S4_major_cap_style_only": {
+    "n": 132,
+    "events": 129,
+    "km_median_days": 139.0,
+    "km_median_95ci": [
+      116.0,
+      169.0
+    ],
+    "cox": {
+      "compiled_i": {
+        "HR": 1.152,
+        "HR_95ci": [
+          0.793,
+          1.674
+        ],
+        "p_holm": 0.4577021409458385
+      },
+      "log_downloads": {
+        "HR": 1.906,
+        "HR_95ci": [
+          1.424,
+          2.55
+        ],
+        "p_holm": 5.736647520542871e-05
+      },
+      "releases_2023": {
+        "HR": 1.012,
+        "HR_95ci": [
+          1.001,
+          1.023
+        ],
+        "p_holm": 0.11840324408496827
+      },
+      "age_years_at_event": {
+        "HR": 1.042,
+        "HR_95ci": [
+          0.996,
+          1.091
+        ],
+        "p_holm": 0.1523751997376815
+      }
+    }
+  },
+  "_excluded": {
+    "late_caps": [
+      "apache-superset",
+      "bpy",
+      "chatterbox-tts",
+      "funasr",
+      "megatron-core",
+      "numpy-typing-compat",
+      "openpi-client",
+      "pykrx",
+      "quantstats",
+      "sagemaker-studio",
+      "yake"
+    ],
+    "born_after_event_and_capped": [
+      "bpy",
+      "chalkpy",
+      "chatterbox-tts",
+      "docling-ibm-models",
+      "kokoro",
+      "langchain-azure-ai",
+      "numpy-typing-compat",
+      "openpi-client",
+      "outlines-core",
+      "sagemaker-studio"
+    ]
+  }
+}

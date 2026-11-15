@@ -1,0 +1,22 @@
+{
+  "population_at_release": {
+    "compatible": 454,
+    "capped": 74
+  },
+  "sampled": 174,
+  "crosstab": {
+    "capped": {
+      "not-testable": 17,
+      "runtime-compatible": 46,
+      "runtime-incompatible": 11
+    },
+    "compatible": {
+      "not-testable": 14,
+      "runtime-compatible": 74,
+      "runtime-incompatible": 12
+    }
+  },
+  "exclude_newer": "2024-07-01T00:00:00Z",
+  "platform": "linux",
+  "seed": 31
+}

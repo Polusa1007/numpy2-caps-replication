@@ -1,0 +1,1538 @@
+{
+  "collected_at": "2026-11-08T09:19:41.683590+00:00",
+  "top_snapshot": "2026-11-01 06:41:05",
+  "RQ1": {
+    "n_numpy_dependent": 746,
+    "n_compiled": 264,
+    "n_ever_capped": 175,
+    "cap_origin": {
+      "reactive": 95,
+      "pre-emptive": 61,
+      "legacy": 19
+    },
+    "H1_fisher": {
+      "table_[compiled T/F]x[capped T/F]": [
+        [
+          64,
+          200
+        ],
+        [
+          111,
+          371
+        ]
+      ],
+      "odds_ratio": 1.0695495495495495,
+      "or_95ci": [
+        0.7518852912934288,
+        1.5214238823235802
+      ],
+      "p": 0.7184254768055138,
+      "cap_rate_compiled": 0.24242424242424243,
+      "cap_rate_pure": 0.23029045643153526
+    },
+    "H1_fisher_excluding_legacy": {
+      "table_[compiled T/F]x[capped T/F]": [
+        [
+          60,
+          200
+        ],
+        [
+          96,
+          371
+        ]
+      ],
+      "odds_ratio": 1.159375,
+      "or_95ci": [
+        0.8044199416646821,
+        1.6709560777961192
+      ],
+      "p": 0.45132873757203706,
+      "cap_rate_compiled": 0.23076923076923078,
+      "cap_rate_pure": 0.20556745182012848
+    }
+  },
+  "RQ2": {
+    "adaptation_counts": {
+      "after-release": 153,
+      "before-release": 17,
+      "still-capped": 5
+    },
+    "before_release_days_median": -73.0,
+    "survival_n": 158,
+    "survival_events": 153,
+    "km_median_days": 150.0,
+    "km_median_95ci": [
+      127.0,
+      167.0
+    ],
+    "km_share_adapted_at": {
+      "30d": 0.10759493670886067,
+      "90d": 0.2784810126582278,
+      "180d": 0.6075949367088608,
+      "365d": 0.8227848101265823
+    },
+    "cox_n": 158,
+    "H2_cox": {
+      "compiled_i": {
+        "HR": 1.1611360999486258,
+        "HR_95ci": [
+          0.8168549627803566,
+          1.6505219457991236
+        ],
+        "p": 0.40507483500900376,
+        "p_holm": 0.40507483500900376
+      },
+      "log_downloads": {
+        "HR": 1.79254104160118,
+        "HR_95ci": [
+          1.353749515759696,
+          2.373558290081057
+        ],
+        "p": 4.614045140942679e-05,
+        "p_holm": 0.00018456180563770715
+      },
+      "releases_2023": {
+        "HR": 1.0109810462036184,
+        "HR_95ci": [
+          0.9999160314638598,
+          1.0221685057760814
+        ],
+        "p": 0.05177389680097094,
+        "p_holm": 0.15532169040291283
+      },
+      "age_years_at_event": {
+        "HR": 1.0388732828010683,
+        "HR_95ci": [
+          0.9938146929806098,
+          1.08597478517952
+        ],
+        "p": 0.09185105907329762,
+        "p_holm": 0.18370211814659523
+      }
+    },
+    "cox_concordance": 0.630806647750304,
+    "ph_test_p": {
+      "age_years_at_event": 0.15629473863683005,
+      "compiled_i": 0.7630627865464767,
+      "log_downloads": 0.7104166796844339,
+      "releases_2023": 0.7658315351321406
+    },
+    "sensitivity_D3_km_median_days": 154.0,
+    "cliffs_delta_days_compiled_vs_pure": -0.07343329488658208
+  },
+  "RQ3": {
+    "n_pairs": 209,
+    "n_pairs_both_uncapped": 200,
+    "n_ties_same_day": 7,
+    "n_downstream_after_upstream": 179,
+    "share_after": 0.927461139896373,
+    "sign_test_p_one_sided": 6.078784127215508e-38,
+    "lag_days_median": 187.60696256449074,
+    "lag_days_iqr": [
+      97.90126291330151,
+      320.61360071580435
+    ],
+    "pairs": [
+      {
+        "downstream": "aider-chat",
+        "upstream": "llama-index-core",
+        "down_uncap": "2024-06-24 20:38:49.294706+00:00",
+        "up_uncap": "2024-11-17 22:27:31.915573+00:00",
+        "lag_days": -146.07549329707177
+      },
+      {
+        "downstream": "aider-chat",
+        "upstream": "pandas",
+        "down_uncap": "2024-06-24 20:38:49.294706+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 75.03795063251157
+      },
+      {
+        "downstream": "aider-chat",
+        "upstream": "scikit-learn",
+        "down_uncap": "2024-06-24 20:38:49.294706+00:00",
+        "up_uncap": "2024-01-18 09:21:23.855833+00:00",
+        "lag_days": 158.47043332028935
+      },
+      {
+        "downstream": "aider-chat",
+        "upstream": "scipy",
+        "down_uncap": "2024-06-24 20:38:49.294706+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 82.95658648565973
+      },
+      {
+        "downstream": "aider-chat",
+        "upstream": "sentence-transformers",
+        "down_uncap": "2024-06-24 20:38:49.294706+00:00",
+        "up_uncap": "2024-09-19 14:18:03.813827+00:00",
+        "lag_days": -86.7355847120486
+      },
+      {
+        "downstream": "aider-chat",
+        "upstream": "streamlit",
+        "down_uncap": "2024-06-24 20:38:49.294706+00:00",
+        "up_uncap": "2024-06-20 18:02:18.401735+00:00",
+        "lag_days": 4.108690890868055
+      },
+      {
+        "downstream": "aider-chat",
+        "upstream": "transformers",
+        "down_uncap": "2024-06-24 20:38:49.294706+00:00",
+        "up_uncap": "2024-07-23 15:06:16.908311+00:00",
+        "lag_days": -28.769069601909724
+      },
+      {
+        "downstream": "albumentations",
+        "upstream": "albucore",
+        "down_uncap": "2024-07-05 02:10:43.814818+00:00",
+        "up_uncap": "2024-08-29 02:15:47.364797+00:00",
+        "lag_days": -55.003513309942136
+      },
+      {
+        "downstream": "albumentations",
+        "upstream": "scikit-learn",
+        "down_uncap": "2024-07-05 02:10:43.814818+00:00",
+        "up_uncap": "2024-01-18 09:21:23.855833+00:00",
+        "lag_days": 168.70092545121528
+      },
+      {
+        "downstream": "albumentations",
+        "upstream": "scipy",
+        "down_uncap": "2024-07-05 02:10:43.814818+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 93.18707861658565
+      },
+      {
+        "downstream": "apache-superset",
+        "upstream": "pandas",
+        "down_uncap": "2026-05-13 18:29:51.334408+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 762.9483909068402
+      },
+      {
+        "downstream": "arize-phoenix",
+        "upstream": "hdbscan",
+        "down_uncap": "2024-09-30 16:18:32.494699+00:00",
+        "up_uncap": "2024-08-05 22:21:39.731445+00:00",
+        "lag_days": 55.74783290803241
+      },
+      {
+        "downstream": "arize-phoenix",
+        "upstream": "pandas",
+        "down_uncap": "2024-09-30 16:18:32.494699+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 172.85720063243056
+      },
+      {
+        "downstream": "arize-phoenix",
+        "upstream": "scikit-learn",
+        "down_uncap": "2024-09-30 16:18:32.494699+00:00",
+        "up_uncap": "2024-01-18 09:21:23.855833+00:00",
+        "lag_days": 256.2896833202083
+      },
+      {
+        "downstream": "arize-phoenix",
+        "upstream": "scipy",
+        "down_uncap": "2024-09-30 16:18:32.494699+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 180.7758364855787
+      },
+      {
+        "downstream": "asammdf",
+        "upstream": "pandas",
+        "down_uncap": "2025-02-24 07:28:31.983136+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 319.4891391560069
+      },
+      {
+        "downstream": "audio-separator",
+        "upstream": "onnxruntime",
+        "down_uncap": "2023-12-21 17:42:12.285035+00:00",
+        "up_uncap": "2024-08-15 19:17:16.967385+00:00",
+        "lag_days": -238.06602641608794
+      },
+      {
+        "downstream": "audio-separator",
+        "upstream": "scipy",
+        "down_uncap": "2023-12-21 17:42:12.285035+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": -103.16606408923612
+      },
+      {
+        "downstream": "audiomentations",
+        "upstream": "numpy-minmax",
+        "down_uncap": "2025-05-05 08:57:35.644557+00:00",
+        "up_uncap": "2025-03-17 20:45:07.186986+00:00",
+        "lag_days": 48.50866270336805
+      },
+      {
+        "downstream": "audiomentations",
+        "upstream": "numpy-rms",
+        "down_uncap": "2025-05-05 08:57:35.644557+00:00",
+        "up_uncap": "2025-03-14 14:24:58.941679+00:00",
+        "lag_days": 51.772647024050926
+      },
+      {
+        "downstream": "audiomentations",
+        "upstream": "scipy",
+        "down_uncap": "2025-05-05 08:57:35.644557+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 397.4696229422685
+      },
+      {
+        "downstream": "auto-round",
+        "upstream": "accelerate",
+        "down_uncap": "2025-11-14 11:36:45.536548+00:00",
+        "up_uncap": "2024-09-02 22:18:03.639059+00:00",
+        "lag_days": 437.55465159130785
+      },
+      {
+        "downstream": "auto-round",
+        "upstream": "numba",
+        "down_uncap": "2025-11-14 11:36:45.536548+00:00",
+        "up_uncap": "2024-06-13 18:10:29.857678+00:00",
+        "lag_days": 518.7265703572916
+      },
+      {
+        "downstream": "auto-round",
+        "upstream": "transformers",
+        "down_uncap": "2025-11-14 11:36:45.536548+00:00",
+        "up_uncap": "2024-07-23 15:06:16.908311+00:00",
+        "lag_days": 478.85449801200235
+      },
+      {
+        "downstream": "autogluon-common",
+        "upstream": "pandas",
+        "down_uncap": "2024-11-27 17:04:34.868960+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 230.8891725567477
+      },
+      {
+        "downstream": "autogluon-core",
+        "upstream": "autogluon-common",
+        "down_uncap": "2024-11-27 17:04:39.686405+00:00",
+        "up_uncap": "2024-11-27 17:04:34.868960+00:00",
+        "lag_days": 5.575746527777778e-05
+      },
+      {
+        "downstream": "autogluon-core",
+        "upstream": "matplotlib",
+        "down_uncap": "2024-11-27 17:04:39.686405+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": 237.63704967238428
+      },
+      {
+        "downstream": "autogluon-core",
+        "upstream": "pandas",
+        "down_uncap": "2024-11-27 17:04:39.686405+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 230.88922831421294
+      },
+      {
+        "downstream": "autogluon-core",
+        "upstream": "scikit-learn",
+        "down_uncap": "2024-11-27 17:04:39.686405+00:00",
+        "up_uncap": "2024-01-18 09:21:23.855833+00:00",
+        "lag_days": 314.32171100199076
+      },
+      {
+        "downstream": "autogluon-core",
+        "upstream": "scipy",
+        "down_uncap": "2024-11-27 17:04:39.686405+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 238.80786416736112
+      },
+      {
+        "downstream": "autogluon-features",
+        "upstream": "autogluon-common",
+        "down_uncap": "2024-11-27 17:04:43.160341+00:00",
+        "up_uncap": "2024-11-27 17:04:34.868960+00:00",
+        "lag_days": 9.596505787037037e-05
+      },
+      {
+        "downstream": "autogluon-features",
+        "upstream": "pandas",
+        "down_uncap": "2024-11-27 17:04:43.160341+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 230.88926852180555
+      },
+      {
+        "downstream": "autogluon-features",
+        "upstream": "scikit-learn",
+        "down_uncap": "2024-11-27 17:04:43.160341+00:00",
+        "up_uncap": "2024-01-18 09:21:23.855833+00:00",
+        "lag_days": 314.32175120958334
+      },
+      {
+        "downstream": "autogluon-tabular",
+        "upstream": "autogluon-core",
+        "down_uncap": "2024-11-27 17:04:48.676342+00:00",
+        "up_uncap": "2024-11-27 17:04:39.686405+00:00",
+        "lag_days": 0.00010405019675925926
+      },
+      {
+        "downstream": "autogluon-tabular",
+        "upstream": "autogluon-features",
+        "down_uncap": "2024-11-27 17:04:48.676342+00:00",
+        "up_uncap": "2024-11-27 17:04:43.160341+00:00",
+        "lag_days": 6.384260416666666e-05
+      },
+      {
+        "downstream": "autogluon-tabular",
+        "upstream": "pandas",
+        "down_uncap": "2024-11-27 17:04:48.676342+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 230.8893323644097
+      },
+      {
+        "downstream": "autogluon-tabular",
+        "upstream": "scikit-learn",
+        "down_uncap": "2024-11-27 17:04:48.676342+00:00",
+        "up_uncap": "2024-01-18 09:21:23.855833+00:00",
+        "lag_days": 314.3218150521875
+      },
+      {
+        "downstream": "autogluon-tabular",
+        "upstream": "scipy",
+        "down_uncap": "2024-11-27 17:04:48.676342+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 238.80796821755789
+      },
+      {
+        "downstream": "awswrangler",
+        "upstream": "pandas",
+        "down_uncap": "2024-10-31 13:55:03.510041+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 203.75755960629627
+      },
+      {
+        "downstream": "bayesian-optimization",
+        "upstream": "scikit-learn",
+        "down_uncap": "2024-07-10 12:02:35.595251+00:00",
+        "up_uncap": "2024-01-18 09:21:23.855833+00:00",
+        "lag_days": 174.1119414284491
+      },
+      {
+        "downstream": "bayesian-optimization",
+        "upstream": "scipy",
+        "down_uncap": "2024-07-10 12:02:35.595251+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 98.59809459381944
+      },
+      {
+        "downstream": "captum",
+        "upstream": "matplotlib",
+        "down_uncap": "2026-04-17 06:11:38.229087+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": 743.1835605830555
+      },
+      {
+        "downstream": "catboost",
+        "upstream": "matplotlib",
+        "down_uncap": "2025-04-13 10:12:07.475931+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": 374.3505657548611
+      },
+      {
+        "downstream": "catboost",
+        "upstream": "pandas",
+        "down_uncap": "2025-04-13 10:12:07.475931+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 367.6027443966898
+      },
+      {
+        "downstream": "catboost",
+        "upstream": "scipy",
+        "down_uncap": "2025-04-13 10:12:07.475931+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 375.521380249838
+      },
+      {
+        "downstream": "causallib",
+        "upstream": "matplotlib",
+        "down_uncap": "2024-07-31 11:25:57.549090+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": 118.40183974975695
+      },
+      {
+        "downstream": "causallib",
+        "upstream": "pandas",
+        "down_uncap": "2024-07-31 11:25:57.549090+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 111.65401839158565
+      },
+      {
+        "downstream": "causallib",
+        "upstream": "scikit-learn",
+        "down_uncap": "2024-07-31 11:25:57.549090+00:00",
+        "up_uncap": "2024-01-18 09:21:23.855833+00:00",
+        "lag_days": 195.08650107936342
+      },
+      {
+        "downstream": "causallib",
+        "upstream": "scipy",
+        "down_uncap": "2024-07-31 11:25:57.549090+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 119.5726542447338
+      },
+      {
+        "downstream": "causallib",
+        "upstream": "statsmodels",
+        "down_uncap": "2024-07-31 11:25:57.549090+00:00",
+        "up_uncap": "2024-04-17 08:41:57.587581+00:00",
+        "lag_days": 105.1138884433912
+      },
+      {
+        "downstream": "chalkpy",
+        "upstream": "pandas",
+        "down_uncap": "2025-11-05 19:19:24.385330+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 573.9828012184375
+      },
+      {
+        "downstream": "chromadb",
+        "upstream": "onnxruntime",
+        "down_uncap": "2024-09-18 23:00:11.062562+00:00",
+        "up_uncap": "2024-08-15 19:17:16.967385+00:00",
+        "lag_days": 34.154792768252314
+      },
+      {
+        "downstream": "cirq-core",
+        "upstream": "matplotlib",
+        "down_uncap": "2025-04-10 18:05:57.196931+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": 371.67961345162036
+      },
+      {
+        "downstream": "cirq-core",
+        "upstream": "pandas",
+        "down_uncap": "2025-04-10 18:05:57.196931+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 364.9317920934491
+      },
+      {
+        "downstream": "cirq-core",
+        "upstream": "scipy",
+        "down_uncap": "2025-04-10 18:05:57.196931+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 372.8504279465972
+      },
+      {
+        "downstream": "colour-science",
+        "upstream": "imageio",
+        "down_uncap": "2024-10-10 07:43:29.039432+00:00",
+        "up_uncap": "2024-08-19 02:35:25.923097+00:00",
+        "lag_days": 52.213924957581014
+      },
+      {
+        "downstream": "colour-science",
+        "upstream": "scipy",
+        "down_uncap": "2024-10-10 07:43:29.039432+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 190.4181576051736
+      },
+      {
+        "downstream": "cudf-cu12",
+        "upstream": "cupy-cuda12x",
+        "down_uncap": "2024-10-10 14:54:22.545586+00:00",
+        "up_uncap": "2024-06-13 00:59:47.843865+00:00",
+        "lag_days": 119.57956830695602
+      },
+      {
+        "downstream": "cudf-cu12",
+        "upstream": "numba",
+        "down_uncap": "2024-10-10 14:54:22.545586+00:00",
+        "up_uncap": "2024-06-13 18:10:29.857678+00:00",
+        "lag_days": 118.86380425819443
+      },
+      {
+        "downstream": "cudf-cu12",
+        "upstream": "pandas",
+        "down_uncap": "2024-10-10 14:54:22.545586+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 182.79875214732638
+      },
+      {
+        "downstream": "cudf-cu12",
+        "upstream": "rmm-cu12",
+        "down_uncap": "2024-10-10 14:54:22.545586+00:00",
+        "up_uncap": "2024-10-10 15:11:55.015862+00:00",
+        "lag_days": -0.012181368935185186
+      },
+      {
+        "downstream": "databento",
+        "upstream": "pandas",
+        "down_uncap": "2024-10-08 22:04:36.623242+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 181.09752619427084
+      },
+      {
+        "downstream": "databricks-connect",
+        "upstream": "pandas",
+        "down_uncap": "2024-08-20 09:51:07.947021+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 131.58816651578704
+      },
+      {
+        "downstream": "datacompy",
+        "upstream": "pandas",
+        "down_uncap": "2024-10-24 16:55:55.744864+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 196.88316417600697
+      },
+      {
+        "downstream": "docling-ibm-models",
+        "upstream": "onnxruntime",
+        "down_uncap": "2024-12-02 16:01:20.792373+00:00",
+        "up_uncap": "2024-08-15 19:17:16.967385+00:00",
+        "lag_days": 108.86393315958334
+      },
+      {
+        "downstream": "econml",
+        "upstream": "pandas",
+        "down_uncap": "2025-07-10 15:06:45.539173+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 455.80735161013894
+      },
+      {
+        "downstream": "econml",
+        "upstream": "scikit-learn",
+        "down_uncap": "2025-07-10 15:06:45.539173+00:00",
+        "up_uncap": "2024-01-18 09:21:23.855833+00:00",
+        "lag_days": 539.2398342979167
+      },
+      {
+        "downstream": "econml",
+        "upstream": "scipy",
+        "down_uncap": "2025-07-10 15:06:45.539173+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 463.725987463287
+      },
+      {
+        "downstream": "econml",
+        "upstream": "statsmodels",
+        "down_uncap": "2025-07-10 15:06:45.539173+00:00",
+        "up_uncap": "2024-04-17 08:41:57.587581+00:00",
+        "lag_days": 449.2672216619444
+      },
+      {
+        "downstream": "exchange-calendars",
+        "upstream": "pandas",
+        "down_uncap": "2024-06-24 19:58:26.637441+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 75.00991061787037
+      },
+      {
+        "downstream": "fairchem-data-oc",
+        "upstream": "matplotlib",
+        "down_uncap": "2025-06-04 19:44:35.627413+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": 426.7481138044213
+      },
+      {
+        "downstream": "fairchem-data-oc",
+        "upstream": "scipy",
+        "down_uncap": "2025-06-04 19:44:35.627413+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 427.9189282993982
+      },
+      {
+        "downstream": "fastembed",
+        "upstream": "onnxruntime",
+        "down_uncap": "2024-11-13 13:38:25.846210+00:00",
+        "up_uncap": "2024-08-15 19:17:16.967385+00:00",
+        "lag_days": 89.76468609751157
+      },
+      {
+        "downstream": "faster-coco-eval",
+        "upstream": "pandas",
+        "down_uncap": "2024-10-31 08:56:23.141624+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 203.55014793480325
+      },
+      {
+        "downstream": "feast",
+        "upstream": "pandas",
+        "down_uncap": "2025-07-01 14:55:39.939394+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 446.79964790899305
+      },
+      {
+        "downstream": "funasr",
+        "upstream": "scipy",
+        "down_uncap": "2026-09-09 04:03:45.582851+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 889.2655713021528
+      },
+      {
+        "downstream": "funasr",
+        "upstream": "transformers",
+        "down_uncap": "2026-09-09 04:03:45.582851+00:00",
+        "up_uncap": "2024-07-23 15:06:16.908311+00:00",
+        "lag_days": 777.5399152145833
+      },
+      {
+        "downstream": "gdsfactory",
+        "upstream": "matplotlib",
+        "down_uncap": "2024-08-13 05:00:42.572939+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": 131.13430530356482
+      },
+      {
+        "downstream": "gdsfactory",
+        "upstream": "pandas",
+        "down_uncap": "2024-08-13 05:00:42.572939+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 124.38648394539351
+      },
+      {
+        "downstream": "gdsfactory",
+        "upstream": "scipy",
+        "down_uncap": "2024-08-13 05:00:42.572939+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 132.30511979854168
+      },
+      {
+        "downstream": "gdsfactory",
+        "upstream": "shapely",
+        "down_uncap": "2024-08-13 05:00:42.572939+00:00",
+        "up_uncap": "2024-04-16 22:26:21.897957+00:00",
+        "lag_days": 118.27385040488426
+      },
+      {
+        "downstream": "gensim",
+        "upstream": "scipy",
+        "down_uncap": "2025-10-18 01:47:12.563460+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 563.170744688831
+      },
+      {
+        "downstream": "gluonts",
+        "upstream": "pandas",
+        "down_uncap": "2024-11-11 08:51:05.875573+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 214.5464758740278
+      },
+      {
+        "downstream": "gradio",
+        "upstream": "matplotlib",
+        "down_uncap": "2024-06-05 00:12:55.722709+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": 61.93445749997685
+      },
+      {
+        "downstream": "gradio",
+        "upstream": "pandas",
+        "down_uncap": "2024-06-05 00:12:55.722709+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 55.18663614180556
+      },
+      {
+        "downstream": "great-expectations",
+        "upstream": "pandas",
+        "down_uncap": "2024-08-22 16:11:47.343263+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 133.85251137969908
+      },
+      {
+        "downstream": "great-expectations",
+        "upstream": "scipy",
+        "down_uncap": "2024-08-22 16:11:47.343263+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 141.77114723284723
+      },
+      {
+        "downstream": "haystack-ai",
+        "upstream": "pandas",
+        "down_uncap": "2024-11-11 10:41:37.805583+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 214.6232343232176
+      },
+      {
+        "downstream": "hdbscan",
+        "upstream": "scikit-learn",
+        "down_uncap": "2024-08-05 22:21:39.731445+00:00",
+        "up_uncap": "2024-01-18 09:21:23.855833+00:00",
+        "lag_days": 200.5418504121759
+      },
+      {
+        "downstream": "hdbscan",
+        "upstream": "scipy",
+        "down_uncap": "2024-08-05 22:21:39.731445+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 125.02800357754629
+      },
+      {
+        "downstream": "ibis-framework",
+        "upstream": "pandas",
+        "down_uncap": "2024-07-22 23:22:52.836612+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 103.15188051568286
+      },
+      {
+        "downstream": "kokoro",
+        "upstream": "scipy",
+        "down_uncap": "2025-03-18 18:08:49.827558+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 349.8524259862616
+      },
+      {
+        "downstream": "kokoro",
+        "upstream": "transformers",
+        "down_uncap": "2025-03-18 18:08:49.827558+00:00",
+        "up_uncap": "2024-07-23 15:06:16.908311+00:00",
+        "lag_days": 238.12676989869215
+      },
+      {
+        "downstream": "label-studio-sdk",
+        "upstream": "pandas",
+        "down_uncap": "2025-04-29 22:00:52.926021+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 384.0949371060648
+      },
+      {
+        "downstream": "langchain-chroma",
+        "upstream": "chromadb",
+        "down_uncap": "2025-04-15 18:18:52.557711+00:00",
+        "up_uncap": "2024-09-18 23:00:11.062562+00:00",
+        "lag_days": 208.80464693459493
+      },
+      {
+        "downstream": "lifelines",
+        "upstream": "matplotlib",
+        "down_uncap": "2024-10-29 12:00:41.749439+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": 208.42596243898146
+      },
+      {
+        "downstream": "lifelines",
+        "upstream": "pandas",
+        "down_uncap": "2024-10-29 12:00:41.749439+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 201.6781410808102
+      },
+      {
+        "downstream": "lifelines",
+        "upstream": "scipy",
+        "down_uncap": "2024-10-29 12:00:41.749439+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 209.59677693395832
+      },
+      {
+        "downstream": "livekit-plugins-silero",
+        "upstream": "onnxruntime",
+        "down_uncap": "2024-07-24 22:26:30.231092+00:00",
+        "up_uncap": "2024-08-15 19:17:16.967385+00:00",
+        "lag_days": -21.868596484872686
+      },
+      {
+        "downstream": "llama-index-core",
+        "upstream": "pandas",
+        "down_uncap": "2024-11-17 22:27:31.915573+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 221.11344392958335
+      },
+      {
+        "downstream": "maggma",
+        "upstream": "monty",
+        "down_uncap": "2024-08-23 18:00:01.175432+00:00",
+        "up_uncap": "2024-12-10 21:16:46.383207+00:00",
+        "lag_days": -109.13663434924769
+      },
+      {
+        "downstream": "maggma",
+        "upstream": "pandas",
+        "down_uncap": "2024-08-23 18:00:01.175432+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 134.9276714742477
+      },
+      {
+        "downstream": "matplotlib",
+        "upstream": "contourpy",
+        "down_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "up_uncap": "2024-04-02 20:34:58.885392+00:00",
+        "lag_days": 1.2168947837847222
+      },
+      {
+        "downstream": "matplotlib-stubs",
+        "upstream": "matplotlib",
+        "down_uncap": "2025-08-02 12:38:01.849596+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": 485.45188952413196
+      },
+      {
+        "downstream": "matplotlib-stubs",
+        "upstream": "pandas",
+        "down_uncap": "2025-08-02 12:38:01.849596+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 478.7040681659606
+      },
+      {
+        "downstream": "matscipy",
+        "upstream": "scipy",
+        "down_uncap": "2025-11-20 17:06:20.382912+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 596.8090296361921
+      },
+      {
+        "downstream": "mdtraj",
+        "upstream": "scipy",
+        "down_uncap": "2024-12-11 20:36:01.583505+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 252.95464538379628
+      },
+      {
+        "downstream": "mediapipe",
+        "upstream": "matplotlib",
+        "down_uncap": "2025-12-16 17:13:31.046540+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": 621.6431996739468
+      },
+      {
+        "downstream": "mlflow",
+        "upstream": "matplotlib",
+        "down_uncap": "2024-08-30 08:49:56.113172+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": 148.2934897970023
+      },
+      {
+        "downstream": "mlflow",
+        "upstream": "pandas",
+        "down_uncap": "2024-08-30 08:49:56.113172+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 141.54566843883103
+      },
+      {
+        "downstream": "mlflow",
+        "upstream": "scikit-learn",
+        "down_uncap": "2024-08-30 08:49:56.113172+00:00",
+        "up_uncap": "2024-01-18 09:21:23.855833+00:00",
+        "lag_days": 224.9781511266088
+      },
+      {
+        "downstream": "mlflow",
+        "upstream": "scipy",
+        "down_uncap": "2024-08-30 08:49:56.113172+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 149.46430429197918
+      },
+      {
+        "downstream": "modin",
+        "upstream": "pandas",
+        "down_uncap": "2024-06-26 14:58:32.266690+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 76.80164243788194
+      },
+      {
+        "downstream": "mteb",
+        "upstream": "scikit-learn",
+        "down_uncap": "2024-10-07 16:35:16.713688+00:00",
+        "up_uncap": "2024-01-18 09:21:23.855833+00:00",
+        "lag_days": 263.3013062251736
+      },
+      {
+        "downstream": "mteb",
+        "upstream": "scipy",
+        "down_uncap": "2024-10-07 16:35:16.713688+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 187.787459390544
+      },
+      {
+        "downstream": "mteb",
+        "upstream": "sentence-transformers",
+        "down_uncap": "2024-10-07 16:35:16.713688+00:00",
+        "up_uncap": "2024-09-19 14:18:03.813827+00:00",
+        "lag_days": 18.09528819283565
+      },
+      {
+        "downstream": "music21",
+        "upstream": "matplotlib",
+        "down_uncap": "2025-06-19 11:54:45.783126+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": 441.42184245850694
+      },
+      {
+        "downstream": "nemo-toolkit",
+        "upstream": "numba",
+        "down_uncap": "2025-07-25 18:12:22.005490+00:00",
+        "up_uncap": "2024-06-13 18:10:29.857678+00:00",
+        "lag_days": 407.00129800708334
+      },
+      {
+        "downstream": "nemo-toolkit",
+        "upstream": "scikit-learn",
+        "down_uncap": "2025-07-25 18:12:22.005490+00:00",
+        "up_uncap": "2024-01-18 09:21:23.855833+00:00",
+        "lag_days": 554.3687285839931
+      },
+      {
+        "downstream": "nncf",
+        "upstream": "pandas",
+        "down_uncap": "2024-11-20 11:49:56.699732+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 223.67067522771993
+      },
+      {
+        "downstream": "nncf",
+        "upstream": "scikit-learn",
+        "down_uncap": "2024-11-20 11:49:56.699732+00:00",
+        "up_uncap": "2024-01-18 09:21:23.855833+00:00",
+        "lag_days": 307.1031579154977
+      },
+      {
+        "downstream": "nncf",
+        "upstream": "scipy",
+        "down_uncap": "2024-11-20 11:49:56.699732+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 231.58931108086804
+      },
+      {
+        "downstream": "nvidia-modelopt",
+        "upstream": "scipy",
+        "down_uncap": "2025-04-02 19:49:13.106167+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 364.92213985905096
+      },
+      {
+        "downstream": "optimum",
+        "upstream": "transformers",
+        "down_uncap": "2024-10-10 11:24:39.948275+00:00",
+        "up_uncap": "2024-07-23 15:06:16.908311+00:00",
+        "lag_days": 78.84609999958333
+      },
+      {
+        "downstream": "osmnx",
+        "upstream": "pandas",
+        "down_uncap": "2024-11-24 17:37:40.984370+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 227.9121600036227
+      },
+      {
+        "downstream": "osmnx",
+        "upstream": "shapely",
+        "down_uncap": "2024-11-24 17:37:40.984370+00:00",
+        "up_uncap": "2024-04-16 22:26:21.897957+00:00",
+        "lag_days": 221.79952646311344
+      },
+      {
+        "downstream": "outlines",
+        "upstream": "numba",
+        "down_uncap": "2024-11-27 20:35:15.753094+00:00",
+        "up_uncap": "2024-06-13 18:10:29.857678+00:00",
+        "lag_days": 167.10053119694444
+      },
+      {
+        "downstream": "outlines",
+        "upstream": "outlines-core",
+        "down_uncap": "2024-11-27 20:35:15.753094+00:00",
+        "up_uncap": "2024-10-10 13:15:08.820404+00:00",
+        "lag_days": 48.30563579502315
+      },
+      {
+        "downstream": "paddlex",
+        "upstream": "pandas",
+        "down_uncap": "2025-06-15 10:40:54.852858+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 430.6227371851968
+      },
+      {
+        "downstream": "pipecat-ai",
+        "upstream": "scipy",
+        "down_uncap": "2025-07-12 00:28:31.575770+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 465.1161036276042
+      },
+      {
+        "downstream": "pykrx",
+        "upstream": "matplotlib",
+        "down_uncap": "2026-04-16 11:47:28.619748+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": 742.4167826971875
+      },
+      {
+        "downstream": "pykrx",
+        "upstream": "pandas",
+        "down_uncap": "2026-04-16 11:47:28.619748+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 735.6689613390162
+      },
+      {
+        "downstream": "pylibraft-cu12",
+        "upstream": "rmm-cu12",
+        "down_uncap": "2024-10-10 15:29:47.073030+00:00",
+        "up_uncap": "2024-10-10 15:11:55.015862+00:00",
+        "lag_days": 0.012408069074074074
+      },
+      {
+        "downstream": "pymatching",
+        "upstream": "matplotlib",
+        "down_uncap": "2025-04-03 11:44:34.839922+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": 364.4147713566088
+      },
+      {
+        "downstream": "pymatching",
+        "upstream": "scipy",
+        "down_uncap": "2025-04-03 11:44:34.839922+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 365.5855858515857
+      },
+      {
+        "downstream": "pystan",
+        "upstream": "httpstan",
+        "down_uncap": "2024-07-03 17:04:15.124028+00:00",
+        "up_uncap": "2024-07-03 16:04:47.049303+00:00",
+        "lag_days": 0.04129716116898148
+      },
+      {
+        "downstream": "pytensor",
+        "upstream": "scipy",
+        "down_uncap": "2025-02-20 21:22:35.760490+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 323.9869853951967
+      },
+      {
+        "downstream": "python-doctr",
+        "upstream": "matplotlib",
+        "down_uncap": "2024-10-21 08:40:28.537758+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": 200.28692063711804
+      },
+      {
+        "downstream": "python-doctr",
+        "upstream": "scipy",
+        "down_uncap": "2024-10-21 08:40:28.537758+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 201.45773513209488
+      },
+      {
+        "downstream": "python-doctr",
+        "upstream": "shapely",
+        "down_uncap": "2024-10-21 08:40:28.537758+00:00",
+        "up_uncap": "2024-04-16 22:26:21.897957+00:00",
+        "lag_days": 187.42646573843749
+      },
+      {
+        "downstream": "pytorch-metric-learning",
+        "upstream": "scikit-learn",
+        "down_uncap": "2024-11-02 21:59:14.431741+00:00",
+        "up_uncap": "2024-01-18 09:21:23.855833+00:00",
+        "lag_days": 289.52627981375
+      },
+      {
+        "downstream": "pyvista",
+        "upstream": "matplotlib",
+        "down_uncap": "2024-06-17 19:35:13.353207+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": 74.74160600111112
+      },
+      {
+        "downstream": "qiskit",
+        "upstream": "rustworkx",
+        "down_uncap": "2024-03-08 18:14:26.058923+00:00",
+        "up_uncap": "2024-06-27 23:36:00.743053+00:00",
+        "lag_days": -111.22331810335648
+      },
+      {
+        "downstream": "qiskit",
+        "upstream": "scipy",
+        "down_uncap": "2024-03-08 18:14:26.058923+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": -25.14368244701389
+      },
+      {
+        "downstream": "quantstats",
+        "upstream": "matplotlib",
+        "down_uncap": "2025-07-20 20:35:13.634947+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": 472.7832759286575
+      },
+      {
+        "downstream": "quantstats",
+        "upstream": "pandas",
+        "down_uncap": "2025-07-20 20:35:13.634947+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 466.0354545704861
+      },
+      {
+        "downstream": "quantstats",
+        "upstream": "scipy",
+        "down_uncap": "2025-07-20 20:35:13.634947+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 473.9540904236343
+      },
+      {
+        "downstream": "qutip",
+        "upstream": "scipy",
+        "down_uncap": "2024-06-27 19:18:03.198450+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 85.90049740862268
+      },
+      {
+        "downstream": "rapidocr-onnxruntime",
+        "upstream": "onnxruntime",
+        "down_uncap": "2024-10-17 14:52:59.974048+00:00",
+        "up_uncap": "2024-08-15 19:17:16.967385+00:00",
+        "lag_days": 62.81646998452547
+      },
+      {
+        "downstream": "rapidocr-onnxruntime",
+        "upstream": "shapely",
+        "down_uncap": "2024-10-17 14:52:59.974048+00:00",
+        "up_uncap": "2024-04-16 22:26:21.897957+00:00",
+        "lag_days": 183.6851629177199
+      },
+      {
+        "downstream": "rmm-cu12",
+        "upstream": "numba",
+        "down_uncap": "2024-10-10 15:11:55.015862+00:00",
+        "up_uncap": "2024-06-13 18:10:29.857678+00:00",
+        "lag_days": 118.87598562712962
+      },
+      {
+        "downstream": "sagemaker-studio",
+        "upstream": "awswrangler",
+        "down_uncap": "2025-11-13 00:58:20.767354+00:00",
+        "up_uncap": "2024-10-31 13:55:03.510041+00:00",
+        "lag_days": 377.4606164040856
+      },
+      {
+        "downstream": "sagemaker-studio",
+        "upstream": "pandas",
+        "down_uncap": "2025-11-13 00:58:20.767354+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 581.218176010382
+      },
+      {
+        "downstream": "scanpy",
+        "upstream": "matplotlib",
+        "down_uncap": "2024-09-17 13:38:00.201797+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": 166.49353711905093
+      },
+      {
+        "downstream": "scanpy",
+        "upstream": "numba",
+        "down_uncap": "2024-09-17 13:38:00.201797+00:00",
+        "up_uncap": "2024-06-13 18:10:29.857678+00:00",
+        "lag_days": 95.81076787174769
+      },
+      {
+        "downstream": "scanpy",
+        "upstream": "pandas",
+        "down_uncap": "2024-09-17 13:38:00.201797+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 159.74571576087962
+      },
+      {
+        "downstream": "scanpy",
+        "upstream": "scikit-learn",
+        "down_uncap": "2024-09-17 13:38:00.201797+00:00",
+        "up_uncap": "2024-01-18 09:21:23.855833+00:00",
+        "lag_days": 243.1781984486574
+      },
+      {
+        "downstream": "scanpy",
+        "upstream": "scipy",
+        "down_uncap": "2024-09-17 13:38:00.201797+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 167.6643516140278
+      },
+      {
+        "downstream": "scanpy",
+        "upstream": "statsmodels",
+        "down_uncap": "2024-09-17 13:38:00.201797+00:00",
+        "up_uncap": "2024-04-17 08:41:57.587581+00:00",
+        "lag_days": 153.20558581268517
+      },
+      {
+        "downstream": "scikit-learn",
+        "upstream": "scipy",
+        "down_uncap": "2024-01-18 09:21:23.855833+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": -75.51384683462963
+      },
+      {
+        "downstream": "sentence-transformers",
+        "upstream": "scikit-learn",
+        "down_uncap": "2024-09-19 14:18:03.813827+00:00",
+        "up_uncap": "2024-01-18 09:21:23.855833+00:00",
+        "lag_days": 245.20601803233797
+      },
+      {
+        "downstream": "sentence-transformers",
+        "upstream": "scipy",
+        "down_uncap": "2024-09-19 14:18:03.813827+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 169.69217119770835
+      },
+      {
+        "downstream": "sentence-transformers",
+        "upstream": "transformers",
+        "down_uncap": "2024-09-19 14:18:03.813827+00:00",
+        "up_uncap": "2024-07-23 15:06:16.908311+00:00",
+        "lag_days": 57.96651511013889
+      },
+      {
+        "downstream": "sktime",
+        "upstream": "pandas",
+        "down_uncap": "2024-07-11 19:03:24.134245+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 91.97168720124999
+      },
+      {
+        "downstream": "sktime",
+        "upstream": "scikit-learn",
+        "down_uncap": "2024-07-11 19:03:24.134245+00:00",
+        "up_uncap": "2024-01-18 09:21:23.855833+00:00",
+        "lag_days": 175.40416988902777
+      },
+      {
+        "downstream": "sktime",
+        "upstream": "scipy",
+        "down_uncap": "2024-07-11 19:03:24.134245+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 99.89032305439815
+      },
+      {
+        "downstream": "stable-baselines3",
+        "upstream": "matplotlib",
+        "down_uncap": "2025-01-27 11:50:43.312509+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": 298.41903608562495
+      },
+      {
+        "downstream": "stable-baselines3",
+        "upstream": "pandas",
+        "down_uncap": "2025-01-27 11:50:43.312509+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 291.67121472745373
+      },
+      {
+        "downstream": "statsmodels",
+        "upstream": "pandas",
+        "down_uncap": "2024-04-17 08:41:57.587581+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 6.540129948194444
+      },
+      {
+        "downstream": "statsmodels",
+        "upstream": "scipy",
+        "down_uncap": "2024-04-17 08:41:57.587581+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 14.458765801342592
+      },
+      {
+        "downstream": "streamlit",
+        "upstream": "pandas",
+        "down_uncap": "2024-06-20 18:02:18.401735+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 70.92925974164352
+      },
+      {
+        "downstream": "supervision",
+        "upstream": "matplotlib",
+        "down_uncap": "2023-12-06 14:52:14.232199+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": -119.45491160314815
+      },
+      {
+        "downstream": "supervision",
+        "upstream": "scipy",
+        "down_uncap": "2023-12-06 14:52:14.232199+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": -118.2840971081713
+      },
+      {
+        "downstream": "timesfm",
+        "upstream": "pandas",
+        "down_uncap": "2024-07-19 19:23:57.549867+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 99.98596284502315
+      },
+      {
+        "downstream": "timesfm",
+        "upstream": "scikit-learn",
+        "down_uncap": "2024-07-19 19:23:57.549867+00:00",
+        "up_uncap": "2024-01-18 09:21:23.855833+00:00",
+        "lag_days": 183.41844553280094
+      },
+      {
+        "downstream": "trl",
+        "upstream": "accelerate",
+        "down_uncap": "2024-08-29 14:53:05.399522+00:00",
+        "up_uncap": "2024-09-02 22:18:03.639059+00:00",
+        "lag_days": -4.3090074020486115
+      },
+      {
+        "downstream": "trl",
+        "upstream": "transformers",
+        "down_uncap": "2024-08-29 14:53:05.399522+00:00",
+        "up_uncap": "2024-07-23 15:06:16.908311+00:00",
+        "lag_days": 36.99083901864583
+      },
+      {
+        "downstream": "ultralytics",
+        "upstream": "matplotlib",
+        "down_uncap": "2024-10-03 12:26:21.346230+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": 182.44378184628474
+      },
+      {
+        "downstream": "ultralytics",
+        "upstream": "pandas",
+        "down_uncap": "2024-10-03 12:26:21.346230+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 175.69596048811343
+      },
+      {
+        "downstream": "ultralytics",
+        "upstream": "scipy",
+        "down_uncap": "2024-10-03 12:26:21.346230+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 183.61459634126157
+      },
+      {
+        "downstream": "unstructured-inference",
+        "upstream": "matplotlib",
+        "down_uncap": "2025-03-18 16:45:28.811406+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": 348.62372935989583
+      },
+      {
+        "downstream": "unstructured-inference",
+        "upstream": "onnxruntime",
+        "down_uncap": "2025-03-18 16:45:28.811406+00:00",
+        "up_uncap": "2024-08-15 19:17:16.967385+00:00",
+        "lag_days": 214.89458152802084
+      },
+      {
+        "downstream": "unstructured-inference",
+        "upstream": "pandas",
+        "down_uncap": "2025-03-18 16:45:28.811406+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 341.87590800172455
+      },
+      {
+        "downstream": "unstructured-inference",
+        "upstream": "scipy",
+        "down_uncap": "2025-03-18 16:45:28.811406+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 349.7945438548727
+      },
+      {
+        "downstream": "unstructured-inference",
+        "upstream": "transformers",
+        "down_uncap": "2025-03-18 16:45:28.811406+00:00",
+        "up_uncap": "2024-07-23 15:06:16.908311+00:00",
+        "lag_days": 238.06888776730324
+      },
+      {
+        "downstream": "vectorbt",
+        "upstream": "imageio",
+        "down_uncap": "2024-12-18 13:07:43.841883+00:00",
+        "up_uncap": "2024-08-19 02:35:25.923097+00:00",
+        "lag_days": 121.43909628224537
+      },
+      {
+        "downstream": "vectorbt",
+        "upstream": "matplotlib",
+        "down_uncap": "2024-12-18 13:07:43.841883+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": 258.4725144348611
+      },
+      {
+        "downstream": "vectorbt",
+        "upstream": "numba",
+        "down_uncap": "2024-12-18 13:07:43.841883+00:00",
+        "up_uncap": "2024-06-13 18:10:29.857678+00:00",
+        "lag_days": 187.78974518755788
+      },
+      {
+        "downstream": "vectorbt",
+        "upstream": "pandas",
+        "down_uncap": "2024-12-18 13:07:43.841883+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 251.72469307668982
+      },
+      {
+        "downstream": "vectorbt",
+        "upstream": "scikit-learn",
+        "down_uncap": "2024-12-18 13:07:43.841883+00:00",
+        "up_uncap": "2024-01-18 09:21:23.855833+00:00",
+        "lag_days": 335.1571757644676
+      },
+      {
+        "downstream": "vectorbt",
+        "upstream": "scipy",
+        "down_uncap": "2024-12-18 13:07:43.841883+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 259.643328929838
+      },
+      {
+        "downstream": "vllm",
+        "upstream": "numba",
+        "down_uncap": "2025-04-06 06:47:12.378621+00:00",
+        "up_uncap": "2024-06-13 18:10:29.857678+00:00",
+        "lag_days": 296.525492140544
+      },
+      {
+        "downstream": "vllm",
+        "upstream": "outlines",
+        "down_uncap": "2025-04-06 06:47:12.378621+00:00",
+        "up_uncap": "2024-11-27 20:35:15.753094+00:00",
+        "lag_days": 129.42496094359953
+      },
+      {
+        "downstream": "vllm",
+        "upstream": "scipy",
+        "down_uncap": "2025-04-06 06:47:12.378621+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 368.37907588282405
+      },
+      {
+        "downstream": "vllm",
+        "upstream": "transformers",
+        "down_uncap": "2025-04-06 06:47:12.378621+00:00",
+        "up_uncap": "2024-07-23 15:06:16.908311+00:00",
+        "lag_days": 256.6534197952546
+      },
+      {
+        "downstream": "ydata-profiling",
+        "upstream": "matplotlib",
+        "down_uncap": "2024-09-07 09:52:35.414696+00:00",
+        "up_uncap": "2024-04-04 01:47:18.594711+00:00",
+        "lag_days": 156.33700023130788
+      },
+      {
+        "downstream": "ydata-profiling",
+        "upstream": "numba",
+        "down_uncap": "2024-09-07 09:52:35.414696+00:00",
+        "up_uncap": "2024-06-13 18:10:29.857678+00:00",
+        "lag_days": 85.65423098400463
+      },
+      {
+        "downstream": "ydata-profiling",
+        "upstream": "pandas",
+        "down_uncap": "2024-09-07 09:52:35.414696+00:00",
+        "up_uncap": "2024-04-10 19:44:10.360057+00:00",
+        "lag_days": 149.58917887313658
+      },
+      {
+        "downstream": "ydata-profiling",
+        "upstream": "scipy",
+        "down_uncap": "2024-09-07 09:52:35.414696+00:00",
+        "up_uncap": "2024-04-02 21:41:20.222345+00:00",
+        "lag_days": 157.50781472628472
+      },
+      {
+        "downstream": "ydata-profiling",
+        "upstream": "statsmodels",
+        "down_uncap": "2024-09-07 09:52:35.414696+00:00",
+        "up_uncap": "2024-04-17 08:41:57.587581+00:00",
+        "lag_days": 143.04904892494213
+      }
+    ]
+  }
+}

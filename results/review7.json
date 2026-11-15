@@ -1,0 +1,246 @@
+{
+  "still_capped": {
+    "n": 19,
+    "inactive": 11,
+    "archived": 3,
+    "no_release_12m": 11,
+    "released_last_12m": 8,
+    "packages": [
+      {
+        "package": "aesara",
+        "last_release": "2024-08-28 21:24:06.069085+00:00",
+        "archived": true,
+        "days_since_last_release": 801,
+        "inactive": true
+      },
+      {
+        "package": "ai2-olmo",
+        "last_release": "2024-12-19 17:02:58.422673+00:00",
+        "archived": false,
+        "days_since_last_release": 688,
+        "inactive": true
+      },
+      {
+        "package": "amundsen-databuilder",
+        "last_release": "2024-08-14 01:06:58.660140+00:00",
+        "archived": true,
+        "days_since_last_release": 816,
+        "inactive": true
+      },
+      {
+        "package": "autofaiss",
+        "last_release": "2025-11-20 22:29:12.772836+00:00",
+        "archived": false,
+        "days_since_last_release": 352,
+        "inactive": false
+      },
+      {
+        "package": "butterfree",
+        "last_release": "2025-06-06 17:32:11.428913+00:00",
+        "archived": false,
+        "days_since_last_release": 519,
+        "inactive": true
+      },
+      {
+        "package": "databricks-mosaic",
+        "last_release": "2024-11-14 18:41:59.387019+00:00",
+        "archived": true,
+        "days_since_last_release": 723,
+        "inactive": true
+      },
+      {
+        "package": "gpflow",
+        "last_release": "2026-10-14 14:53:42.040837+00:00",
+        "archived": false,
+        "days_since_last_release": 24,
+        "inactive": false
+      },
+      {
+        "package": "neuralprophet",
+        "last_release": "2024-06-26 23:51:51.986629+00:00",
+        "archived": false,
+        "days_since_last_release": 864,
+        "inactive": true
+      },
+      {
+        "package": "nuscenes-devkit",
+        "last_release": "2025-08-28 03:19:16.503827+00:00",
+        "archived": false,
+        "days_since_last_release": 437,
+        "inactive": true
+      },
+      {
+        "package": "onnx2tf",
+        "last_release": "2026-09-14 01:47:07.034331+00:00",
+        "archived": false,
+        "days_since_last_release": 55,
+        "inactive": false
+      },
+      {
+        "package": "openvino-dev",
+        "last_release": "2024-12-19 10:41:21.882203+00:00",
+        "archived": false,
+        "days_since_last_release": 689,
+        "inactive": true
+      },
+      {
+        "package": "pandasai",
+        "last_release": "2025-10-07 08:22:55.304430+00:00",
+        "archived": false,
+        "days_since_last_release": 397,
+        "inactive": true
+      },
+      {
+        "package": "prowler",
+        "last_release": "2026-11-06 11:29:23.627695+00:00",
+        "archived": false,
+        "days_since_last_release": 2,
+        "inactive": false
+      },
+      {
+        "package": "pycaret",
+        "last_release": "2026-05-08 16:26:51.608912+00:00",
+        "archived": false,
+        "days_since_last_release": 183,
+        "inactive": false
+      },
+      {
+        "package": "refinitiv-data",
+        "last_release": "2024-08-02 08:53:56.469664+00:00",
+        "archived": null,
+        "days_since_last_release": 828,
+        "inactive": true
+      },
+      {
+        "package": "storey",
+        "last_release": "2026-10-22 11:36:28.718432+00:00",
+        "archived": false,
+        "days_since_last_release": 16,
+        "inactive": false
+      },
+      {
+        "package": "target-hotglue",
+        "last_release": "2026-02-03 19:20:55.685953+00:00",
+        "archived": null,
+        "days_since_last_release": 277,
+        "inactive": false
+      },
+      {
+        "package": "tecton",
+        "last_release": "2026-09-14 23:15:39.671607+00:00",
+        "archived": null,
+        "days_since_last_release": 54,
+        "inactive": false
+      },
+      {
+        "package": "tensorflow-cpu-aws",
+        "last_release": "2024-03-14 16:29:24.016261+00:00",
+        "archived": false,
+        "days_since_last_release": 968,
+        "inactive": true
+      }
+    ]
+  },
+  "km_excluding_inactive_still_capped": {
+    "n": 148,
+    "events": 140,
+    "median": 148.36881800431712,
+    "median_95ci": [
+      109.51830261840279,
+      164.7115704445023
+    ],
+    "adapted_at": {
+      "30d": 0.18714918251976898,
+      "90d": 0.3350989620257685,
+      "180d": 0.6414934478557897,
+      "365d": 0.8659155592676429
+    }
+  },
+  "github_adjusted": {
+    "capped_i": {
+      "OR": 2.167080731730169,
+      "OR_95ci": [
+        1.2478893919298693,
+        3.7633454761350276
+      ],
+      "p": 0.006025803829076036
+    },
+    "log_downloads": {
+      "OR": 1.5912956244441798,
+      "OR_95ci": [
+        1.189398030817869,
+        2.1289944146232975
+      ],
+      "p": 0.001761364129864091
+    },
+    "compiled_i": {
+      "OR": 2.0910354159068656,
+      "OR_95ci": [
+        1.2696978647635104,
+        3.4436768241641427
+      ],
+      "p": 0.0037547760114090157
+    },
+    "n": 574
+  },
+  "early_post_beta": {
+    "n_early_any": 29,
+    "n_early_post_beta": 22,
+    "by_core": {
+      "table": [
+        [
+          8,
+          8
+        ],
+        [
+          14,
+          158
+        ]
+      ],
+      "OR": 11.285714285714286,
+      "OR_95ci": [
+        3.6746425597724754,
+        34.66115271539822
+      ],
+      "p": 6.912586505622855e-05
+    },
+    "by_compiled": {
+      "table": [
+        [
+          15,
+          38
+        ],
+        [
+          7,
+          128
+        ]
+      ],
+      "OR": 7.2180451127819545,
+      "OR_95ci": [
+        2.743196424104143,
+        18.99250625742925
+      ],
+      "p": 3.7123659833138184e-05
+    }
+  },
+  "rq3_lag_all_upstreams_lifted": {
+    "downstreams_with_capped_upstream": 132,
+    "eligible": 115,
+    "share_within_30d": 0.12173913043478261,
+    "null_mean": 0.04506434782608695,
+    "null_95": [
+      0.017391304347826087,
+      0.08695652173913043
+    ],
+    "p": 0.0005998800239952009,
+    "lag_median": 167.7928401413426
+  },
+  "binary_missing": {
+    "n": 12,
+    "by_reason": {
+      "no-wheel": 10,
+      "unscanned": 2
+    },
+    "capped_among_missing": 2
+  }
+}

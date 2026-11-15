@@ -1,0 +1,23 @@
+{
+  "pool_size": 7014,
+  "sampled": 300,
+  "seed": 7,
+  "numpy_dependent_in_window": 5,
+  "capped_in_window": 3,
+  "capped_then_dropped_numpy": 3,
+  "dependent_packages": [
+    "metricflow",
+    "databricks-sql-connector",
+    "magika",
+    "langchain",
+    "scipy-stubs"
+  ],
+  "capped_packages": [
+    "databricks-sql-connector",
+    "magika",
+    "langchain"
+  ],
+  "share_dependent": 0.016666666666666666,
+  "estimated_missed_dependents_in_pool": 117,
+  "estimated_missed_capped_in_pool": 70
+}
