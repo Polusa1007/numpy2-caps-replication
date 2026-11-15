@@ -1,0 +1,31 @@
+package,ever_capped,cap_timing,first_cap,uncap,uncap_kind
+tables,True,reactive,2024-08-13 08:49:34.259578+00:00,2024-08-17 09:56:50.229438+00:00,lifted
+accelerate,True,reactive,2024-07-03 17:25:27.868501+00:00,2024-09-02 22:18:03.639059+00:00,lifted
+semantic-kernel,True,reactive,2024-08-28 06:40:44.131745+00:00,2024-09-16 18:52:45.978678+00:00,lifted
+databricks-mosaic,True,reactive,2024-11-14 18:41:59.387019+00:00,,
+bioframe,True,reactive,2024-06-17 20:24:06.804798+00:00,2025-04-08 17:43:45.675949+00:00,lifted
+optimum,True,reactive,2024-07-02 08:05:37.012429+00:00,2024-10-10 11:24:39.948275+00:00,lifted
+asammdf,True,reactive,2024-06-19 09:20:01.037091+00:00,2025-02-24 07:28:31.983136+00:00,lifted
+compas,True,reactive,2024-06-24 17:42:32.505247+00:00,2025-02-04 07:31:55.419345+00:00,lifted
+albumentations,True,reactive,2024-06-19 22:13:49.399439+00:00,2024-07-05 02:10:43.814818+00:00,lifted
+rerun-sdk,True,pre-emptive,2024-01-17 17:00:37.139156+00:00,2024-12-18 14:11:28.533971+00:00,lifted
+jsonconversion,True,pre-emptive,2024-03-07 16:45:57.409991+00:00,2025-01-13 14:10:14.159931+00:00,lifted
+awkward-cpp,True,pre-emptive,2024-03-22 00:12:01.717013+00:00,2024-04-01 22:55:35.202312+00:00,lifted
+databricks-feature-engineering,True,pre-emptive,2024-01-09 18:14:56.388608+00:00,2025-04-14 20:19:18.691968+00:00,lifted
+numba,True,pre-emptive,2023-10-18 13:46:37.554671+00:00,2024-06-13 18:10:29.857678+00:00,lifted
+pyvista,True,pre-emptive,2024-06-06 03:22:16.078199+00:00,2024-06-17 19:35:13.353207+00:00,lifted
+tensorflow-cpu,True,pre-emptive,2023-11-14 18:57:37.307386+00:00,2024-10-25 00:16:55.903340+00:00,lifted
+deepecho,True,legacy,2023-07-25 17:39:07.808852+00:00,2024-04-11 02:18:35.466632+00:00,lifted
+httpstan,True,legacy,2023-10-18 00:32:05.334775+00:00,2024-07-03 16:04:47.049303+00:00,lifted
+sdmetrics,True,legacy,2023-08-10 21:00:10.363392+00:00,2024-04-11 20:26:50.033308+00:00,lifted
+scipy,True,legacy,2023-06-28 21:43:44.452033+00:00,2024-04-02 21:41:20.222345+00:00,lifted
+tabula-py,False,,,,
+ortools,False,,,,
+tensorflow-probability,False,,,,
+torchsde,False,,,,
+resampy,False,,,,
+vector,False,,,,
+lightning-fabric,False,,,,
+nagisa,False,,,,
+embreex,False,,,,
+nfoursid,False,,,,

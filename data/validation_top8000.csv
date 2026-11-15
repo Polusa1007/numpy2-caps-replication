@@ -1,0 +1,96 @@
+package,cap_timing,check,version,pipeline_status,independent_status,expected,source_file,numpy_lines,agree_sources,meets_definition
+rapidocr-onnxruntime,reactive,first_cap,1.3.23,capped,capped,capped,rapidocr_onnxruntime-1.3.23-py3-none-any.whl,"numpy <2.0.0,>=1.19.5",True,True
+rapidocr-onnxruntime,reactive,before_first_cap,1.3.22,compatible,compatible,compatible|none|other,rapidocr_onnxruntime-1.3.22-py3-none-any.whl,numpy >=1.19.5,True,True
+rapidocr-onnxruntime,reactive,last_capped,1.3.24,capped,capped,capped,rapidocr_onnxruntime-1.3.24-py3-none-any.whl,"numpy <2.0.0,>=1.19.5",True,True
+rapidocr-onnxruntime,reactive,uncap,1.3.25,compatible,compatible,compatible,rapidocr_onnxruntime-1.3.25-py3-none-any.whl,"numpy <3.0.0,>=1.19.5",True,True
+fairchem-data-oc,reactive,first_cap,0.1.0,capped,capped,capped,fairchem_data_oc-0.1.0-py2.py3-none-any.whl,"numpy<2.0.0,>=1.25.0",True,True
+fairchem-data-oc,reactive,before_first_cap,0.0.1,compatible,compatible,compatible|none|other,fairchem_data_oc-0.0.1-py2.py3-none-any.whl,numpy>=1.25.0,True,True
+fairchem-data-oc,reactive,last_capped,0.2.0,capped,capped,capped,fairchem_data_oc-0.2.0-py2.py3-none-any.whl,"numpy<2.0.0,>=1.26.0",True,True
+fairchem-data-oc,reactive,uncap,1.0.1,compatible,compatible,compatible,fairchem_data_oc-1.0.1-py2.py3-none-any.whl,numpy,True,True
+scanpy,reactive,first_cap,1.10.2,capped,capped,capped,scanpy-1.10.2-py3-none-any.whl,"numpy<2,>=1.23",True,True
+scanpy,reactive,before_first_cap,1.10.1,compatible,compatible,compatible|none|other,scanpy-1.10.1-py3-none-any.whl,numpy>=1.23,True,True
+scanpy,reactive,last_capped,1.10.2,capped,capped,capped,scanpy-1.10.2-py3-none-any.whl,"numpy<2,>=1.23",True,True
+scanpy,reactive,uncap,1.10.3,compatible,compatible,compatible,scanpy-1.10.3-py3-none-any.whl,numpy>=1.23,True,True
+semantic-kernel,reactive,first_cap,1.8.1,capped,capped,capped,semantic_kernel-1.8.1-py3-none-any.whl,numpy ~= 1.25.0; python_version < '3.12' || numpy ~= 1.26.0; python_version >= '3.12',True,True
+semantic-kernel,reactive,before_first_cap,1.8.0,compatible,compatible,compatible|none|other,semantic_kernel-1.8.0-py3-none-any.whl,"numpy (>=1.25) ; python_version < ""3.12"" || numpy (>=1.26) ; python_version >= ""3.12""",True,True
+semantic-kernel,reactive,last_capped,1.8.3,capped,capped,capped,semantic_kernel-1.8.3-py3-none-any.whl,numpy ~= 1.25.0; python_version < '3.12' || numpy ~= 1.26.0; python_version >= '3.12',True,True
+semantic-kernel,reactive,uncap,1.9.0,compatible,compatible,compatible,semantic_kernel-1.9.0-py3-none-any.whl,numpy >= 1.25.0; python_version < '3.12' || numpy >= 1.26.0; python_version >= '3.12',True,True
+accelerate,reactive,first_cap,0.32.0,capped,capped,capped,accelerate-0.32.0-py3-none-any.whl,"numpy <2.0.0,>=1.17",True,True
+accelerate,reactive,before_first_cap,0.31.0,compatible,compatible,compatible|none|other,accelerate-0.31.0-py3-none-any.whl,numpy (>=1.17),True,True
+accelerate,reactive,last_capped,0.33.0,capped,capped,capped,accelerate-0.33.0-py3-none-any.whl,"numpy (<2.0.0,>=1.17)",True,True
+accelerate,reactive,uncap,0.34.0,compatible,compatible,compatible,accelerate-0.34.0-py3-none-any.whl,"numpy <3.0.0,>=1.17",True,True
+funasr,reactive,first_cap,1.4.13,capped,capped,capped,funasr-1.4.13-py3-none-any.whl,numpy<2,True,True
+funasr,reactive,before_first_cap,1.4.12,compatible,compatible,compatible|none|other,funasr-1.4.12-py3-none-any.whl,numpy,True,True
+funasr,reactive,last_capped,1.4.14,capped,capped,capped,funasr-1.4.14-py3-none-any.whl,numpy<2,True,True
+funasr,reactive,uncap,1.4.15,compatible,compatible,compatible,funasr-1.4.15-py3-none-any.whl,numpy,True,True
+mediapipe,reactive,first_cap,0.10.15,capped,capped,capped,mediapipe-0.10.15-cp310-cp310-macosx_11_0_universal2.whl,numpy<2,True,True
+mediapipe,reactive,before_first_cap,0.10.14,compatible,compatible,compatible|none|other,mediapipe-0.10.14-cp310-cp310-macosx_11_0_universal2.whl,numpy,True,True
+mediapipe,reactive,last_capped,0.10.21,capped,capped,capped,mediapipe-0.10.21-cp310-cp310-macosx_11_0_universal2.whl,numpy<2,True,True
+mediapipe,reactive,uncap,0.10.30,compatible,compatible,compatible,mediapipe-0.10.30-py3-none-macosx_11_0_arm64.whl,numpy,True,True
+monai,reactive,first_cap,1.4.0,capped,capped,capped,monai-1.4.0-py3-none-any.whl,"numpy<2.0,>=1.24",True,True
+monai,reactive,before_first_cap,1.3.2,compatible,compatible,compatible|none|other,monai-1.3.2-py3-none-any.whl,numpy >=1.20,True,True
+monai,reactive,last_capped,1.4.0,capped,capped,capped,monai-1.4.0-py3-none-any.whl,"numpy<2.0,>=1.24",True,True
+monai,reactive,uncap,1.5.0,compatible,compatible,compatible,monai-1.5.0-py3-none-any.whl,"numpy<3.0,>=1.24",True,True
+bpy,reactive,first_cap,4.5.0,capped,capped,capped,bpy-4.5.0-cp311-cp311-macosx_11_0_x86_64.whl,"numpy<2.0,>=1.26",True,True
+bpy,reactive,before_first_cap,4.4.0,compatible,compatible,compatible|none|other,bpy-4.4.0-cp311-cp311-macosx_11_0_arm64.whl,numpy,True,True
+bpy,reactive,last_capped,4.5.1,capped,capped,capped,bpy-4.5.1-cp311-cp311-macosx_11_0_arm64.whl,"numpy<2.0,>=1.26",True,True
+bpy,reactive,uncap,4.2.13,compatible,compatible,compatible,bpy-4.2.13-cp311-cp311-macosx_11_0_arm64.whl,numpy,True,True
+music21,reactive,first_cap,9.5.0,capped,capped,capped,music21-9.5.0-py3-none-any.whl,numpy<2.0.0,True,True
+music21,reactive,before_first_cap,9.3.0,compatible,compatible,compatible|none|other,music21-9.3.0-py3-none-any.whl,numpy,True,True
+music21,reactive,last_capped,9.7.0,capped,capped,capped,music21-9.7.0-py3-none-any.whl,numpy<2.0.0,True,True
+music21,reactive,uncap,9.7.1,compatible,compatible,compatible,music21-9.7.1-py3-none-any.whl,numpy>=1.26.4,True,True
+tritonclient,reactive,first_cap,2.47.0,capped,capped,capped,tritonclient-2.47.0-py3-none-any.whl,"numpy <2,>=1.19.1 || numpy <2,>=1.19.1 ; extra == 'all' || numpy <2,>=1.19.1 ; extra == 'grpc' || numpy <2,>=1.19.1 ; extra == 'http'",True,True
+tritonclient,reactive,before_first_cap,2.46.0,compatible,compatible,compatible|none|other,tritonclient-2.46.0-py3-none-any.whl,numpy >=1.19.1 || numpy >=1.19.1 ; extra == 'all' || numpy >=1.19.1 ; extra == 'grpc' || numpy >=1.19.1 ; extra == 'http',True,True
+tritonclient,reactive,last_capped,2.56.0,capped,capped,capped,tritonclient-2.56.0-py3-none-any.whl,"numpy <2,>=1.19.1 || numpy <2,>=1.19.1 ; extra == 'all' || numpy <2,>=1.19.1 ; extra == 'grpc' || numpy <2,>=1.19.1 ; extra == 'http'",True,True
+tritonclient,reactive,uncap,2.57.0,compatible,compatible,compatible,tritonclient-2.57.0-py3-none-any.whl,numpy >=1.19.1 || numpy >=1.19.1 ; extra == 'all' || numpy >=1.19.1 ; extra == 'grpc' || numpy >=1.19.1 ; extra == 'http',True,True
+aider-chat,pre-emptive,first_cap,0.29.0,capped,capped,capped,aider_chat-0.29.0-py3-none-any.whl,numpy ==1.26.4,True,True
+aider-chat,pre-emptive,before_first_cap,0.28.0,other,other,compatible|none|other,aider_chat-0.28.0-py3-none-any.whl,numpy ==1.26.3,True,True
+aider-chat,pre-emptive,last_capped,0.39.0,capped,capped,capped,aider_chat-0.39.0-py3-none-any.whl,numpy ==1.26.4,True,True
+aider-chat,pre-emptive,uncap,0.40.0,compatible,compatible,compatible,aider_chat-0.40.0-py3-none-any.whl,numpy ==2.0.0,True,True
+build123d,pre-emptive,first_cap,0.1.1,capped,capped,capped,build123d-0.1.1-py3-none-any.whl,"numpy <2,>=1.24.1 || numpy-stl <4,>=3.0.0",True,True
+build123d,pre-emptive,last_capped,0.7.0,capped,capped,capped,build123d-0.7.0-py3-none-any.whl,"numpy<2,>=1.24.1",True,True
+build123d,pre-emptive,uncap,0.8.0,compatible,compatible,compatible,build123d-0.8.0-py3-none-any.whl,"numpy<3,>=2",True,True
+qiskit,pre-emptive,first_cap,1.0.0,capped,capped,capped,qiskit-1.0.0-cp38-abi3-macosx_10_9_universal2.whl,"numpy <2,>=1.17",True,True
+qiskit,pre-emptive,before_first_cap,0.46.0,none,none,compatible|none|other,qiskit-0.46.0-py3-none-any.whl,,True,True
+qiskit,pre-emptive,last_capped,1.0.2,capped,capped,capped,qiskit-1.0.2-cp38-abi3-macosx_10_9_universal2.whl,"numpy <2,>=1.17",True,True
+qiskit,pre-emptive,uncap,0.46.1,none,none,none,qiskit-0.46.1-py3-none-any.whl,,True,True
+mdtraj,pre-emptive,first_cap,1.10.0,capped,capped,capped,mdtraj-1.10.0-cp310-cp310-macosx_10_9_x86_64.whl,"numpy <2.0.0a0,>=1.23",True,True
+mdtraj,pre-emptive,last_capped,1.10.1,capped,capped,capped,mdtraj-1.10.1-cp310-cp310-macosx_10_13_x86_64.whl,"numpy<2.0.0a0,>=1.23",True,True
+mdtraj,pre-emptive,uncap,1.10.2,compatible,compatible,compatible,mdtraj-1.10.2-cp310-cp310-macosx_10_13_x86_64.whl,numpy<3,True,True
+databricks-feature-engineering,pre-emptive,first_cap,0.2.0,capped,capped,capped,databricks_feature_engineering-0.2.0-py3-none-any.whl,"numpy <2,>=1.19.2",True,True
+databricks-feature-engineering,pre-emptive,before_first_cap,0.1.3,none,none,compatible|none|other,databricks_feature_engineering-0.1.3-py3-none-any.whl,,True,True
+databricks-feature-engineering,pre-emptive,last_capped,0.9.0,capped,capped,capped,databricks_feature_engineering-0.9.0-py3-none-any.whl,"numpy <2,>=1.19.2",True,True
+databricks-feature-engineering,pre-emptive,uncap,0.10.2,compatible,compatible,compatible,databricks_feature_engineering-0.10.2-py3-none-any.whl,"numpy<3,>=1.19.2",True,True
+statsmodels,pre-emptive,first_cap,0.14.1,capped,capped,capped,statsmodels-0.14.1-cp310-cp310-macosx_10_9_x86_64.whl,"numpy <2,>=1.18 || numpy <2,>=1.22.3 ; python_version == ""3.10"" and platform_system == ""Windows"" and platform_python_implementation != ""PyPy"" || numpydoc ; extra == 'docs'",True,True
+statsmodels,pre-emptive,last_capped,0.14.1,capped,capped,capped,statsmodels-0.14.1-cp310-cp310-macosx_10_9_x86_64.whl,"numpy <2,>=1.18 || numpy <2,>=1.22.3 ; python_version == ""3.10"" and platform_system == ""Windows"" and platform_python_implementation != ""PyPy"" || numpydoc ; extra == 'docs'",True,True
+statsmodels,pre-emptive,uncap,0.14.2,compatible,compatible,compatible,statsmodels-0.14.2-cp310-cp310-macosx_10_9_x86_64.whl,numpy >=1.22.3 || numpydoc ; extra == 'docs',True,True
+numba,pre-emptive,first_cap,0.58.1,capped,capped,capped,numba-0.58.1-cp310-cp310-macosx_10_9_x86_64.whl,"numpy <1.27,>=1.22",True,True
+numba,pre-emptive,before_first_cap,0.57.1,other,other,compatible|none|other,numba-0.57.1-cp310-cp310-macosx_10_9_x86_64.whl,"numpy (<1.25,>=1.21)",True,True
+numba,pre-emptive,last_capped,0.59.1,capped,capped,capped,numba-0.59.1-cp310-cp310-macosx_10_9_x86_64.whl,"numpy <1.27,>=1.22",True,True
+numba,pre-emptive,uncap,0.60.0,compatible,compatible,compatible,numba-0.60.0-cp310-cp310-macosx_10_9_x86_64.whl,"numpy <2.1,>=1.22",True,True
+arelle-release,legacy,first_cap,2.11.0,capped,capped,capped,arelle_release-2.11.0-py3-none-any.whl,numpy (==1.*),True,True
+arelle-release,legacy,last_capped,2.30.24,capped,capped,capped,arelle_release-2.30.24-py3-none-any.whl,numpy==1.*,True,True
+arelle-release,legacy,uncap,2.30.25,compatible,compatible,compatible,arelle_release-2.30.25-py3-none-any.whl,"numpy<3,>=1",True,True
+awswrangler,legacy,first_cap,3.3.0,capped,capped,capped,awswrangler-3.3.0-py3-none-any.whl,"numpy (>=1.18,<2.0)",True,True
+awswrangler,legacy,last_capped,3.9.1,capped,capped,capped,awswrangler-3.9.1-py3-none-any.whl,"numpy (>=1.18,<2.0) ; python_version < ""3.12"" || numpy (>=1.26,<2.0) ; python_version >= ""3.12""",True,True
+awswrangler,legacy,uncap,3.10.0,compatible,compatible,compatible,awswrangler-3.10.0-py3-none-any.whl,"numpy (>=1.18,<2.0) ; python_version < ""3.9"" || numpy (>=1.26,<3.0) ; python_version >= ""3.9""",True,True
+tflite-runtime,,latest,2.14.0,compatible,compatible,compatible|none|other,tflite_runtime-2.14.0-cp310-cp310-manylinux2014_x86_64.whl,numpy >=1.23.2,True,True
+tflite-runtime,,random,2.13.0,compatible,compatible,compatible|none|other,tflite_runtime-2.13.0-cp310-cp310-manylinux2014_aarch64.whl,numpy (>=1.21.2),True,True
+cupti-python,,latest,13.5.0,compatible,compatible,compatible|none|other,cupti_python-13.5.0-cp310-cp310-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl,numpy>=1.23,True,True
+cupti-python,,random,12.6.0,none,none,compatible|none|other,cupti_python-12.6.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl,,True,True
+formulas,,latest,1.3.4,compatible,compatible,compatible|none|other,formulas-1.3.4-py2.py3-none-any.whl,numpy>=1.15 || numpy-financial,True,True
+formulas,,random,1.2.11,compatible,compatible,compatible|none|other,formulas-1.2.11-py2.py3-none-any.whl,numpy>=1.15 || numpy-financial,True,True
+tilelang,,latest,0.1.15,compatible,compatible,compatible|none|other,tilelang-0.1.15-cp39-abi3-macosx_11_0_arm64.whl,numpy>=1.23.5,True,True
+tilelang,,random,0.1.5,compatible,compatible,compatible|none|other,tilelang-0.1.5-cp310-cp310-manylinux_2_27_x86_64.whl,numpy>=1.23.5,True,True
+utilsforecast,,latest,0.2.17,compatible,compatible,compatible|none|other,utilsforecast-0.2.17-py3-none-any.whl,numpy,True,True
+utilsforecast,,random,0.0.15,compatible,compatible,compatible|none|other,utilsforecast-0.0.15-py3-none-any.whl,numpy,True,True
+orbax-checkpoint,,latest,0.12.9,compatible,compatible,compatible|none|other,orbax_checkpoint-0.12.9-py3-none-any.whl,numpy,True,True
+orbax-checkpoint,,random,0.5.0,compatible,compatible,compatible|none|other,orbax_checkpoint-0.5.0-py3-none-any.whl,numpy,True,True
+keybert,,latest,0.9.0,compatible,compatible,compatible|none|other,keybert-0.9.0-py3-none-any.whl,numpy>=1.18.5,True,True
+keybert,,random,0.9.0,compatible,compatible,compatible|none|other,keybert-0.9.0-py3-none-any.whl,numpy>=1.18.5,True,True
+bokeh,,latest,3.10.2,compatible,compatible,compatible|none|other,bokeh-3.10.2-py3-none-any.whl,numpy>=1.16,True,True
+bokeh,,random,3.3.3,compatible,compatible,compatible|none|other,bokeh-3.3.3-py3-none-any.whl,numpy >=1.16,True,True
+datashader,,latest,0.19.1,compatible,compatible,compatible|none|other,datashader-0.19.1-py3-none-any.whl,numpy,True,True
+datashader,,random,0.19.0,compatible,compatible,compatible|none|other,datashader-0.19.0-py3-none-any.whl,numpy,True,True
+optimum-quanto,,latest,0.2.7,compatible,compatible,compatible|none|other,optimum_quanto-0.2.7-py3-none-any.whl,numpy,True,True
+optimum-quanto,,random,0.2.6,compatible,compatible,compatible|none|other,optimum_quanto-0.2.6-py3-none-any.whl,numpy,True,True
