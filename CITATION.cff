@@ -10,7 +10,8 @@ authors:
     affiliation: "Independent Researcher, Taiwan"
 version: "1.0"
 date-released: "2026-11-09"
-doi: "TODO: Zenodo DOI"
+doi: "10.5281/zenodo.24249008"
+repository-code: "https://github.com/Polusa1007/numpy2-caps-replication"
 license:
   - MIT
   - CC-BY-4.0

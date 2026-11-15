@@ -3,6 +3,8 @@
 Empirical study of how popular PyPI packages used version caps (`numpy<2`) around the NumPy 2.0 release (2024-06-16).
 Replication package for the manuscript (under review). The manuscript sources are not included; `paper/numbers.tex` lists every data-derived number reported in it.
 
+**Cached raw metadata:** `data/raw.tar.gz` (98 MB) is too large for the Git repository. On GitHub it is attached to the [v1.0 release](https://github.com/Polusa1007/numpy2-caps-replication/releases/tag/v1.0); the [Zenodo archive](https://doi.org/10.5281/zenodo.24249008) (DOI: 10.5281/zenodo.24249008) includes it. Download it into `data/` and extract it from the repository root with `tar -xzf data/raw.tar.gz` (creates `data/raw/`) before running `reproduce_all.sh`.
+
 **One command:** `bash reproduce_all.sh` re-runs every analysis from the cached data and regenerates `paper/numbers.tex`.
 
 ## Layout
