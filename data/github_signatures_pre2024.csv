@@ -1,0 +1,675 @@
+package,capped,cap_timing,first_cap,uncap,compiled,repo,searchable,n_reports,first_report,kinds,reported
+accelerate,True,reactive,2024-07-03 17:25:27.868501+00:00,2024-09-02 22:18:03.639059+00:00,False,huggingface/accelerate,True,0,,,False
+adapter-transformers,False,,,,False,adapter-hub/adapters,True,0,,,False
+adjusttext,False,,,,False,Phlya/adjustText,True,1,2024-06-24 10:24:40+00:00,API,True
+aesara,True,reactive,2024-08-28 21:24:06.069085+00:00,,False,aesara-devs/aesara,True,0,,,False
+ahrs,False,,,,False,Mayitzin/ahrs,True,0,,,False
+ai2-olmo,True,reactive,2024-10-17 21:32:02.277098+00:00,,False,allenai/OLMo,True,0,,,False
+airbyte-cdk,True,reactive,2024-10-31 12:29:22.861145+00:00,2025-10-17 21:55:44.065172+00:00,False,airbytehq/airbyte-python-cdk,True,0,,,False
+albumentations,True,reactive,2024-06-19 22:13:49.399439+00:00,2024-07-05 02:10:43.814818+00:00,False,,False,0,,,False
+alchemlyb,False,,,,False,alchemistry/alchemlyb,True,0,,,False
+ale-py,True,reactive,2024-09-24 16:19:22.963406+00:00,2024-09-28 08:47:51.483868+00:00,True,Farama-Foundation/Arcade-Learning-Environment,True,0,,,False
+altair,False,,,,False,vega/altair,True,0,,,False
+amundsen-databuilder,True,reactive,2024-07-19 00:28:49.291515+00:00,,False,amundsen-io/amundsen,True,0,,,False
+anndata,False,,,,False,scverse/anndata,True,0,,,False
+apache-airflow-providers-apache-beam,False,,,,False,apache/airflow,True,0,,,False
+apache-beam,True,pre-emptive,2024-03-25 13:51:29.719657+00:00,2024-11-25 19:04:35.480267+00:00,True,,False,0,,,False
+apache-flink,False,,,,True,,False,0,,,False
+apache-superset,True,reactive,2025-06-23 14:54:30.362028+00:00,2026-05-13 18:29:51.334408+00:00,False,,False,0,,,False
+arcgis,True,reactive,2024-07-09 17:29:35.439434+00:00,2025-10-27 17:10:55.605509+00:00,False,,False,0,,,False
+arch,False,,,,True,bashtage/arch,True,0,,,False
+argilla,True,pre-emptive,2024-05-30 17:36:15.119466+00:00,2024-07-30 16:03:01.489647+00:00,False,,False,0,,,False
+arize,False,,,,False,Arize-ai/client_python,True,0,,,False
+arize-phoenix,True,reactive,2024-06-17 15:18:03.281480+00:00,2024-09-30 16:18:32.494699+00:00,False,Arize-ai/phoenix,True,1,2024-06-17 09:08:40+00:00,ABI,True
+arthurai,False,,,,False,,False,0,,,False
+arviz,True,pre-emptive,2023-07-18 20:14:08.236822+00:00,2024-07-19 19:33:56.901635+00:00,False,arviz-devs/arviz,True,0,,,False
+asammdf,True,reactive,2024-06-19 09:20:01.037091+00:00,2025-02-24 07:28:31.983136+00:00,True,danielhrisca/asammdf,True,1,2024-08-30 10:22:06+00:00,ABI,True
+asdf,False,,,,False,asdf-format/asdf,True,0,,,False
+asdf-astropy,False,,,,False,astropy/asdf-astropy,True,0,,,False
+ase,False,,,,False,,False,0,,,False
+astropy,True,pre-emptive,2023-09-07 10:29:57.406219+00:00,2024-05-04 22:15:57.072702+00:00,True,astropy/astropy,True,1,2024-09-19 11:30:58+00:00,ABI,True
+astropy-healpix,False,,,,True,astropy/astropy-healpix,True,0,,,False
+astroquery,False,,,,False,astropy/astroquery,True,0,,,False
+auto-gptq,False,,,,True,PanQiWei/AutoGPTQ,False,0,,,False
+autofaiss,True,legacy,2024-01-12 22:18:30.295099+00:00,,False,criteo/autofaiss,True,0,,,False
+autogluon-common,True,legacy,2023-06-16 02:00:57.031078+00:00,2024-11-27 17:04:34.868960+00:00,False,autogluon/autogluon,True,1,2025-09-10 21:21:54+00:00,ABI,True
+autogluon-core,True,legacy,2023-06-16 02:01:03.086840+00:00,2024-11-27 17:04:39.686405+00:00,False,autogluon/autogluon,True,1,2025-09-10 21:21:54+00:00,ABI,True
+autogluon-features,True,legacy,2023-06-16 02:01:08.783164+00:00,2024-11-27 17:04:43.160341+00:00,False,autogluon/autogluon,True,1,2025-09-10 21:21:54+00:00,ABI,True
+autogluon-multimodal,True,legacy,2023-06-16 02:01:22.824803+00:00,2024-11-27 17:04:54.465952+00:00,False,autogluon/autogluon,True,1,2025-09-10 21:21:54+00:00,ABI,True
+autogluon-tabular,True,legacy,2023-06-16 02:01:15.888836+00:00,2024-11-27 17:04:48.676342+00:00,False,autogluon/autogluon,True,1,2025-09-10 21:21:54+00:00,ABI,True
+autogluon-timeseries,True,legacy,2023-06-16 02:01:28.243646+00:00,2024-11-27 17:04:58.516565+00:00,False,autogluon/autogluon,True,1,2025-09-10 21:21:54+00:00,ABI,True
+autograd,False,,,,False,HIPS/autograd,True,0,,,False
+awkward,False,,,,True,scikit-hep/awkward-1.0,False,0,,,False
+awkward-cpp,True,pre-emptive,2024-03-22 00:12:01.717013+00:00,2024-04-01 22:55:35.202312+00:00,True,scikit-hep/awkward-1.0,False,0,,,False
+awswrangler,True,legacy,2023-08-01 17:52:16.253424+00:00,2024-10-31 13:55:03.510041+00:00,False,aws/aws-sdk-pandas,True,2,2024-06-17 22:34:11+00:00,ABI,True
+azureml-automl-runtime,False,,,,False,,False,0,,,False
+azureml-dataset-runtime,False,,,,False,,False,0,,,False
+azureml-designer-serving,False,,,,False,,False,0,,,False
+azureml-interpret,False,,,,False,,False,0,,,False
+azureml-training-tabular,False,,,,False,,False,0,,,False
+basemap,True,pre-emptive,2024-01-09 12:09:33.979931+00:00,2025-06-13 14:37:51.688018+00:00,True,matplotlib/basemap,True,0,,,False
+batchgenerators,False,,,,False,MIC-DKFZ/batchgenerators,True,0,,,False
+bayesian-optimization,True,reactive,2024-06-24 12:11:14.965085+00:00,2024-07-10 12:02:35.595251+00:00,False,bayesian-optimization/BayesianOptimization,True,0,,,False
+bentoml,False,,,,False,bentoml/bentoml,True,0,,,False
+bertopic,False,,,,False,MaartenGr/BERTopic,True,2,2024-11-29 13:50:09+00:00,ABI,True
+bezier,False,,,,True,dhermes/bezier,True,0,,,False
+bioframe,True,reactive,2024-06-17 20:24:06.804798+00:00,2025-04-08 17:43:45.675949+00:00,False,open2c/bioframe,True,0,,,False
+biopython,False,,,,True,biopython/biopython,True,0,,,False
+bitsandbytes,False,,,,True,bitsandbytes-foundation/bitsandbytes,True,0,,,False
+blenderproc,False,,,,False,DLR-RM/BlenderProc,True,0,,,False
+blendmodes,True,legacy,2023-08-31 19:49:51.451615+00:00,2025-02-20 19:56:36.969678+00:00,False,FHPythonUtils/BlendModes,True,0,,,False
+blis,False,,,,True,explosion/cython-blis,True,0,,,False
+blosc2,False,,,,True,Blosc/python-blosc2,True,0,,,False
+bokeh,False,,,,False,bokeh/bokeh,True,0,,,False
+boruta,False,,,,False,danielhomola/boruta_py,False,0,,,False
+botorch,True,reactive,2024-07-22 21:09:12.339913+00:00,2024-09-17 16:43:01.610557+00:00,False,meta-pytorch/botorch,True,0,,,False
+bottleneck,False,,,,True,pydata/bottleneck,True,1,2024-06-17 07:52:27+00:00,ABI,True
+bpemb,False,,,,False,,False,0,,,False
+bqplot,False,,,,False,bqplot/bqplot,True,0,,,False
+business-duration,False,,,,False,gnaneshwar441/Business_Duration,True,0,,,False
+butterfree,True,reactive,2024-06-20 14:47:25.808687+00:00,,False,quintoandar/butterfree,True,0,,,False
+calibur,False,,,,False,eliphatfs/calibur,True,0,,,False
+camelot-py,False,,,,False,camelot-dev/camelot,True,0,,,False
+captum,True,reactive,2025-03-27 04:48:08.056665+00:00,2026-04-17 06:11:38.229087+00:00,False,pytorch/captum,False,0,,,False
+cartopy,False,,,,True,SciTools/cartopy,True,0,,,False
+casadi,False,,,,True,casadi/casadi,True,0,,,False
+catboost,True,reactive,2024-09-05 10:03:09.782563+00:00,2025-04-13 10:12:07.475931+00:00,True,catboost/catboost,True,3,2024-05-22 16:18:23+00:00,ABI,True
+category-encoders,False,,,,False,,False,0,,,False
+cfgrib,False,,,,False,ecmwf/cfgrib,True,0,,,False
+cftime,False,,,,True,,False,0,,,False
+chainlit,True,pre-emptive,2024-06-13 15:16:37.784534+00:00,2025-01-09 08:57:18.275582+00:00,False,Chainlit/chainlit,True,0,,,False
+chem,False,,,,False,openedx/openedx-chem,True,0,,,False
+chex,False,,,,False,google-deepmind/chex,True,0,,,False
+chroma-hnswlib,False,,,,True,chroma-core/hnswlib,True,0,,,False
+chromadb,True,reactive,2024-06-18 00:28:04.463080+00:00,2024-09-18 23:00:11.062562+00:00,True,chroma-core/chroma,True,3,2024-06-24 07:18:18+00:00,API,True
+cirq-core,True,pre-emptive,2023-07-18 17:33:43.988949+00:00,2025-04-10 18:05:57.196931+00:00,False,quantumlib/cirq,True,1,2025-04-13 18:15:55+00:00,ABI,True
+clarabel,False,,,,True,oxfordcontrol/Clarabel.rs,True,0,,,False
+clearml,False,,,,False,clearml/clearml,True,0,,,False
+clu,False,,,,False,google/CommonLoopUtils,True,0,,,False
+cma,False,,,,False,CMA-ES/pycma,True,0,,,False
+cmaes,False,,,,False,CyberAgentAILab/cmaes,True,0,,,False
+cmdstanpy,False,,,,False,stan-dev/cmdstanpy,True,0,,,False
+coinmetrics-api-client,False,,,,False,coinmetrics/api-client-python,True,0,,,False
+colour-science,True,legacy,2023-08-26 10:00:14.743681+00:00,2024-10-10 07:43:29.039432+00:00,False,colour-science/colour,True,1,2025-11-23 22:43:55+00:00,API,True
+compas,True,reactive,2024-06-24 17:42:32.505247+00:00,2025-02-04 07:31:55.419345+00:00,False,compas-dev/compas,True,0,,,False
+configspace,False,,,,False,automl/ConfigSpace,True,1,2024-07-04 10:05:28+00:00,ABI,True
+contourpy,True,pre-emptive,2023-09-16 10:20:32.848861+00:00,2024-04-02 20:34:58.885392+00:00,True,contourpy/contourpy,True,0,,,False
+control,False,,,,False,python-control/python-control,True,0,,,False
+controlnet-aux,False,,,,False,patrickvonplaten/controlnet_aux,False,0,,,False
+coolprop,False,,,,True,CoolProp/CoolProp,True,0,,,False
+copulas,True,legacy,2023-08-10 21:03:33.356678+00:00,2024-04-10 16:36:47.635558+00:00,False,sdv-dev/Copulas,True,0,,,False
+coreforecast,False,,,,True,Nixtla/coreforecast,True,0,,,False
+coremltools,False,,,,True,apple/coremltools,True,2,2024-06-25 16:17:43+00:00,API,True
+correctionlib,False,,,,True,cms-nanoAOD/correctionlib,True,0,,,False
+ctgan,True,legacy,2023-07-25 17:37:14.516258+00:00,2024-03-14 15:03:54.513326+00:00,False,sdv-dev/CTGAN,True,0,,,False
+ctranslate2,False,,,,True,OpenNMT/CTranslate2,True,0,,,False
+cupy-cuda11x,True,legacy,2023-08-08 06:12:35.598349+00:00,2024-06-13 00:58:34.845472+00:00,True,cupy/cupy,True,2,2024-06-27 19:24:30+00:00,API,True
+cupy-cuda12x,True,legacy,2023-08-08 06:13:31.831389+00:00,2024-06-13 00:59:47.843865+00:00,True,cupy/cupy,True,2,2024-06-27 19:24:30+00:00,API,True
+cvxpy,False,,,,True,cvxpy/cvxpy,True,1,2025-06-22 22:30:37+00:00,ABI,True
+cyvcf2,False,,,,True,brentp/cyvcf2,True,1,2024-06-17 10:40:22+00:00,ABI,True
+daal4py,False,,,,True,IntelPython/daal4py,False,0,,,False
+dagster-pandas,True,reactive,2024-06-27 20:17:12.460135+00:00,2024-08-15 21:17:15.262892+00:00,False,dagster-io/dagster,True,0,,,False
+darts,True,reactive,2024-06-19 16:52:52.999091+00:00,2025-04-18 15:15:29.276979+00:00,False,unit8co/darts,True,2,2025-03-18 11:13:06+00:00,ABI,True
+dask-glm,False,,,,False,dask/dask-glm,True,0,,,False
+dask-ml,False,,,,False,dask/dask-ml,True,0,,,False
+databricks-connect,True,reactive,2024-07-09 16:20:02.817135+00:00,2025-06-12 13:12:49.563670+00:00,False,,False,0,,,False
+databricks-feature-engineering,True,pre-emptive,2024-01-09 18:14:56.388608+00:00,2025-04-14 20:19:18.691968+00:00,False,,False,0,,,False
+databricks-feature-store,True,legacy,2023-06-21 22:43:16.122798+00:00,2024-01-09 18:28:14.136942+00:00,False,,False,0,,,False
+databricks-mosaic,True,reactive,2024-11-14 18:41:59.387019+00:00,,False,databrickslabs/mosaic,True,0,,,False
+databricks-sql-connector,True,reactive,2024-07-17 17:39:51.795815+00:00,2024-12-23 17:53:18.312563+00:00,False,databricks/databricks-sql-python,True,0,,,False
+datacompy,True,pre-emptive,2024-02-21 15:51:53.457552+00:00,2024-10-24 16:55:55.744864+00:00,False,capitalone/datacompy,True,0,,,False
+dataengine,False,,,,False,leealessandrini/dataengine,True,0,,,False
+datarobot,False,,,,False,,False,0,,,False
+datasets,False,,,,False,huggingface/datasets,True,2,2024-07-15 11:21:04+00:00,ABI,True
+datashader,False,,,,False,holoviz/datashader,True,0,,,False
+datasketch,False,,,,False,ekzhu/datasketch,True,0,,,False
+datasketches,False,,,,True,,False,0,,,False
+db-dtypes,False,,,,False,googleapis/google-cloud-python,True,0,,,False
+ddddocr,False,,,,False,sml2h3/ddddocr,True,1,2025-10-17 17:11:44+00:00,ABI,True
+deap,False,,,,True,,False,0,,,False
+dedupe,False,,,,True,dedupeio/dedupe,True,0,,,False
+deepecho,True,legacy,2023-07-25 17:39:07.808852+00:00,2024-04-11 02:18:35.466632+00:00,False,sdv-dev/Deepecho,True,0,,,False
+deepface,False,,,,False,serengil/deepface,True,1,2024-11-06 02:25:28+00:00,ABI,True
+deepspeed,False,,,,True,deepspeedai/DeepSpeed,True,0,,,False
+descript-audio-codec,False,,,,False,descriptinc/descript-audio-codec,True,0,,,False
+descript-audiotools,False,,,,False,,False,0,,,False
+dgl,False,,,,True,dmlc/dgl,True,0,,,False
+dice-ml,False,,,,False,interpretml/DiCE,True,0,,,False
+diffusers,False,,,,False,huggingface/diffusers,True,1,2025-03-29 01:25:02+00:00,ABI,True
+distinctipy,False,,,,False,alan-turing-institute/distinctipy,True,0,,,False
+distrax,False,,,,False,google-deepmind/distrax,True,0,,,False
+dm-haiku,False,,,,False,deepmind/dm-haiku,False,0,,,False
+dm-tree,False,,,,True,deepmind/tree,False,0,,,False
+docarray,False,,,,False,docarray/docarray,True,0,,,False
+dscribe,False,,,,True,,False,0,,,False
+dtaidistance,False,,,,True,wannesm/dtaidistance,True,0,,,False
+dtale,False,,,,False,man-group/dtale,True,0,,,False
+dtreeviz,False,,,,False,parrt/dtreeviz,True,0,,,False
+dtw-python,False,,,,True,DynamicTimeWarping/dtw-python,True,0,,,False
+duckdb-engine,False,,,,False,Mause/duckdb_engine,True,0,,,False
+dython,False,,,,False,,False,0,,,False
+earthlib,False,,,,False,,False,0,,,False
+easyocr,False,,,,False,jaidedai/easyocr,True,0,,,False
+eccodes,False,,,,True,ecmwf/eccodes-python,True,0,,,False
+econml,True,reactive,2024-07-03 18:16:13.823472+00:00,2025-07-10 15:06:45.539173+00:00,True,py-why/EconML,True,0,,,False
+ecos,False,,,,True,embotech/ecos,True,0,,,False
+einx,False,,,,False,fferflo/einx,True,0,,,False
+elementary-data,True,reactive,2025-02-16 22:20:34.226369+00:00,2026-01-29 12:05:49.402489+00:00,False,elementary-data/elementary,True,0,,,False
+eli5,False,,,,False,eli5-org/eli5,True,0,,,False
+embedding-reader,True,legacy,2024-01-06 22:19:34.785992+00:00,2025-08-09 21:35:13.772691+00:00,False,rom1504/embedding-reader,True,0,,,False
+embreex,False,,,,True,trimesh/embreex,True,0,,,False
+emcee,False,,,,False,dfm/emcee,True,0,,,False
+emmet-core,True,reactive,2024-06-20 23:03:36.418257+00:00,2025-04-01 00:12:58.700077+00:00,False,materialsproject/emmet,True,0,,,False
+evaluate,False,,,,False,huggingface/evaluate,True,0,,,False
+evidently,False,,,,False,evidentlyai/evidently,True,0,,,False
+evo,False,,,,False,MichaelGrupp/evo,True,0,,,False
+exchange-calendars,True,pre-emptive,2024-01-31 18:03:33.215022+00:00,2024-06-24 19:58:26.637441+00:00,False,gerrymanoim/exchange_calendars,True,0,,,False
+explainerdashboard,True,reactive,2024-12-29 21:23:32.665628+00:00,2026-01-25 20:46:16.637131+00:00,False,oegedijk/explainerdashboard,True,0,,,False
+ezdxf,False,,,,True,mozman/ezdxf,True,0,,,False
+face-alignment,False,,,,False,1adrianb/face-alignment,True,0,,,False
+fairlearn,False,,,,False,fairlearn/fairlearn,True,1,2024-06-19 10:47:53+00:00,API,True
+faiss-cpu,True,reactive,2024-06-24 05:57:40.993740+00:00,2024-10-08 07:06:15.038126+00:00,True,facebookresearch/faiss,True,1,2024-06-18 06:24:00+00:00,ABI,True
+faiss-gpu,False,,,,True,facebookresearch/faiss,True,1,2024-06-18 06:24:00+00:00,ABI,True
+fastcluster,False,,,,True,,False,0,,,False
+fastembed,True,reactive,2024-06-17 18:07:14.677944+00:00,2024-11-13 13:38:25.846210+00:00,False,qdrant/fastembed,True,0,,,False
+fastparquet,False,,,,True,dask/fastparquet,True,2,2024-05-06 19:36:32+00:00,ABI;API,True
+fasttext,False,,,,True,facebookresearch/fastText,True,0,,,False
+fasttext-langdetect,False,,,,False,zafercavdar/fasttext-langdetect,True,0,,,False
+feast,True,pre-emptive,2024-05-23 17:35:35.600196+00:00,2025-07-01 14:55:39.939394+00:00,False,feast-dev/feast,True,0,,,False
+feature-engine,False,,,,False,feature-engine/feature_engine,True,0,,,False
+featuretools,False,,,,False,alteryx/featuretools,True,0,,,False
+ffn,False,,,,False,pmorissette/ffn,True,0,,,False
+fiftyone,False,,,,False,voxel51/fiftyone,True,0,,,False
+fiftyone-brain,False,,,,False,voxel51/fiftyone-brain,True,0,,,False
+filterpy,False,,,,False,rlabbe/filterpy,True,0,,,False
+flaml,False,,,,False,microsoft/FLAML,True,3,2024-03-12 07:12:02+00:00,ABI;API,True
+flax,False,,,,False,google/flax,True,0,,,False
+flaxmodels,False,,,,False,matthias-wright/flaxmodels,True,0,,,False
+flox,False,,,,False,xarray-contrib/flox,True,0,,,False
+flytekit,True,reactive,2024-06-17 22:57:56.734324+00:00,2024-07-03 21:17:05.716588+00:00,False,flyteorg/flytekit,True,0,,,False
+fmpy,False,,,,False,,False,0,,,False
+folium,False,,,,False,python-visualization/folium,True,0,,,False
+formulaic,False,,,,False,matthewwardrop/formulaic,True,0,,,False
+formulas,False,,,,False,vinci1it2000/formulas,True,0,,,False
+fschat,False,,,,False,lm-sys/fastchat,True,0,,,False
+fst-pso,False,,,,False,aresio/fst-pso,True,0,,,False
+fuzzytm,False,,,,False,ERijck/FuzzyTM,True,0,,,False
+g4f,False,,,,False,xtekky/gpt4free,True,0,,,False
+gamma-pytools,True,legacy,2023-11-14 14:21:26.560010+00:00,2024-07-04 23:29:31.609657+00:00,False,BCG-X-Official/pytools,True,0,,,False
+gekko,False,,,,False,BYU-PRISM/GEKKO,True,0,,,False
+gensim,True,reactive,2024-07-19 14:39:26.268765+00:00,2025-10-18 01:47:12.563460+00:00,True,RaRe-Technologies/gensim,False,0,,,False
+geojsoncontour,False,,,,False,bartromgens/geojsoncontour,True,0,,,False
+geopandas,False,,,,False,geopandas/geopandas,True,0,,,False
+gguf,False,,,,False,ggml-org/llama.cpp,True,0,,,False
+gliner,False,,,,False,urchade/GLiNER,True,1,2024-06-26 21:00:54+00:00,ABI,True
+gluonts,True,legacy,2023-08-07 13:56:19.550721+00:00,2024-11-11 08:51:05.875573+00:00,False,awslabs/gluonts,True,0,,,False
+gmr,False,,,,False,AlexanderFabisch/gmr,True,0,,,False
+gpflow,True,reactive,2025-05-29 13:55:06.956965+00:00,,False,GPflow/GPflow,True,0,,,False
+gptcache,False,,,,False,zilliztech/GPTCache,True,0,,,False
+gradio,True,pre-emptive,2023-07-17 18:56:36.749848+00:00,2024-06-05 00:12:55.722709+00:00,False,gradio-app/gradio,True,0,,,False
+graphdatascience,True,reactive,2024-07-31 17:27:16.676677+00:00,2025-02-20 12:36:01.981357+00:00,False,neo4j/graph-data-science-client,True,0,,,False
+great-expectations,True,pre-emptive,2024-02-16 15:14:04.290554+00:00,2024-08-22 16:11:47.343263+00:00,False,fivetran/great_expectations,True,1,2025-01-15 09:05:09+00:00,ABI,True
+gruut,False,,,,False,rhasspy/gruut,True,0,,,False
+gs-quant,True,reactive,2024-06-17 14:49:01.925841+00:00,2025-06-09 17:08:04.361730+00:00,False,,False,0,,,False
+gwcs,False,,,,False,spacetelescope/gwcs,True,0,,,False
+gymnasium,False,,,,False,Farama-Foundation/Gymnasium,True,0,,,False
+h3ronpy,True,reactive,2024-07-01 16:58:39.069411+00:00,2024-11-26 09:58:59.933564+00:00,True,nmandery/h3ronpy,True,0,,,False
+h5netcdf,False,,,,False,h5netcdf/h5netcdf,True,0,,,False
+h5py,False,,,,True,h5py/h5py,True,2,2024-05-02 16:03:44+00:00,ABI,True
+haystack-ai,True,reactive,2024-06-17 12:25:04.209663+00:00,2024-11-11 10:41:37.805583+00:00,False,deepset-ai/haystack,True,0,,,False
+haystack-bm25,False,,,,False,deepset-ai/haystack-bm25,True,0,,,False
+hdbscan,True,reactive,2024-06-17 19:47:22.746756+00:00,2024-08-05 22:21:39.731445+00:00,True,scikit-learn-contrib/hdbscan,True,1,2024-06-17 14:38:01+00:00,ABI,True
+hdijupyterutils,False,,,,False,jupyter-incubator/sparkmagic,True,0,,,False
+hdmf,True,pre-emptive,2024-05-21 03:38:17.807671+00:00,2024-07-08 15:36:07.159721+00:00,False,hdmf-dev/hdmf,True,0,,,False
+healpy,False,,,,True,healpy/healpy,True,0,,,False
+hierarchicalforecast,False,,,,True,Nixtla/hierarchicalforecast,True,0,,,False
+hmmlearn,False,,,,True,hmmlearn/hmmlearn,True,0,,,False
+hnswlib,False,,,,False,yurymalkov/hnsw,False,0,,,False
+holoviews,False,,,,False,holoviz/holoviews,True,0,,,False
+homeassistant,False,,,,False,home-assistant/core,True,2,2024-11-06 21:41:40+00:00,ABI,True
+httpstan,True,legacy,2023-10-18 00:32:05.334775+00:00,2024-07-03 16:04:47.049303+00:00,True,stan-dev/httpstan,True,0,,,False
+hvplot,False,,,,False,holoviz/hvplot,True,0,,,False
+hyperopt,False,,,,False,hyperopt/hyperopt,True,0,,,False
+ibis-framework,True,legacy,2023-07-05 15:05:44.593569+00:00,2024-07-22 23:22:52.836612+00:00,False,ibis-project/ibis,True,0,,,False
+imagecodecs,False,,,,True,cgohlke/imagecodecs,True,0,,,False
+imagehash,False,,,,False,JohannesBuchner/imagehash,True,0,,,False
+imageio,True,reactive,2024-08-13 04:42:04.369997+00:00,2024-08-19 02:35:25.923097+00:00,False,imageio/imageio,True,0,,,False
+imbalanced-learn,False,,,,False,scikit-learn-contrib/imbalanced-learn,True,0,,,False
+iminuit,False,,,,True,scikit-hep/iminuit,True,0,,,False
+imodels,False,,,,False,csinva/imodels,True,1,2024-12-13 10:21:36+00:00,ABI,True
+implicit,False,,,,True,,False,0,,,False
+insightface,False,,,,False,deepinsight/insightface,True,1,2024-11-13 00:51:08+00:00,ABI,True
+interpret-community,False,,,,False,interpretml/interpret-community,True,0,,,False
+interpret-core,False,,,,False,interpretml/interpret,True,0,,,False
+invisible-watermark,False,,,,False,ShieldMnt/invisible-watermark,True,0,,,False
+ipympl,False,,,,False,matplotlib/ipympl,True,0,,,False
+itables,False,,,,False,mwouts/itables,True,0,,,False
+jax,False,,,,False,jax-ml/jax,True,1,2024-06-17 23:06:42+00:00,ABI,True
+jaxlib,False,,,,True,jax-ml/jax,True,1,2024-06-17 23:06:42+00:00,ABI,True
+jaxopt,False,,,,False,google/jaxopt,True,0,,,False
+jaxtyping,False,,,,False,patrick-kidger/jaxtyping,True,0,,,False
+jmetalpy,False,,,,False,,False,0,,,False
+jplephem,False,,,,False,brandon-rhodes/python-jplephem,True,0,,,False
+json2parquet,False,,,,False,andrewgross/json2parquet,True,0,,,False
+jsonconversion,True,pre-emptive,2024-03-07 16:45:57.409991+00:00,2025-01-13 14:10:14.159931+00:00,False,DLR-RM/python-jsonconversion,True,0,,,False
+kaldi-io,False,,,,False,vesis84/kaldi-io-for-python,False,0,,,False
+kaldiio,False,,,,False,nttcslab-sp/kaldiio,True,0,,,False
+keras,False,,,,False,keras-team/keras,True,0,,,False
+keras-core,False,,,,False,keras-team/keras-core,True,0,,,False
+keras-nlp,False,,,,False,keras-team/keras,True,0,,,False
+keybert,False,,,,False,MaartenGr/KeyBERT,True,0,,,False
+kneed,False,,,,False,arvkevi/kneed,True,0,,,False
+kornia,False,,,,False,kornia/kornia,True,0,,,False
+lancedb,False,,,,True,lancedb/lancedb,True,0,,,False
+langchain,True,legacy,2023-06-16 13:54:04.071349+00:00,2024-11-27 21:04:23.578660+00:00,False,langchain-ai/langchain,True,0,,,False
+langchain-aws,True,pre-emptive,2024-04-24 19:19:46.844056+00:00,2024-12-04 02:56:22.805982+00:00,False,langchain-ai/langchain-aws,True,0,,,False
+langchain-chroma,True,pre-emptive,2024-04-11 19:43:23.913038+00:00,2025-04-15 18:18:52.557711+00:00,False,langchain-ai/langchain,True,0,,,False
+langchain-community,True,pre-emptive,2023-12-11 23:21:56.820665+00:00,2024-12-02 16:32:26.558857+00:00,False,langchain-ai/langchain-community,True,0,,,False
+langchain-openai,True,pre-emptive,2024-01-06 00:36:27.679059+00:00,2024-02-27 12:26:39.990330+00:00,False,langchain-ai/langchain,True,0,,,False
+langchain-pinecone,True,pre-emptive,2024-02-08 17:05:16.144046+00:00,2025-04-03 12:13:43.371881+00:00,False,langchain-ai/langchain-pinecone,True,0,,,False
+lap,False,,,,True,gatagat/lap,True,1,2025-02-14 10:32:42+00:00,ABI,True
+lapx,False,,,,True,rathaROG/lapx,True,0,,,False
+laspy,False,,,,False,laspy/laspy,True,0,,,False
+lhotse,False,,,,False,,False,0,,,False
+libpysal,False,,,,False,pysal/libpysal,True,0,,,False
+librosa,False,,,,False,librosa/librosa,True,0,,,False
+lifelines,True,pre-emptive,2023-09-13 15:31:06.647372+00:00,2024-10-29 12:00:41.749439+00:00,False,CamDavidsonPilon/lifelines,True,0,,,False
+lightgbm,False,,,,True,lightgbm-org/LightGBM,True,0,,,False
+lightning,False,,,,False,Lightning-AI/lightning,False,0,,,False
+lightning-fabric,False,,,,False,Lightning-AI/pytorch-lightning,True,0,,,False
+lingua-language-detector,True,legacy,2023-11-07 22:15:56.589068+00:00,2023-12-12 20:35:29.435292+00:00,True,pemistahl/lingua-rs,True,0,,,False
+llama-cpp-python,False,,,,False,abetlen/llama-cpp-python,True,0,,,False
+llama-index,True,pre-emptive,2023-10-11 03:54:30.457936+00:00,2023-10-11 22:49:09.232212+00:00,False,run-llama/llama_index,True,3,2024-06-20 19:48:34+00:00,ABI,True
+llama-index-core,True,reactive,2024-06-17 23:15:54.804616+00:00,2024-11-17 22:27:31.915573+00:00,False,run-llama/llama_index,True,3,2024-06-20 19:48:34+00:00,ABI,True
+llama-index-legacy,False,,,,False,run-llama/llama_index,True,3,2024-06-20 19:48:34+00:00,ABI,True
+lm-eval,False,,,,False,EleutherAI/lm-evaluation-harness,True,1,2025-04-27 19:27:51+00:00,API,True
+lmfit,False,,,,False,,False,0,,,False
+loess,False,,,,False,,False,0,,,False
+mabwiser,False,,,,False,fidelity/mabwiser,True,0,,,False
+mapbox-earcut,False,,,,True,skogler/mapbox_earcut_python,True,0,,,False
+mapclassify,False,,,,False,pysal/mapclassify,True,1,2024-06-08 15:35:20+00:00,API,True
+mat73,False,,,,False,skjerns/mat7.3,True,0,,,False
+matplotlib,True,pre-emptive,2023-09-12 03:01:27.951229+00:00,2024-04-04 01:47:18.594711+00:00,True,matplotlib/matplotlib,True,2,2024-06-27 07:37:12+00:00,ABI,True
+matplotlib-venn,False,,,,False,konstantint/matplotlib-venn,True,0,,,False
+matscipy,True,reactive,2024-10-16 12:56:04.274347+00:00,2025-11-20 17:06:20.382912+00:00,True,libAtoms/matscipy,True,0,,,False
+mediapipe,True,reactive,2024-08-29 16:51:19.754551+00:00,2025-12-16 17:13:31.046540+00:00,True,google/mediapipe,False,0,,,False
+mediapy,False,,,,False,google/mediapy,True,0,,,False
+megablocks,False,,,,False,databricks/megablocks,True,0,,,False
+meltanolabs-target-snowflake,True,reactive,2024-06-17 13:27:31.835763+00:00,2024-07-06 02:30:39.653975+00:00,False,,False,0,,,False
+meshio,False,,,,False,nschloe/meshio,True,0,,,False
+meteostat,False,,,,False,,False,0,,,False
+milvus-lite,False,,,,True,milvus-io/milvus-lite,True,0,,,False
+mizani,False,,,,False,has2k1/mizani,True,0,,,False
+ml-dtypes,False,,,,True,jax-ml/ml_dtypes,True,0,,,False
+ml-goodput-measurement,False,,,,False,AI-Hypercomputer/ml-goodput-measurement,True,0,,,False
+ml-insights,True,reactive,2024-06-21 16:16:25.793643+00:00,2025-04-14 00:01:49.312552+00:00,False,numeristical/introspective,True,0,,,False
+ml-wrappers,True,reactive,2024-08-21 21:19:27.143643+00:00,2025-01-10 18:28:47.953174+00:00,False,microsoft/ml-wrappers,True,0,,,False
+mleap,False,,,,False,combust/mleap,True,0,,,False
+mlflow,True,legacy,2023-07-10 06:25:39.566932+00:00,2024-08-30 08:49:56.113172+00:00,False,mlflow/mlflow,True,0,,,False
+mlserver,False,,,,False,,False,0,,,False
+mlxtend,False,,,,False,rasbt/mlxtend,True,1,2024-06-25 09:05:17+00:00,API,True
+mmdet,False,,,,False,open-mmlab/mmdetection,True,0,,,False
+mmengine,False,,,,False,open-mmlab/mmengine,True,0,,,False
+mne,False,,,,False,mne-tools/mne-python,True,0,,,False
+modelscope,False,,,,False,modelscope/modelscope,True,0,,,False
+modin,True,pre-emptive,2024-06-10 12:40:10.589624+00:00,2024-06-26 14:58:32.266690+00:00,False,modin-project/modin,True,0,,,False
+monai,True,reactive,2024-10-16 17:29:29.984506+00:00,2025-06-14 02:20:48.830748+00:00,False,Project-MONAI/MONAI,True,1,2025-04-20 01:43:46+00:00,ABI,True
+monty,True,reactive,2024-10-21 16:14:27.590415+00:00,2024-12-10 21:16:46.383207+00:00,False,,False,0,,,False
+mosaicml-streaming,False,,,,False,mosaicml/streaming,True,0,,,False
+moviepy,False,,,,False,,False,0,,,False
+mrcfile,False,,,,False,ccpem/mrcfile,True,1,2024-05-27 18:56:00+00:00,API,True
+mstrio-py,False,,,,False,MicroStrategy/mstrio-py,True,0,,,False
+mteb,True,reactive,2024-06-17 12:16:02.524784+00:00,2024-10-07 16:35:16.713688+00:00,False,embeddings-benchmark/mteb,True,0,,,False
+mujoco,False,,,,True,google-deepmind/mujoco,True,0,,,False
+musdb,False,,,,False,sigsep/sigsep-mus-db,True,1,2024-08-07 19:52:32+00:00,API,True
+nagisa,False,,,,True,taishi-i/nagisa,True,0,,,False
+ncnn,False,,,,True,Tencent/ncnn,True,0,,,False
+neo,True,reactive,2024-08-28 14:50:57.939697+00:00,2025-01-20 14:03:29.611098+00:00,False,NeuralEnsemble/python-neo,True,0,,,False
+netcdf4,False,,,,True,Unidata/netcdf4-python,True,2,2024-06-17 17:01:38+00:00,ABI,True
+neuralprophet,True,pre-emptive,2024-02-14 23:32:25.078017+00:00,,False,ourownstory/neural_prophet,True,0,,,False
+nevergrad,False,,,,False,facebookresearch/nevergrad,True,0,,,False
+nfoursid,False,,,,False,spmvg/nfoursid,True,0,,,False
+nibabel,False,,,,False,nipy/nibabel,True,0,,,False
+nilearn,False,,,,False,nilearn/nilearn,True,1,2024-11-13 08:20:31+00:00,ABI,True
+nipype,True,reactive,2024-10-31 14:42:41.369412+00:00,2024-11-19 14:21:28.646369+00:00,False,nipy/nipype,True,0,,,False
+nmslib,False,,,,True,nmslib/nmslib,True,0,,,False
+nncf,True,pre-emptive,2023-11-16 14:59:36.959092+00:00,2024-11-20 11:49:56.699732+00:00,False,openvinotoolkit/nncf,True,0,,,False
+nudenet,False,,,,False,notAI-tech/nudenet,True,0,,,False
+numba,True,pre-emptive,2023-10-18 13:46:37.554671+00:00,2024-06-13 18:10:29.857678+00:00,True,,False,0,,,False
+numbagg,False,,,,False,numbagg/numbagg,True,0,,,False
+numcodecs,False,,,,True,zarr-developers/numcodecs,True,0,,,False
+numdifftools,False,,,,False,pbrod/numdifftools,True,0,,,False
+numexpr,False,,,,True,pydata/numexpr,True,0,,,False
+numpy-financial,False,,,,True,,False,0,,,False
+numpy-groupies,False,,,,False,ml31415/numpy-groupies,True,0,,,False
+numpy-quaternion,True,reactive,2024-06-24 19:40:41.229082+00:00,2024-09-30 23:29:09.911042+00:00,True,moble/quaternion,True,2,2024-06-08 10:19:32+00:00,ABI,True
+numpyencoder,False,,,,False,hmallen/numpyencoder,True,2,2025-05-09 11:05:20+00:00,API,True
+numpyro,False,,,,False,pyro-ppl/numpyro,True,1,2024-06-17 20:08:11+00:00,API,True
+nuscenes-devkit,True,reactive,2025-08-28 03:19:16.503827+00:00,,False,nutonomy/nuscenes-devkit,True,0,,,False
+oldest-supported-numpy,False,,,,False,scipy/oldest-supported-numpy,True,0,,,False
+onnx,False,,,,True,onnx/onnx,True,0,,,False
+onnx-graphsurgeon,False,,,,False,NVIDIA/TensorRT,True,0,,,False
+onnx2tf,True,reactive,2026-01-23 13:35:01.665213+00:00,,False,PINTO0309/onnx2tf,True,0,,,False
+onnxconverter-common,False,,,,False,microsoft/onnxconverter-common,True,0,,,False
+onnxmltools,False,,,,False,onnx/onnxmltools,True,0,,,False
+onnxruntime,True,reactive,2024-06-27 23:52:42.147876+00:00,2024-08-15 19:17:16.967385+00:00,True,microsoft/onnxruntime,True,0,,,False
+onnxruntime-gpu,True,reactive,2024-06-27 23:54:11.167298+00:00,2024-08-16 00:50:09.495149+00:00,True,microsoft/onnxruntime,True,0,,,False
+onnxscript,False,,,,False,microsoft/onnxscript,True,0,,,False
+opacus,True,reactive,2024-07-26 15:12:42.012433+00:00,2025-05-27 16:23:55.827714+00:00,False,pytorch/opacus,False,0,,,False
+open3d,False,,,,True,isl-org/Open3D,True,0,,,False
+openai,False,,,,False,openai/openai-python,True,0,,,False
+openai-whisper,False,,,,False,openai/whisper,True,0,,,False
+opencv-contrib-python,False,,,,True,opencv/opencv-python,True,2,2024-06-04 07:20:24+00:00,ABI,True
+opencv-contrib-python-headless,False,,,,True,opencv/opencv-python,True,2,2024-06-04 07:20:24+00:00,ABI,True
+opencv-python,False,,,,True,opencv/opencv-python,True,2,2024-06-04 07:20:24+00:00,ABI,True
+opencv-python-headless,False,,,,True,opencv/opencv-python,True,2,2024-06-04 07:20:24+00:00,ABI,True
+openexr,False,,,,True,AcademySoftwareFoundation/OpenEXR,True,0,,,False
+opennsfw2,False,,,,False,bhky/opennsfw2,True,0,,,False
+opensimplex,False,,,,False,,False,0,,,False
+openunmix,False,,,,False,sigsep/open-unmix-pytorch,True,0,,,False
+openvino,True,pre-emptive,2024-04-25 09:17:02.257187+00:00,2024-09-19 08:26:08.860362+00:00,True,openvinotoolkit/openvino,True,0,,,False
+openvino-dev,True,pre-emptive,2024-04-25 09:24:14.987610+00:00,,False,openvinotoolkit/openvino,True,0,,,False
+optax,False,,,,False,google-deepmind/optax,True,0,,,False
+optbinning,True,pre-emptive,2024-01-15 22:58:44.121775+00:00,2024-10-28 23:12:35.438878+00:00,False,guillermo-navas-palencia/optbinning,True,0,,,False
+optimum,True,reactive,2024-07-02 08:05:37.012429+00:00,2024-10-10 11:24:39.948275+00:00,False,huggingface/optimum,True,0,,,False
+optuna,False,,,,False,optuna/optuna,True,0,,,False
+orbax-checkpoint,False,,,,False,google/orbax,True,0,,,False
+ortools,False,,,,True,google/or-tools,True,0,,,False
+osmnx,True,reactive,2024-07-24 21:25:34.752972+00:00,2024-11-24 17:37:40.984370+00:00,False,gboeing/osmnx,True,0,,,False
+osqp,False,,,,True,,False,0,,,False
+outlines,True,reactive,2024-06-17 19:36:24.237467+00:00,2024-11-27 20:35:15.753094+00:00,False,dottxt-ai/outlines,True,0,,,False
+paddleocr,True,reactive,2024-07-04 11:46:16.613667+00:00,2025-03-07 07:04:27.813844+00:00,False,PaddlePaddle/PaddleOCR,True,1,2025-03-12 05:52:02+00:00,API,True
+paddlepaddle,False,,,,True,paddlepaddle/paddle,True,1,2025-03-11 02:50:00+00:00,API,True
+pandas,True,pre-emptive,2023-10-26 19:22:55.532165+00:00,2024-04-10 19:44:10.360057+00:00,True,pandas-dev/pandas,True,5,2024-06-19 13:39:05+00:00,ABI,True
+pandas-gbq,False,,,,False,googleapis/google-cloud-python,True,0,,,False
+pandas-stubs,False,,,,False,pandas-dev/pandas-stubs,True,0,,,False
+pandasai,True,reactive,2025-10-07 08:22:55.304430+00:00,,False,sinaptik-ai/pandas-ai,True,6,2024-06-25 14:47:54+00:00,ABI,True
+pandavro,False,,,,False,ynqa/pandavro,True,1,2024-06-19 06:38:22+00:00,API,True
+pandera,False,,,,False,pandera-dev/pandera,False,0,,,False
+pantab,False,,,,True,innobi/pantab,True,0,,,False
+paramz,False,,,,False,sods/paramz,True,0,,,False
+patsy,False,,,,False,pydata/patsy,True,0,,,False
+pdb2pqr,False,,,,False,Electrostatics/pdb2pqr,True,0,,,False
+pdf2docx,False,,,,False,,False,0,,,False
+peft,False,,,,False,huggingface/peft,True,0,,,False
+pentapy,False,,,,True,GeoStat-Framework/pentapy,True,0,,,False
+petastorm,False,,,,False,uber/petastorm,True,0,,,False
+pgeocode,False,,,,False,,False,0,,,False
+pgvector,False,,,,False,pgvector/pgvector-python,True,0,,,False
+phik,False,,,,True,,False,0,,,False
+photutils,False,,,,True,astropy/photutils,True,0,,,False
+piecewise-regression,False,,,,False,chasmani/piecewise-regression,True,0,,,False
+pilgram,False,,,,False,akiomik/pilgram,True,0,,,False
+pims,False,,,,False,soft-matter/pims,True,0,,,False
+pinecone-client,False,,,,False,,False,0,,,False
+pingouin,False,,,,False,raphaelvallat/pingouin,True,1,2025-07-03 08:46:42+00:00,API,True
+plotbin,False,,,,False,,False,0,,,False
+plotly-resampler,False,,,,False,predict-idlab/plotly-resampler,True,0,,,False
+plotnine,False,,,,False,has2k1/plotnine,True,0,,,False
+plyfile,False,,,,False,dranjan/python-plyfile,True,0,,,False
+pmdarima,False,,,,True,alkaline-ml/pmdarima,True,4,2024-06-18 15:55:25+00:00,ABI,True
+pot,False,,,,True,PythonOT/POT,True,0,,,False
+praat-parselmouth,False,,,,True,YannickJadoul/Parselmouth,True,0,,,False
+presidio-analyzer,False,,,,False,data-privacy-stack/presidio,True,1,2024-06-17 10:06:08+00:00,ABI,True
+probeinterface,False,,,,False,SpikeInterface/probeinterface,True,0,,,False
+prometheus-api-client,False,,,,False,4n4nd/prometheus-api-client-python,True,0,,,False
+prophet,False,,,,True,facebook/prophet,False,0,,,False
+prowler,True,pre-emptive,2024-04-04 14:12:40.518676+00:00,,False,prowler-cloud/prowler,True,0,,,False
+pvlib,False,,,,False,pvlib/pvlib-python,True,0,,,False
+pwlf,False,,,,False,cjekel/piecewise_linear_fit_py,True,0,,,False
+py3langid,False,,,,False,adbar/py3langid,True,0,,,False
+pyannote-core,False,,,,False,,False,0,,,False
+pyannote-metrics,False,,,,False,,False,0,,,False
+pyarrow,True,pre-emptive,2024-01-21 14:58:49.201359+00:00,2024-04-20 21:43:53.940513+00:00,True,apache/arrow,True,1,2025-04-15 18:35:10+00:00,ABI,True
+pyastronomy,True,reactive,2025-06-25 07:57:27.138747+00:00,2025-10-18 13:54:34.155401+00:00,False,sczesla/PyAstronomy,True,0,,,False
+pyautogen,True,pre-emptive,2024-03-12 22:49:17.975872+00:00,2025-01-22 20:54:36.802379+00:00,False,,False,0,,,False
+pybaselines,False,,,,False,derb12/pybaselines,True,0,,,False
+pybboxes,False,,,,False,devrimcavusoglu/pybboxes,True,0,,,False
+pybedtools,False,,,,True,daler/pybedtools,True,0,,,False
+pycaret,True,pre-emptive,2023-11-12 21:44:47.831053+00:00,,False,pycaret/pycaret,True,0,,,False
+pycocotools,False,,,,True,ppwwyyxx/cocoapi,True,0,,,False
+pycollada,False,,,,False,,False,0,,,False
+pydap,False,,,,False,,False,0,,,False
+pydeck,False,,,,False,visgl/deck.gl,True,0,,,False
+pydeequ,False,,,,False,awslabs/python-deequ,True,0,,,False
+pydoe,False,,,,False,pydoe/pydoe,True,0,,,False
+pyerfa,False,,,,True,liberfa/pyerfa,True,0,,,False
+pyformlang,False,,,,False,Aunsiels/pyformlang,True,0,,,False
+pyfume,False,,,,False,CaroFuchs/pyFUME,True,0,,,False
+pygam,False,,,,False,,False,0,,,False
+pygdal,False,,,,False,nextgis/pygdal,True,0,,,False
+pygrib,False,,,,True,jswhit/pygrib,True,1,2024-06-17 04:32:37+00:00,ABI,True
+pygwalker,True,reactive,2024-06-20 05:43:10.471678+00:00,2025-02-26 02:13:23.457499+00:00,False,Kanaries/pygwalker,True,0,,,False
+pyhacrf-datamade,False,,,,True,datamade/pyhacrf,False,0,,,False
+pyhdfe,False,,,,False,jeffgortmaker/pyhdfe,True,0,,,False
+pykalman,False,,,,False,pykalman/pykalman,True,0,,,False
+pylance,True,reactive,2024-07-25 21:11:00.058381+00:00,2024-11-13 20:30:35.230929+00:00,True,,False,0,,,False
+pylbfgs,False,,,,True,dedupeio/pylbfgs,True,0,,,False
+pylibjpeg-libjpeg,True,pre-emptive,2024-01-07 12:12:10.030567+00:00,2024-06-18 00:30:45.107708+00:00,True,pydicom/pylibjpeg-libjpeg,True,0,,,False
+pylibjpeg-openjpeg,True,pre-emptive,2024-01-07 07:29:16.850713+00:00,2024-06-18 00:18:15.875862+00:00,True,pydicom/pylibjpeg-openjpeg,True,0,,,False
+pyloudnorm,False,,,,False,csteinmetz1/pyloudnorm,True,0,,,False
+pylsl,False,,,,True,labstreaminglayer/pylsl,True,0,,,False
+pymatgen,False,,,,True,materialsproject/pymatgen,True,5,2024-06-16 14:27:21+00:00,ABI,True
+pymatting,False,,,,False,pymatting/pymatting,True,0,,,False
+pymc,False,,,,False,pymc-devs/pymc,True,1,2024-11-27 03:12:54+00:00,API,True
+pymc3,False,,,,False,pymc-devs/pymc3,False,0,,,False
+pymcubes,False,,,,True,pmneila/PyMCubes,True,1,2024-07-03 13:36:48+00:00,ABI,True
+pymilvus,False,,,,False,milvus-io/pymilvus,True,1,2025-04-30 04:09:42+00:00,ABI,True
+pymoo,False,,,,True,,False,0,,,False
+pymupdf,False,,,,True,pymupdf/pymupdf,True,0,,,False
+pynrrd,False,,,,False,mhe/pynrrd,True,0,,,False
+pynumdiff,False,,,,False,florisvb/PyNumDiff,True,0,,,False
+pynwb,True,pre-emptive,2024-05-03 00:54:49.252099+00:00,2024-09-09 19:34:22.405560+00:00,False,NeurodataWithoutBorders/pynwb,True,0,,,False
+pyod,False,,,,False,yzhao062/pyod,True,0,,,False
+pyogrio,False,,,,True,geopandas/pyogrio,True,0,,,False
+pyqtgraph,False,,,,False,pyqtgraph/pyqtgraph,True,0,,,False
+pyreadr,False,,,,True,ofajardo/pyreadr,True,0,,,False
+pyreadstat,False,,,,True,Roche/pyreadstat,True,0,,,False
+pyro-ppl,False,,,,False,pyro-ppl/pyro,True,0,,,False
+pyscf,False,,,,True,pyscf/pyscf,True,0,,,False
+pystan,True,legacy,2023-12-14 11:17:15.700341+00:00,2024-07-03 17:04:15.124028+00:00,False,stan-dev/pystan,True,0,,,False
+pystoi,False,,,,False,mpariente/pystoi,True,0,,,False
+pytd,True,reactive,2024-09-20 05:08:11.963590+00:00,2025-08-05 04:55:33.445128+00:00,False,treasure-data/pytd,True,0,,,False
+pytensor,True,pre-emptive,2024-05-13 20:36:53.912908+00:00,2025-02-20 21:22:35.760490+00:00,True,pymc-devs/pytensor,True,0,,,False
+pytest-arraydiff,False,,,,False,astropy/pytest-arraydiff,True,0,,,False
+pythainlp,False,,,,False,PyThaiNLP/pythainlp,True,0,,,False
+pythran,False,,,,False,serge-sans-paille/pythran,True,1,2024-04-03 19:26:30+00:00,ABI,True
+pytorch-lightning,False,,,,False,Lightning-AI/pytorch-lightning,True,0,,,False
+pytorch-metric-learning,True,reactive,2024-07-24 12:26:06.084120+00:00,2024-11-02 21:59:14.431741+00:00,False,KevinMusgrave/pytorch-metric-learning,True,0,,,False
+pyts,False,,,,False,johannfaouzi/pyts,True,0,,,False
+pyvista,True,pre-emptive,2024-06-06 03:22:16.078199+00:00,2024-06-17 19:35:13.353207+00:00,False,pyvista/pyvista,True,0,,,False
+pywavelets,True,pre-emptive,2023-11-17 22:50:57.249834+00:00,2024-04-01 18:08:16.979927+00:00,True,PyWavelets/pywt,True,0,,,False
+pyworld,False,,,,True,JeremyCCHsu/Python-Wrapper-for-World-Vocoder,True,0,,,False
+qdldl,False,,,,True,oxfordcontrol/qdldl-python,False,0,,,False
+qdrant-client,False,,,,False,qdrant/qdrant-client,True,1,2024-09-19 18:21:44+00:00,API,True
+qiskit,True,pre-emptive,2024-02-15 20:58:17.351106+00:00,2024-05-16 20:31:52.196933+00:00,True,Qiskit/qiskit,True,0,,,False
+qiskit-aer,False,,,,True,Qiskit/qiskit-aer,True,0,,,False
+qiskit-ibm-provider,False,,,,False,Qiskit/qiskit-ibm-provider,True,0,,,False
+qiskit-ibm-runtime,False,,,,False,Qiskit/qiskit-ibm-runtime,True,0,,,False
+qiskit-terra,True,pre-emptive,2023-11-03 12:30:49.378067+00:00,2024-06-20 17:49:32.087905+00:00,True,Qiskit/qiskit,True,0,,,False
+qpsolvers,False,,,,False,qpsolvers/qpsolvers,True,0,,,False
+quadprog,False,,,,True,quadprog/quadprog,True,0,,,False
+quantities,False,,,,False,python-quantities/python-quantities,True,0,,,False
+quimb,False,,,,False,jcmgray/quimb,True,0,,,False
+ragas,False,,,,False,vibrantlabsai/ragas,True,0,,,False
+raiutils,False,,,,False,microsoft/responsible-ai-widgets,False,0,,,False
+rasterio,False,,,,True,rasterio/rasterio,True,0,,,False
+rasterstats,False,,,,False,perrygeo/python-rasterstats,True,0,,,False
+rawpy,False,,,,True,letmaik/rawpy,True,1,2024-06-17 14:14:10+00:00,ABI,True
+ray,False,,,,True,ray-project/ray,True,1,2024-11-05 07:54:38+00:00,ABI,True
+rdkit,True,reactive,2024-07-05 06:18:41.188468+00:00,2024-08-06 08:47:49.217001+00:00,True,rdkit/rdkit,True,0,,,False
+rdt,True,legacy,2023-07-12 20:34:45.790872+00:00,2024-04-11 02:23:07.188546+00:00,False,sdv-dev/RDT,True,0,,,False
+recordlinkage,False,,,,False,J535D165/recordlinkage,True,0,,,False
+refinitiv-data,True,pre-emptive,2024-02-07 15:46:13.006401+00:00,,False,,False,0,,,False
+rembg,False,,,,False,danielgatis/rembg,True,1,2024-06-21 09:34:19+00:00,ABI,True
+rerun-sdk,True,pre-emptive,2024-01-17 17:00:37.139156+00:00,2024-12-18 14:11:28.533971+00:00,True,rerun-io/rerun,True,1,2025-02-11 18:13:38+00:00,API,True
+resampy,False,,,,False,bmcfee/resampy,True,0,,,False
+retina-face,False,,,,False,serengil/retinaface,True,0,,,False
+rioxarray,False,,,,False,vylor/rioxarray,True,0,,,False
+rlax,False,,,,False,google-deepmind/rlax,True,0,,,False
+roboflow,False,,,,False,roboflow-ai/roboflow-python,False,0,,,False
+ropwr,False,,,,False,guillermo-navas-palencia/ropwr,True,0,,,False
+rosbags,False,,,,False,,False,0,,,False
+ruptures,False,,,,True,deepcharles/ruptures,True,0,,,False
+rustworkx,True,pre-emptive,2024-01-23 19:18:12.947950+00:00,2024-06-27 23:36:00.743053+00:00,True,Qiskit/rustworkx,True,0,,,False
+sacrebleu,False,,,,False,mjpost/sacrebleu,True,0,,,False
+sagemaker,True,pre-emptive,2023-12-13 18:40:51.948921+00:00,2025-10-29 15:23:14.429469+00:00,False,aws/sagemaker-python-sdk,True,0,,,False
+sahi,True,reactive,2024-07-10 10:19:56.979627+00:00,2025-03-06 05:17:42.200774+00:00,False,obss/sahi,True,0,,,False
+salib,False,,,,False,SALib/SALib,True,0,,,False
+samplerate,False,,,,True,,False,0,,,False
+scann,False,,,,True,google-research/google-research,True,0,,,False
+scanpy,True,reactive,2024-06-25 12:02:32.048441+00:00,2024-09-17 13:38:00.201797+00:00,False,scverse/scanpy,True,2,2025-04-10 19:20:00+00:00,ABI;API,True
+scenedetect,False,,,,False,Breakthrough/PySceneDetect,True,0,,,False
+schemachange,True,reactive,2024-07-11 17:16:58.726814+00:00,2024-07-22 13:44:35.516898+00:00,False,Snowflake-Labs/schemachange,True,1,2024-06-17 16:01:29+00:00,ABI,True
+scikit-image,False,,,,True,scikit-image/scikit-image,True,1,2024-06-17 16:19:17+00:00,ABI,True
+scikit-learn,True,pre-emptive,2023-09-21 07:50:52.241325+00:00,2024-01-18 09:21:23.855833+00:00,True,scikit-learn/scikit-learn,True,3,2024-08-06 16:55:54+00:00,ABI,True
+scikit-learn-intelex,False,,,,True,uxlfoundation/scikit-learn-intelex,True,0,,,False
+scikit-optimize,False,,,,False,holgern/scikit-optimize,True,0,,,False
+scikit-posthocs,False,,,,False,maximtrp/scikit-posthocs,True,0,,,False
+scikit-surprise,False,,,,True,NicolasHug/Surprise,True,1,2025-02-11 17:21:29+00:00,ABI,True
+scikit-survival,False,,,,True,sebp/scikit-survival,True,0,,,False
+scipy,True,legacy,2023-06-28 21:43:44.452033+00:00,2024-04-02 21:41:20.222345+00:00,True,scipy/scipy,True,1,2024-05-18 13:08:55+00:00,ABI,True
+scs,False,,,,True,,False,0,,,False
+sdmetrics,True,legacy,2023-08-10 21:00:10.363392+00:00,2024-04-11 20:26:50.033308+00:00,False,sdv-dev/SDMetrics,True,0,,,False
+sdv,True,legacy,2023-10-13 17:28:52.415471+00:00,2024-11-19 00:17:56.634199+00:00,False,sdv-dev/SDV,True,0,,,False
+seaborn,False,,,,False,mwaskom/seaborn,True,0,,,False
+seeq,False,,,,False,,False,0,,,False
+seeq-spy,False,,,,False,,False,0,,,False
+segmentation-models-pytorch,False,,,,False,qubvel-org/segmentation_models.pytorch,True,0,,,False
+segyio,False,,,,True,equinor/segyio,True,0,,,False
+semantic-kernel,True,reactive,2024-08-28 06:40:44.131745+00:00,2024-09-16 18:52:45.978678+00:00,False,microsoft/semantic-kernel,True,0,,,False
+sentence-transformers,True,reactive,2024-09-11 14:04:17.939583+00:00,2024-09-19 14:18:03.813827+00:00,False,huggingface/sentence-transformers,True,1,2025-03-04 19:51:31+00:00,ABI,True
+seqio,False,,,,False,google/seqio,True,0,,,False
+shap,False,,,,True,shap/shap,True,2,2024-06-18 15:02:31+00:00,ABI;API,True
+shapely,True,pre-emptive,2024-02-16 14:21:16.064726+00:00,2024-04-16 22:26:21.897957+00:00,True,shapely/shapely,True,0,,,False
+shimmy,False,,,,False,Farama-Foundation/Shimmy,True,0,,,False
+simdkalman,False,,,,False,oseiskar/simdkalman,True,0,,,False
+simpful,False,,,,False,aresio/simpful,True,0,,,False
+simple-dwd-weatherforecast,False,,,,False,FL550/simple_dwd_weatherforecast,True,0,,,False
+sklearndf,True,pre-emptive,2023-11-15 16:26:09.497037+00:00,2025-07-22 21:13:00.774186+00:00,False,BCG-X-Official/sklearndf,True,0,,,False
+skorch,False,,,,False,,False,0,,,False
+sktime,True,pre-emptive,2023-10-13 13:50:47.918770+00:00,2024-07-11 19:03:24.134245+00:00,False,sktime/sktime,True,4,2024-08-15 08:16:06+00:00,ABI,True
+skyfield,False,,,,False,brandon-rhodes/python-skyfield,False,0,,,False
+smdebug,False,,,,False,awslabs/sagemaker-debugger,True,0,,,False
+snowflake-ml-python,True,pre-emptive,2023-06-16 20:33:27.762385+00:00,2025-07-18 22:12:41.451811+00:00,False,snowflakedb/snowflake-ml-python,True,0,,,False
+soundcard,False,,,,False,bastibe/SoundCard,True,0,,,False
+soundfile,False,,,,True,bastibe/python-soundfile,True,0,,,False
+sox,False,,,,False,rabitt/pysox,False,0,,,False
+soxr,False,,,,True,dofuuz/python-soxr,True,0,,,False
+spacy,False,,,,True,explosion/spaCy,True,7,2024-06-16 15:42:21+00:00,ABI,True
+spacy-pkuseg,False,,,,True,explosion/spacy-pkuseg,True,0,,,False
+spacy-transformers,False,,,,True,,False,0,,,False
+spandrel,False,,,,False,,False,0,,,False
+sparse,False,,,,False,pydata/sparse,True,0,,,False
+sparse-dot-topn,False,,,,True,ing-bank/sparse_dot_topn,True,0,,,False
+spectral,False,,,,False,spectralpython/spectral,True,1,2024-10-10 19:39:15+00:00,API,True
+speechbrain,False,,,,False,,False,0,,,False
+spglib,False,,,,True,spglib/spglib,True,0,,,False
+spikeinterface,True,reactive,2024-06-24 16:25:37.693795+00:00,2025-02-07 11:42:47.465614+00:00,False,SpikeInterface/spikeinterface,True,2,2024-06-18 18:53:52+00:00,API,True
+splinecalib,True,reactive,2024-06-21 16:07:43.189638+00:00,2025-02-26 18:44:10.185557+00:00,True,,False,0,,,False
+splink,False,,,,False,moj-analytical-services/splink,True,0,,,False
+stable-baselines3,True,reactive,2024-11-18 10:03:24.983454+00:00,2025-01-27 11:50:43.312509+00:00,False,DLR-RM/stable-baselines3,True,1,2024-07-04 15:01:53+00:00,ABI,True
+stanio,False,,,,False,stan-dev/stanio,True,0,,,False
+stanza,False,,,,False,stanfordnlp/stanza,True,0,,,False
+statsforecast,False,,,,True,Nixtla/statsforecast,True,0,,,False
+statsmodels,True,pre-emptive,2023-12-14 14:50:21.976822+00:00,2024-04-17 08:41:57.587581+00:00,True,statsmodels/statsmodels,True,1,2025-03-19 08:04:53+00:00,ABI,True
+stempeg,False,,,,False,faroit/stempeg,True,0,,,False
+storey,True,pre-emptive,2024-01-08 04:35:41.982346+00:00,,False,mlrun/storey,True,0,,,False
+streamlit,True,legacy,2023-06-27 06:14:33.570760+00:00,2024-06-20 18:02:18.401735+00:00,False,streamlit/streamlit,True,1,2025-05-14 20:55:51+00:00,API,True
+stumpy,False,,,,False,stumpy-dev/stumpy,True,2,2024-06-17 12:14:30+00:00,API,True
+supermercado,False,,,,False,mapbox/supermercado,True,0,,,False
+supervisely,True,legacy,2023-06-18 15:07:12.338588+00:00,2025-10-23 21:37:22.764046+00:00,False,supervisely/supervisely,True,0,,,False
+supervision,True,pre-emptive,2023-07-24 07:57:42.038624+00:00,2023-12-06 14:52:14.232199+00:00,False,roboflow/supervision,True,1,2024-11-25 11:41:33+00:00,ABI,True
+sweetviz,False,,,,False,fbdesignpro/sweetviz,True,0,,,False
+ta-lib,False,,,,True,ta-lib/ta-lib-python,True,2,2024-07-04 01:06:54+00:00,ABI,True
+tables,True,reactive,2024-08-13 08:49:34.259578+00:00,2024-08-17 09:56:50.229438+00:00,True,PyTables/PyTables,True,3,2024-06-18 19:01:40+00:00,ABI,True
+tabula-py,False,,,,False,chezou/tabula-py,True,0,,,False
+target-hotglue,True,reactive,2025-05-13 13:25:10.187239+00:00,,False,,False,0,,,False
+tbats,False,,,,False,intive-DataScience/tbats,True,0,,,False
+tcod,False,,,,True,libtcod/python-tcod,True,0,,,False
+tdda,False,,,,False,tdda/tdda,True,0,,,False
+tecton,True,legacy,2023-07-17 19:11:13.278283+00:00,,False,,False,0,,,False
+tensorboard,False,,,,False,tensorflow/tensorboard,True,1,2024-06-29 21:13:41+00:00,API,True
+tensorboardx,False,,,,False,lanpa/tensorboardX,True,0,,,False
+tensorflow,True,pre-emptive,2023-11-14 18:56:38.167085+00:00,2024-10-25 00:14:11.549846+00:00,True,tensorflow/tensorflow,True,3,2025-03-29 17:11:20+00:00,ABI,True
+tensorflow-cpu,True,pre-emptive,2023-11-14 18:57:37.307386+00:00,2024-10-25 00:16:55.903340+00:00,True,tensorflow/tensorflow,True,3,2025-03-29 17:11:20+00:00,ABI,True
+tensorflow-cpu-aws,True,pre-emptive,2023-11-15 00:09:13.627470+00:00,,True,tensorflow/tensorflow,True,3,2025-03-29 17:11:20+00:00,ABI,True
+tensorflow-data-validation,False,,,,True,tensorflow/data-validation,True,0,,,False
+tensorflow-datasets,False,,,,False,tensorflow/datasets,True,0,,,False
+tensorflow-decision-forests,False,,,,True,tensorflow/decision-forests,True,0,,,False
+tensorflow-hub,False,,,,False,tensorflow/hub,True,1,2025-05-02 08:48:20+00:00,ABI,True
+tensorflow-intel,True,pre-emptive,2023-11-14 21:35:18.843021+00:00,2024-10-25 04:46:05.615681+00:00,True,tensorflow/tensorflow,True,3,2025-03-29 17:11:20+00:00,ABI,True
+tensorflow-macos,True,pre-emptive,2023-11-13 21:55:57.814203+00:00,2024-03-20 18:41:02.256077+00:00,True,tensorflow/tensorflow,True,3,2025-03-29 17:11:20+00:00,ABI,True
+tensorflow-model-analysis,False,,,,False,tensorflow/model-analysis,True,0,,,False
+tensorflow-model-optimization,True,legacy,2024-02-08 01:57:17.751219+00:00,2026-05-12 18:16:39.696859+00:00,False,tensorflow/model-optimization,True,0,,,False
+tensorflow-probability,False,,,,False,tensorflow/probability,True,1,2024-06-18 18:13:50+00:00,API,True
+tensorflow-ranking,False,,,,False,tensorflow/ranking,True,0,,,False
+tensorflow-transform,False,,,,False,tensorflow/transform,True,0,,,False
+tensorstore,False,,,,True,google/tensorstore,True,0,,,False
+tf-models-official,False,,,,False,tensorflow/models,True,0,,,False
+tf2onnx,False,,,,False,onnx/tensorflow-onnx,True,2,2024-12-19 09:09:41+00:00,API,True
+tflite-model-maker,False,,,,False,tensorflow/examples,True,0,,,False
+tflite-support,False,,,,True,tensorflow/tflite-support,True,0,,,False
+tfx-bsl,False,,,,True,tensorflow/tfx-bsl,True,0,,,False
+thinc,False,,,,True,explosion/thinc,True,1,2024-06-17 17:37:14+00:00,ABI,True
+tifffile,False,,,,False,cgohlke/tifffile,True,0,,,False
+timezonefinder,True,legacy,2024-02-01 22:37:35.283622+00:00,2024-06-17 12:30:36.642524+00:00,True,jannikmi/timezonefinder,True,0,,,False
+torch-complex,False,,,,False,kamo-naoyuki/torch_complex,False,0,,,False
+torch-fidelity,False,,,,False,toshas/torch-fidelity,True,0,,,False
+torch-geometric,False,,,,False,pyg-team/pytorch_geometric,True,0,,,False
+torch-stoi,False,,,,False,mpariente/pytorch_stoi,True,0,,,False
+torchao,False,,,,True,pytorch/ao,True,1,2024-07-16 16:01:28+00:00,ABI,True
+torchfcpe,False,,,,False,CNChTu/FCPE,True,0,,,False
+torchmetrics,True,reactive,2024-10-18 19:42:06.340938+00:00,2024-11-08 10:42:14.084819+00:00,False,Lightning-AI/torchmetrics,True,0,,,False
+torchsde,False,,,,False,google-research/torchsde,True,0,,,False
+torchtext,False,,,,True,pytorch/text,True,0,,,False
+torchvision,False,,,,True,pytorch/vision,True,0,,,False
+transformer-smaller-training-vocab,True,pre-emptive,2024-04-05 15:31:14.217453+00:00,2025-04-16 12:55:48.438162+00:00,False,helpmefindaname/transformer-smaller-training-vocab,True,0,,,False
+transformers,True,reactive,2024-06-27 15:47:24.745417+00:00,2024-07-23 15:06:16.908311+00:00,False,huggingface/transformers,True,3,2024-12-11 23:04:34+00:00,ABI,True
+transforms3d,False,,,,False,matthew-brett/transforms3d,True,1,2024-06-17 01:12:12+00:00,API,True
+treelite,False,,,,True,dmlc/treelite,True,0,,,False
+treelite-runtime,False,,,,True,dmlc/treelite,True,0,,,False
+triad,False,,,,False,fugue-project/triad,True,0,,,False
+trimesh,False,,,,False,mikedh/trimesh,True,1,2025-02-12 23:17:23+00:00,ABI,True
+tritonclient,True,reactive,2024-06-28 00:27:49.065777+00:00,2025-05-13 19:32:17.501344+00:00,True,,False,0,,,False
+trl,True,reactive,2024-07-08 13:38:47.094422+00:00,2024-08-29 14:53:05.399522+00:00,False,huggingface/trl,True,0,,,False
+tsdownsample,False,,,,True,predict-idlab/tsdownsample,True,0,,,False
+tsfresh,False,,,,False,blue-yonder/tsfresh,True,1,2024-07-25 09:29:59+00:00,API,True
+tslearn,False,,,,False,tslearn-team/tslearn,True,0,,,False
+tsx,False,,,,False,asuiu/tsx,True,0,,,False
+tts,False,,,,True,coqui-ai/TTS,True,0,,,False
+turbopuffer,True,pre-emptive,2024-01-15 04:21:39.066899+00:00,2024-11-21 19:09:36.224460+00:00,False,turbopuffer/turbopuffer-python,True,0,,,False
+types-jack-client,False,,,,False,typeshed-internal/stub_uploader,True,0,,,False
+types-tensorflow,True,reactive,2024-06-18 02:26:42.077757+00:00,2024-08-04 02:32:48.183694+00:00,False,typeshed-internal/stub_uploader,True,0,,,False
+ultralytics,True,reactive,2024-06-16 19:40:08.953035+00:00,2024-10-03 12:26:21.346230+00:00,False,ultralytics/ultralytics,True,2,2025-02-03 19:27:19+00:00,ABI,True
+umap-learn,False,,,,False,lmcinnes/umap,True,0,,,False
+unstructured,True,pre-emptive,2024-03-08 19:16:37.208273+00:00,2024-04-05 06:41:02.645543+00:00,False,Unstructured-IO/unstructured,True,0,,,False
+unstructured-inference,True,reactive,2024-09-24 21:06:45.797006+00:00,2025-03-18 16:45:28.811406+00:00,False,Unstructured-IO/unstructured-inference,True,0,,,False
+uproot,False,,,,False,scikit-hep/uproot5,True,0,,,False
+utilsforecast,False,,,,False,Nixtla/utilsforecast,True,0,,,False
+vector,False,,,,False,scikit-hep/vector,True,0,,,False
+vessl,False,,,,False,,False,0,,,False
+vhacdx,False,,,,True,trimesh/vhacdx,True,0,,,False
+visdom,False,,,,False,fossasia/visdom,True,0,,,False
+visions,False,,,,False,dylan-profiler/visions,True,0,,,False
+vispy,False,,,,True,,False,0,,,False
+vllm,True,reactive,2024-07-06 02:32:58.721936+00:00,2025-04-06 06:47:12.378621+00:00,True,vllm-project/vllm,True,2,2024-03-29 06:26:25+00:00,ABI,True
+voxel51-eta,False,,,,False,voxel51/eta,True,0,,,False
+webdataset,False,,,,False,webdataset/webdataset,True,0,,,False
+window-ops,False,,,,False,jmoralez/window_ops,True,0,,,False
+woodwork,True,pre-emptive,2024-02-06 19:40:36.283723+00:00,2024-02-26 16:04:45.592072+00:00,False,alteryx/woodwork,True,0,,,False
+wordcloud,False,,,,True,amueller/word_cloud,True,0,,,False
+wxpython,False,,,,True,wxWidgets/Phoenix,True,0,,,False
+xarray,False,,,,False,pydata/xarray,True,2,2024-07-08 00:23:44+00:00,API,True
+xarray-einstats,False,,,,False,arviz-devs/xarray-einstats,True,0,,,False
+xatlas,False,,,,True,mworchel/xatlas-python,True,0,,,False
+xbbg,False,,,,True,underloam/xbbg,True,0,,,False
+xformers,False,,,,True,,False,0,,,False
+xgboost,False,,,,True,dmlc/xgboost,True,0,,,False
+xpress,True,pre-emptive,2024-04-22 09:04:19.160954+00:00,2025-04-29 15:15:23.998062+00:00,True,,False,0,,,False
+xtcocotools,False,,,,True,jin-s13/xtcocoapi,True,1,2025-01-27 10:43:32+00:00,ABI,True
+yake,True,reactive,2026-02-02 14:42:56.988199+00:00,2026-02-09 18:34:02.640623+00:00,False,INESCTEC/yake,True,0,,,False
+ydata-profiling,True,pre-emptive,2024-03-18 18:30:47.323120+00:00,2024-09-07 09:52:35.414696+00:00,False,ydataai/ydata-profiling,False,0,,,False
+yfinance,False,,,,False,ranaroussi/yfinance,True,0,,,False
+yolov5,False,,,,False,fcakyon/yolov5-pip,True,0,,,False
+zarr,False,,,,False,zarr-developers/zarr-python,True,0,,,False
