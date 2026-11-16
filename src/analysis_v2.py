@@ -202,12 +202,13 @@ def main() -> None:
     ax.plot([], [], color="#6b8e23", ls=(0, (1, 3)), lw=1.2, label="2.0.0b1 (2024-03-12)")
     ax.plot([], [], color="grey", ls=":", lw=1.2, label="2.0.0rc1 (2024-03-30)")
     ax.plot([], [], color="purple", ls=(0, (3, 2, 1, 2)), lw=1.0, label="2.0.0rc2 (2024-05-12)")
-    ax.set_ylim(bottom=0)
+    ax.set_ylim(0, 1.45 * max(shown.share.max(), fx.fixed_share.max()) * 100)   # headroom for the legend
     ax2.set_xlabel("Days since NumPy 2.0.0 release")
     ax.set_ylabel("% whose latest release\nis capped")
-    ax.legend(fontsize=7, loc="upper right")
+    ax.legend(fontsize=8.5, loc="upper center", ncol=2, framealpha=0.95)
     fig.tight_layout()
-    fig.savefig(OUT / f"prevalence_{TAG}{envsfx}.png", dpi=200)
+    fig.savefig(OUT / f"prevalence_{TAG}{envsfx}.pdf")
+    fig.savefig(OUT / f"prevalence_{TAG}{envsfx}.png", dpi=300)
     plt.close(fig)
 
     # ---- RQ2: delayed-entry main model ---------------------------------------
@@ -298,7 +299,7 @@ def main() -> None:
     }
 
     fig, ax = plt.subplots(figsize=(6, 4))
-    for flag, label in [(1, "Builds against NumPy"), (0, "Does not / pure Python")]:
+    for flag, label in [(1, "Builds against NumPy"), (0, "Does not build against NumPy")]:
         g = r[(r.capi_i == flag) & (r.capi_unknown_i == 0)]
         if len(g) >= 3:
             KaplanMeierFitter().fit(g.duration, g.observed, entry=g.entry, label=f"{label} (n={len(g)})"
@@ -307,7 +308,8 @@ def main() -> None:
     ax.set_ylabel("Share of packages at risk still capped")
     ax.set_ylim(0, 1.02)
     fig.tight_layout()
-    fig.savefig(OUT / f"km_{TAG}{envsfx}.png", dpi=200)
+    fig.savefig(OUT / f"km_{TAG}{envsfx}.pdf")
+    fig.savefig(OUT / f"km_{TAG}{envsfx}.png", dpi=300)
     plt.close(fig)
 
     # ---- RQ3 ---------------------------------------------------------------
@@ -393,19 +395,29 @@ def main() -> None:
     tl["start"] = tl.first_cap.where(tl.first_cap > floor, floor)
     tl = tl.sort_values("uncap")
     colors = {"legacy": "#8c8c8c", "pre-emptive": "#2b6cb0", "reactive": "#c05621"}
-    fig, ax = plt.subplots(figsize=(7, max(4, 0.1 * len(tl))))
-    for i, x in enumerate(tl.itertuples()):
-        ax.plot([x.start.to_pydatetime(), x.uncap.to_pydatetime()], [i, i], color=colors[x.cap_timing], lw=1.4)
-    ax.axvline(EVENT.to_pydatetime(), color="k", ls="--", lw=1)
-    ax.set_yticks([])
-    ax.set_ylabel(f"Capped packages with an observed lift (n={len(tl)}), sorted by lift date", fontsize=11)
-    ax.set_xlabel("Capped period (dashed: NumPy 2.0.0 release)", fontsize=11)
-    ax.tick_params(axis="x", labelsize=10, labelrotation=30)
-    for k, v in colors.items():
-        ax.plot([], [], color=v, lw=3, label=k)
-    ax.legend(loc="upper left", fontsize=12)
-    fig.tight_layout()
-    fig.savefig(OUT / f"timeline_{TAG}{envsfx}.png", dpi=200)
+    # two columns: core packages (named) and the periphery (too many to name)
+    core_tl, peri_tl = tl[tl.core_i == 1], tl[tl.core_i == 0]
+    fig, (axc, axp) = plt.subplots(1, 2, figsize=(7.5, 8.5), sharex=True, layout="constrained",
+                                   gridspec_kw={"width_ratios": [1, 1]})
+    for ax, part, title in ((axc, core_tl, f"Core packages (n={len(core_tl)})"),
+                            (axp, peri_tl, f"Periphery (n={len(peri_tl)})")):
+        lw = 3.0 if len(part) < 40 else 1.3
+        for i, x in enumerate(part.itertuples()):
+            ax.plot([x.start.to_pydatetime(), x.uncap.to_pydatetime()], [i, i], color=colors[x.cap_timing], lw=lw)
+        ax.axvline(EVENT.to_pydatetime(), color="k", ls="--", lw=1)
+        ax.set_ylim(len(part) - 0.5, -0.5)
+        ax.set_title(title, fontsize=11)
+        ax.tick_params(axis="x", labelsize=9.5, labelrotation=40)
+        ax.set_xlabel("Capped period", fontsize=10.5)
+    axc.set_yticks(range(len(core_tl)))
+    axc.set_yticklabels(core_tl.package, fontsize=9)
+    axp.set_yticks([])
+    axp.set_ylabel("Packages sorted by lift date (earliest at top)", fontsize=10.5)
+    handles = [plt.Line2D([], [], color=v, lw=3, label=k) for k, v in colors.items()]
+    handles.append(plt.Line2D([], [], color="k", ls="--", lw=1, label="NumPy 2.0.0 release"))
+    fig.legend(handles=handles, loc="outside upper center", ncol=4, fontsize=9.5, frameon=False)
+    fig.savefig(OUT / f"timeline_{TAG}{envsfx}.pdf")
+    fig.savefig(OUT / f"timeline_{TAG}{envsfx}.png", dpi=300)
     plt.close(fig)
     out["timeline_n"] = int(len(tl))
 

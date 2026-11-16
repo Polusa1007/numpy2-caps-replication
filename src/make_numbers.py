@@ -23,10 +23,111 @@ class PStr(str):
     """A formatted p-value; mac() also emits <name>Rel ('< .001' or '= .xx') for running text."""
 
 
-def mac(name: str, value) -> None:
+# Quantities computed in loops shared with reported ones but not reported in the paper;
+# mac() skips them so that numbers.tex lists only macros the manuscript uses.
+NOT_REPORTED = {
+    "BoundLoA",
+    "BoundLoB",
+    "BoundUpA",
+    "BoundUpB",
+    "CapCapiP",
+    "CapCompCIninety",
+    "CapCompP",
+    "CapCoreCIninety",
+    "CapCoreP",
+    "ClOrgAgeCI",
+    "ClOrgDlCI",
+    "ClRepoAgeCI",
+    "ClRepoDlCI",
+    "CoreThrFiveCI",
+    "CoreThrFiveEarlyA",
+    "CoreThrFiveEarlyB",
+    "CoreThrFiveEarlyCI",
+    "CoreThrFiveEarlyOR",
+    "CoreThrFiveHR",
+    "CoreThrFiveN",
+    "CoreThrTenN",
+    "CoreThrThreeN",
+    "EarlyCapiRateA",
+    "EarlyCapiRateB",
+    "EarlyCompRateA",
+    "EarlyCompRateB",
+    "EarlyCoreRateA",
+    "EarlyCoreRateB",
+    "EnvPyCore",
+    "EnvPyTV",
+    "EnvPyTVCI",
+    "EnvWinCore",
+    "EnvWinTV",
+    "EnvWinTVCI",
+    "HRAgeCIninety",
+    "HRCapiCIninety",
+    "HRCapiUnkCIninety",
+    "HRCoreCIninety",
+    "HRCoreMajor",
+    "HRCoreNoPoetry",
+    "HRDlCIninety",
+    "HRDlMajor",
+    "HRDlNoPoetry",
+    "HRPoetryCIninety",
+    "HRRelCIninety",
+    "HoCapBin",
+    "HoCapBuild",
+    "HoCapComp",
+    "HoEarlyBin",
+    "HoEarlyComp",
+    "HoEarlyCore",
+    "LogitCapi",
+    "LogitCapiCI",
+    "LogitCore",
+    "LogitCoreCI",
+    "LogitDl",
+    "LogitDlCI",
+    "LxCapDep",
+    "LxCompDep",
+    "LxCompOk",
+    "LxCompOkPct",
+    "NCompiled",
+    "PreAEarly",
+    "PreAMajor",
+    "PreAPoetry",
+    "PreBEarly",
+    "RtCapDep",
+    "RtCapFailCI",
+    "RtCapFailPct",
+    "RtCapNT",
+    "RtCapOk",
+    "RtCapOkPct",
+    "RtCapOwn",
+    "RtCapOwnCI",
+    "RtCapOwnPct",
+    "RtCompDep",
+    "RtCompFailCI",
+    "RtCompFailPct",
+    "RtCompNT",
+    "RtCompOk",
+    "RtCompOkPct",
+    "RtCompOwn",
+    "RtCompOwnCI",
+    "RtCompOwnPct",
+    "StAStillN",
+    "StBStillN",
+    "StEStillN",
+}
+# p-values built in loops whose running-text form (<name>Rel) is used, with or without the plain form
+REL_NAMES = set()
+REL_ONLY = {"HoCapCore"}
+
+
+def mac(name: str, value, rel: bool | str = False) -> None:
+    """Emit \\name; for a p-value, rel=True also emits \\nameRel and rel="only" emits just \\nameRel."""
     assert name.isalpha(), name
-    LINES.append(f"\\newcommand{{\\{name}}}{{{value}}}")
-    if isinstance(value, PStr):
+    if name in NOT_REPORTED:
+        return
+    rel = "only" if name in REL_ONLY else (True if name in REL_NAMES else rel)
+    if rel != "only":
+        LINES.append(f"\\newcommand{{\\{name}}}{{{value}}}")
+    if isinstance(value, PStr) and rel:
         rel = "{<}\\,.001" if value.startswith("{<}") else "=" + str(value)
         LINES.append(f"\\newcommand{{\\{name}Rel}}{{{rel}}}")
 
@@ -87,18 +188,15 @@ def main() -> None:
     po = R1["poetry"]
     mac("NPoetry", n(po["n"])); mac("NPoetryPre", n(po["by_origin"].get("pre-emptive", 0)))
     mac("NPoetryReact", n(po["by_origin"].get("reactive", 0))); mac("NPoetryLegacy", n(po["by_origin"].get("legacy", 0)))
-    mac("NPreemptiveNoPoetry", n(co["pre-emptive"] - po["by_origin"].get("pre-emptive", 0)))
     for key, pre in (("by_capi_vs_rest", "CapCapi"), ("by_compiled", "CapComp"), ("by_core", "CapCore")):
         d = R1[key]
         mac(pre + "RateA", pct(d["rate_true"])); mac(pre + "RateB", pct(d["rate_false"]))
         mac(pre + "OR", f2(d["OR"])); mac(pre + "CI", ci(d["OR_95ci"])); mac(pre + "CIninety", ci(d["OR_90ci"]))
         mac(pre + "P", pval(d["p"]))
-    cc = R1["by_capi_category"]
-    mac("NCapiBuildCapped", n(cc["build-numpy"]["capped"]))
 
     # prevalence
     mac("PrevZero", pct(PV["day_0"]["share"])); mac("PrevZeroN", n(PV["day_0"]["n"]))
-    mac("PrevPeak", pct(PV["peak"]["share"])); mac("PrevPeakDay", n(PV["peak"]["day"]))
+    mac("PrevPeak", pct(PV["peak"]["share"]))
     mac("PrevPeakWeeks", n(PV["peak"]["day"] / 7))
     mac("FixedN", n(PV["fixed_cohort_n"])); mac("FixedDay", n(-PV["fixed_cohort_day"]))
     mac("FixedPeak", pct(PV["fixed_peak"]["fixed_share"])); mac("FixedPeakDay", n(PV["fixed_peak"]["day"]))
@@ -139,7 +237,6 @@ def main() -> None:
         mac(f"HRCore{nm}", f2(t["core_i"]["HR"])); mac(f"HRDl{nm}", f2(t["log_downloads"]["HR"]))
     t = R2["sens_known_capi"]["cox"]["terms"]
     mac("HRCapiKnown", f2(t["capi_i"]["HR"])); mac("HRCapiKnownCI", ci(t["capi_i"]["HR_95ci"]))
-    mac("HRCoreKnown", f2(t["core_i"]["HR"]))
     e = R2["early"]
     for key, nm in (("by_capi", "EarlyCapi"), ("by_compiled", "EarlyComp"), ("by_core", "EarlyCore")):
         d = e[key]
@@ -155,32 +252,28 @@ def main() -> None:
     t = R2["sens_frame_indegree"]["cox"]["terms"]["log_frame_indeg"]
     mac("HRFrame", f2(t["HR"])); mac("HRFrameCI", ci(t["HR_95ci"]))
     t = e["logit_frame_indegree"]["terms"]["log_frame_indeg"]
-    mac("LogitFrame", f2(t["OR"])); mac("LogitFrameCI", ci(t["OR_95ci"]))
     lt = e["logit"]
-    mac("LogitN", n(lt["n"])); mac("LogitEvents", n(lt["events"]))
     for k, nm in (("capi_i", "Capi"), ("core_i", "Core"), ("log_downloads", "Dl")):
         mac(f"Logit{nm}", f2(lt["terms"][k]["OR"])); mac(f"Logit{nm}CI", ci(lt["terms"][k]["OR_95ci"]))
 
     # RQ3
     mac("PairsAll", n(R3["n_pairs_all"])); mac("PairsBoth", n(R3["n_pairs_both_lifted"])); mac("PairsTies", n(R3["ties"]))
     mac("PairsN", n(R3["n_pairs"])); mac("PairsAfter", n(round(R3["pair_share_after"] * R3["n_pairs"])))
-    mac("PairShare", pct(R3["pair_share_after"])); mac("LagMed", days(R3["lag_median"]))
-    mac("LagIQR", f"{days(R3['lag_iqr'][0])}--{days(R3['lag_iqr'][1])}")
     tu = R3["top_upstreams"]
     mac("UpstreamList", ", ".join(f"{k} ({v})" for k, v in tu.items()))
     mac("NDown", n(R3["n_downstreams"])); mac("DownAll", n(R3["downstreams_all_followed"]))
-    mac("DownMaj", n(R3["downstreams_majority"])); mac("DownMin", n(R3["downstreams_minority"]))
+    mac("DownMin", n(R3["downstreams_minority"]))
     mac("DownShare", pct(R3["downstream_share_mean"])); mac("PermNull", pct(R3["perm_null_mean"]))
     mac("PermNullRange", f"{pct(R3['perm_null_95'][0])}--{pct(R3['perm_null_95'][1])}")
     mac("PermTwoNull", pct(R3["perm2_null_mean"]))
     mac("PermTwoRange", f"{pct(R3['perm2_null_95'][0])}--{pct(R3['perm2_null_95'][1])}")
-    mac("PermTwoP", pval(R3["perm2_p"]))
+    mac("PermTwoP", pval(R3["perm2_p"]), rel="only")
     mac("PermTwoExcess", f"{float(pct(R3['downstream_share_mean'])) - float(pct(R3['perm2_null_mean'])):.1f}")
-    mac("PermOneP", pval(R3["perm_p"]))
-    mac("TVEvents", n(R3["tv_events_total"])); mac("TVEventsUp", n(R3["tv_events_in_packages_with_upstream"]))
-    mac("TVEventsBlocked", n(R3["tv_events_while_blocked"])); mac("TVCov", n(R3["tv_n_covariates"]))
+    mac("PermOneP", pval(R3["perm_p"]), rel="only")
+    mac("TVEventsUp", n(R3["tv_events_in_packages_with_upstream"]))
+    mac("TVEventsBlocked", n(R3["tv_events_while_blocked"]))
     mac("TVN", n(R3["tv_n_with_capped_upstream"])); mac("TVHR", f2(R3["tv_blocked"]["HR"]))
-    mac("TVCI", ci(R3["tv_blocked"]["HR_95ci"])); mac("TVP", pval(R3["tv_blocked"]["p"]))
+    mac("TVCI", ci(R3["tv_blocked"]["HR_95ci"]))
 
     # environment sensitivity
     for env, nm in (("py39-linux", "EnvPy"), ("py312-windows", "EnvWin")):
@@ -192,19 +285,7 @@ def main() -> None:
     gfile = ROOT / "results" / "github_issues_pre2024.json"
     if gfile.exists():
         g = json.loads(gfile.read_text(encoding="utf-8"))
-        mac("GhSample", n(g["sample"])); mac("GhRepo", n(g["with_github_repo"]))
-        mac("GhCappedRepo", n(g["capped_with_repo"])); mac("GhNeverRepo", n(g["never_capped_with_repo"]))
-        mac("GhCappedRep", n(g["n_with_report_capped"])); mac("GhNeverRep", n(g["n_with_report_never_capped"]))
-        mac("GhReact", n(g["reactive_with_report"])); mac("GhReactBefore", n(g["reactive_report_before_or_at_cap"]))
         # manual coding (data/github_issues_manual_coding.csv)
-        mac("GhHits", n(g["manual_hits_auto"])); mac("GhGenuine", n(g["manual_genuine"]))
-        mac("GhFalse", n(g["false_positive_hits"]))
-        mac("GhCapGen", n(g["capped_genuine"])); mac("GhCapN", n(g["capped_repo"]))
-        mac("GhCapGenPct", pct(g["capped_genuine"] / g["capped_repo"], 0))
-        mac("GhNevGen", n(g["never_genuine"])); mac("GhNevN", n(g["never_repo"]))
-        mac("GhNevGenPct", pct(g["never_genuine"] / g["never_repo"], 0))
-        mac("GhNevBroken", n(g["never_broken"]))
-        mac("GhReactGen", n(g["reactive_genuine"])); mac("GhReactGenBefore", n(g["reactive_genuine_before_cap"]))
     # capped counts by build status (absolute)
     (a, b), (c, dd) = R1["by_capi_vs_rest"]["table"]
     mac("CapCapiA", f"{a} of {a + b}"); mac("CapCapiB", f"{c} of {c + dd}")
@@ -225,34 +306,27 @@ def main() -> None:
         g = json.loads(sfile.read_text(encoding="utf-8"))
         mac("SigRepo", n(g["with_repo"])); mac("SigSearch", n(g["searchable"]))
         mac("SigCapN", n(g["capped_searchable"])); mac("SigNevN", n(g["never_capped_searchable"]))
-        mac("SigCapRep", n(g["capped_reported"])); mac("SigNevRep", n(g["never_capped_reported"]))
         mac("SigCapPct", pct(g["share_capped"])); mac("SigNevPct", pct(g["share_never"]))
-        mac("SigDiff", pct(g["diff"])); mac("SigDiffCI", f"[{pct(g['diff_95ci'][0])}, {pct(g['diff_95ci'][1])}]")
         mac("SigOR", f2(g["OR"])); mac("SigORCI", ci(g["OR_95ci"]))
-        mac("SigNevCompiled", n(g["never_capped_reported_compiled"]))
         mac("SigReact", n(g["reactive_reported"])); mac("SigReactBefore", n(g["reactive_report_before_cap"]))
         sd = pd.read_csv(ROOT / "data" / "github_signatures_pre2024.csv")
         mac("SigRepoDistinct", n(sd[sd.searchable].repo.nunique()))
         mac("SigReportedDistinctRepos", n(sd[sd.n_reports > 0].repo.nunique()))
         mac("SigReportedPkgs", n(int((sd.n_reports > 0).sum())))
-        kn = g["kinds_never_capped"]
-        mac("SigNevABI", n(sum(v for k, v in kn.items() if "ABI" in k)))
-        mac("SigNevAPI", n(sum(v for k, v in kn.items() if "API" in k)))
 
     # validation (main frame)
     v = pd.read_csv(ROOT / "data" / "validation_pre2024_mainline.csv")
-    mac("ValChecks", n(len(v))); mac("ValAgree", n(int(v.agree_sources.sum())))
+    mac("ValChecks", n(len(v)))
 
     # planned analysis (2026 frame)
     p = json.loads((ROOT / "results" / "results_top8000.json").read_text(encoding="utf-8"))
     P1, P2, P3 = p["RQ1"], p["RQ2"], p["RQ3"]
     mac("PNDep", n(P1["n_numpy_dependent"])); mac("PNCapped", n(P1["n_ever_capped"]))
-    mac("PNCompiled", n(P1["n_compiled"]))
     mac("PCapRate", pct(P1["n_ever_capped"] / P1["n_numpy_dependent"]))
     for k, nm in (("reactive", "PNReactive"), ("pre-emptive", "PNPreemptive"), ("legacy", "PNLegacy")):
         mac(nm, n(P1["cap_origin"][k]))
     h = P1["H1_fisher"]
-    mac("PHOneOR", f2(h["odds_ratio"])); mac("PHOneCI", ci(h["or_95ci"])); mac("PHOneP", pval(h["p"]))
+    mac("PHOneOR", f2(h["odds_ratio"])); mac("PHOneCI", ci(h["or_95ci"])); mac("PHOneP", pval(h["p"]), rel="only")
     mac("PHOneRateA", pct(h["cap_rate_compiled"])); mac("PHOneRateB", pct(h["cap_rate_pure"]))
     mac("PNEarly", n(P2["adaptation_counts"]["before-release"]))
     mac("PSurvN", n(P2["survival_n"])); mac("PSurvEvents", n(P2["survival_events"]))
@@ -275,26 +349,14 @@ def main() -> None:
     mac("TimelineN", n(m["timeline_n"]))
     # original 2026 frame, mainline + revision analyses (for the frame comparison table)
     o = json.loads((ROOT / "results" / "revision_top8000_mainline.json").read_text(encoding="utf-8"))
-    om = json.loads((ROOT / "results" / "results_top8000_mainline.json").read_text(encoding="utf-8"))
-    mac("ONDep", n(om["RQ1"]["n_numpy_dependent"])); mac("ONCapped", n(om["RQ1"]["n_ever_capped"]))
-    mac("OCapRate", pct(om["RQ1"]["n_ever_capped"] / om["RQ1"]["n_numpy_dependent"]))
     ok = o["R2_release_origin_delayed_entry"]
-    mac("OMedDE", days(ok["km"]["median"])); mac("OMedDECI", ci(ok["km"]["median_95ci"], days))
-    mac("OSurvN", n(ok["km"]["n"])); mac("OStill", n(ok["km"]["n"] - ok["km"]["events"]))
-    mac("ODurReact", days(o["R2_cap_duration"]["reactive"]["median"]))
     t = ok["cox"]["terms"]["log_downloads"]
-    mac("OHRDl", f2(t["HR"])); mac("OHRDlCI", ci(t["HR_95ci"]))
-    mac("OPrevPeak", pct(o["R2_prevalence"]["peak_from_day_-180"]["share_capped"]))
-    mac("OTVHR", f2(o["R6_time_varying_cox"]["terms"]["blocked"]["HR"]))
-    mac("OTVCI", ci(o["R6_time_varying_cox"]["terms"]["blocked"]["HR_95ci"]))
-    mac("OPermNull", pct(o["R6_rq3_stratified_permutation"]["null_mean"]))
-    mac("ODownShare", pct(o["R6_rq3_stratified_permutation"]["observed"]))
 
     # supplementary set 4 (results/review4.json)
     r4 = json.loads((ROOT / "results" / "review4.json").read_text(encoding="utf-8"))
     bk = r4["bookkeeping"]
-    mac("NCappedUnk", n(bk["capped_unknown_build"])); mac("NEarlyCompiled", n(bk["early_compiled"]))
-    mac("NEarlyBuild", n(bk["early_build_numpy"])); mac("NEarlyUnk", n(bk["early_unknown_build"]))
+    mac("NEarlyCompiled", n(bk["early_compiled"]))
+    mac("NEarlyBuild", n(bk["early_build_numpy"]))
     mac("NEarlyCore", n(bk["early_core"])); mac("NCappedCore", n(bk["capped_core"]))
     mac("ShReactiveExact", f"{co['reactive']} of {F['capped']}")
     er = r4["early_by_rc1"]
@@ -320,8 +382,6 @@ def main() -> None:
         mac(f"FirthF{nm}", f2(ff[k]["OR"])); mac(f"FirthF{nm}CI", ci(ff[k]["OR_95ci"]))
     co_ = r4["collinearity"]
     mac("CorrDlCore", f2(co_["corr_downloads_core"])); mac("VIFmax", f2(max(co_["vif"].values())))
-    gd = r4["github_diff"]
-    mac("GhDiff", pct(gd["diff"], 0)); mac("GhDiffCI", f"[{pct(gd['ci95'][0], 0)}, {pct(gd['ci95'][1], 0)}]")
     mac("BelowListCapped", n(r4["below_2026_list_capped"]))
     for st, nm in zip(r4["stepwise"], ("A", "B", "C", "D", "E")):
         mac(f"St{nm}Capped", n(st["capped"])); mac(f"St{nm}Still", f"{st['still_capped']} of {st['cohort']}")
@@ -340,16 +400,14 @@ def main() -> None:
         t = r6[key]["age_years_at_event"]; mac(f"Cl{nm}AgeCI", ci(t["HR_95ci"]))
         t = r6[key]["log_downloads"]; mac(f"Cl{nm}DlCI", ci(t["HR_95ci"]))
     t = r6["logit_cluster_org"]
-    mac("ClOrgLogitDlCI", ci(t["log_downloads"]["OR_95ci"])); mac("ClOrgLogitCoreCI", ci(t["core_i"]["OR_95ci"]))
     q = r6["rq3_upstream_after_release"]
     mac("RqAPairs", n(q["pairs"])); mac("RqAPairsAfter", n(q["pairs_after"])); mac("RqADown", n(q["downstreams"]))
     mac("RqADownMaj", n(q["downstream_majority"])); mac("RqADownMin", n(q["downstream_minority"]))
-    mac("RqAP", pval(q["sign_p"])); mac("RqALag", days(q["lag_median"]))
+    mac("RqAP", pval(q["sign_p"]), rel="only"); mac("RqALag", days(q["lag_median"]))
     q = r6["rq3_last_upstream_lag"]
-    mac("RqLDown", n(q["downstreams"])); mac("RqLLag", days(q["lag_median"]))
-    mac("RqLLagIQR", f"{days(q['lag_iqr'][0])}--{days(q['lag_iqr'][1])}")
+    mac("RqLDown", n(q["downstreams"]))
     mac("RqLThirty", pct(q["share_within_30d_after"])); mac("RqLNull", pct(q["null_share_within_30d"]))
-    mac("RqLNullRange", f"{pct(q['null_share_95'][0])}--{pct(q['null_share_95'][1])}"); mac("RqLP", pval(q["p_one_sided"]))
+    mac("RqLNullRange", f"{pct(q['null_share_95'][0])}--{pct(q['null_share_95'][1])}"); mac("RqLP", pval(q["p_one_sided"]), rel="only")
     mac("RqLAbs", days(q["abs_lag_median"])); mac("RqLAbsNull", days(q["null_abs_lag_median"]))
     sp = r6["preemptive_split"]
     for k, nm in (("before_beta", "PreB"), ("after_beta", "PreA")):
@@ -372,12 +430,8 @@ def main() -> None:
         a = b["agreement"]
         mac("BinN", n(a["n"])); mac("BinTP", n(a["tp"])); mac("BinFP", n(a["fp"])); mac("BinFN", n(a["fn"])); mac("BinTN", n(a["tn"]))
         mac("BinPrec", pct(a["precision"], 0)); mac("BinRec", pct(a["recall"], 0))
-        cnt = b["counts"]
-        mac("BinUses", n(cnt.get("uses-capi", 0))); mac("BinNo", n(cnt.get("no-capi", 0)))
-        mac("BinUnscanned", n(sum(v for k, v in cnt.items() if k not in ("uses-capi", "no-capi", "pure"))))
         uk = b["unknown_group"]
         mac("BinUnkUses", n(uk.get("uses-capi", 0))); mac("BinUnkNo", n(uk.get("no-capi", 0)))
-        mac("BinUnkOther", n(sum(v for k, v in uk.items() if k not in ("uses-capi", "no-capi"))))
         for key, nm in (("cap_rate_by_binary", "BinCap"), ("early_by_binary", "BinEarly"),
                         ("cap_rate_unknown_as_build", "BoundUp"), ("cap_rate_unknown_as_not", "BoundLo")):
             x = b[key]; (a1, b1), (c1, d1) = x["table"]
@@ -391,7 +445,7 @@ def main() -> None:
     mac("ScrPool", n(sa["pool"])); mac("ScrN", n(sa["sampled"])); mac("ScrDep", n(sa["dependent"]))
     mac("ScrUpper", n(sa["est_missed_dependent_95"][1]))
     PVb = m["prevalence"]
-    mac("PrevBackfilled", n(PVb.get("backfilled", 0))); mac("PrevStart", pct(PVb["day_-180"]["share"]))
+    mac("PrevStart", pct(PVb["day_-180"]["share"]))
     mac("PrevMinusNinety", pct(PVb["day_-90"]["share"]))
 
     # supplementary set 7 (results/review7.json)
@@ -400,15 +454,13 @@ def main() -> None:
     mac("StillInactive", n(sc["inactive"])); mac("StillArchived", n(sc["archived"])); mac("StillActive", n(sc["released_last_12m"]))
     k = r7["km_excluding_inactive_still_capped"]; mac("MedActive", days(k["median"])); mac("MedActiveCI", ci(k["median_95ci"], days))
     g = r7["github_adjusted"]
-    mac("GhAdjOR", f2(g["capped_i"]["OR"])); mac("GhAdjCI", ci(g["capped_i"]["OR_95ci"])); mac("GhAdjN", n(g["n"]))
-    mac("GhAdjDl", f2(g["log_downloads"]["OR"])); mac("GhAdjComp", f2(g["compiled_i"]["OR"]))
+    mac("GhAdjOR", f2(g["capped_i"]["OR"])); mac("GhAdjCI", ci(g["capped_i"]["OR_95ci"]))
     e = r7["early_post_beta"]
     mac("EarlyPostBeta", n(e["n_early_post_beta"]))
     (a1, b1), (c1, d1) = e["by_core"]["table"]
     mac("EpbCoreA", f"{a1} of {a1 + b1}"); mac("EpbCoreB", f"{c1} of {c1 + d1}")
     mac("EpbCoreOR", f2(e["by_core"]["OR"])); mac("EpbCoreCI", ci(e["by_core"]["OR_95ci"]))
     q = r7["rq3_lag_all_upstreams_lifted"]
-    mac("RqDownWithUp", n(q["downstreams_with_capped_upstream"])); mac("RqEligible", n(q["eligible"]))
     bm = r7["binary_missing"]
     mac("BinMissing", n(bm["n"])); mac("BinNoWheel", n(bm["by_reason"].get("no-wheel", 0)))
     mac("BinUnscan", n(bm["by_reason"].get("unscanned", 0))); mac("BinMissCapped", n(bm["capped_among_missing"]))
@@ -437,8 +489,7 @@ def main() -> None:
                 int(((t.declared == "capped") & (t.outcome == "runtime-compatible")).sum())],
                [int(((t.declared == "compatible") & (t.outcome == "runtime-incompatible")).sum()),
                 int(((t.declared == "compatible") & (t.outcome == "runtime-compatible")).sum())]]
-        mac("RtFisherP", pval(_fx(tab)[1]))
-        mac("RtSampled", n(len(d))); mac("RtTested", n(len(t))); mac("RtNotTestable", n(len(d) - len(t)))
+        mac("RtTested", n(len(t)))
         fails = t[t.outcome == "runtime-incompatible"]
         def kind(x):
             e = " ".join(ast.literal_eval(x).get("failed", {}).values()) if isinstance(x, str) else ""
@@ -448,7 +499,6 @@ def main() -> None:
                 return "API"
             return "other"
         kinds = fails.np2.map(kind).value_counts()
-        mac("RtABI", n(kinds.get("ABI", 0))); mac("RtAPI", n(kinds.get("API", 0))); mac("RtOther", n(kinds.get("other", 0)))
         rj = json.loads((ROOT / "results" / "runtime_test.json").read_text(encoding="utf-8"))
         pop = rj["population_at_release"]
         mac("RtPopCap", n(pop["capped"])); mac("RtPopComp", n(pop["compatible"]))
@@ -464,19 +514,15 @@ def main() -> None:
         mac("SsOR", f2(g["OR"])); mac("SsORCI", ci(g["OR_95ci"]))
         mac("SsAdjOR", f2(g["adj_OR"])); mac("SsAdjCI", ci(g["adj_OR_95ci"]))
         mac("SsNevABI", n(g["never_reported_abi"])); mac("SsNevAPI", n(g["never_reported_api"]))
-        mac("SsDropped", n(g["dropped_by_strict"]))
         o = r8["runtime_origin"]
         for dec, nm in (("capped", "Cap"), ("compatible", "Comp")):
             mac(f"Rt{nm}Own", n(o[dec]["own_failures"])); mac(f"Rt{nm}Dep", n(o[dec]["dependency_failures"]))
             mac(f"Rt{nm}OwnPct", pct(o[dec]["own_share"], 0))
             mac(f"Rt{nm}OwnCI", f"[{pct(o[dec]['own_95ci'][0], 0)}, {pct(o[dec]['own_95ci'][1], 0)}]")
             mac(f"Rt{nm}NT", n(o[dec]["not_testable"]))
-        mac("RtAttrP", pval(o["attrition_fisher_p"])); mac("RtOwnP", pval(o["own_fisher_p"]))
-        mac("RtOwnN", n(o["capped"]["own_failures"] + o["compatible"]["own_failures"]))
-        mac("RtDepN", n(o["capped"]["dependency_failures"] + o["compatible"]["dependency_failures"]))
         rp = r8["runtime_population"]
         mac("RtPopPre", n(rp["with_pre_event_release"])); mac("RtPopNone", n(rp.get("none", 0)))
-        mac("RtPopOther", n(rp.get("other", 0))); mac("RtPopNoRel", n(rp["packages"] - rp["with_pre_event_release"]))
+        mac("RtPopOther", n(rp.get("other", 0)))
         h = r8["holm"]
         for fam, pre in (("rq1_cap_rate", "HoCap"), ("early_adaptation", "HoEarly")):
             for k, nm in (("build", "Build"), ("compiled", "Comp"), ("core", "Core"), ("binary", "Bin")):
@@ -500,11 +546,11 @@ def main() -> None:
             mac(f"Lx{nm}FailCI", f"[{pct(lo, 0)}, {pct(hi, 0)}]")
         tab = [[int(((t.declared == x) & (t.outcome == "runtime-incompatible")).sum()),
                 int(((t.declared == x) & (t.outcome == "runtime-compatible")).sum())] for x in ("capped", "compatible")]
-        mac("LxFisherP", pval(_fx(tab)[1]))
+        mac("LxFisherP", pval(_fx(tab)[1]), rel="only")
         nt = [[int(((d.declared == x) & (d.outcome == "not-testable")).sum()),
                int(((d.declared == x) & (d.outcome != "not-testable")).sum())] for x in ("capped", "compatible")]
-        mac("LxAttrP", pval(_fx(nt)[1]))
-        mac("LxSampled", n(len(d))); mac("LxTested", n(len(t))); mac("LxNotTestable", n(len(d) - len(t)))
+        mac("LxAttrP", pval(_fx(nt)[1]), rel="only")
+        mac("LxTested", n(len(t))); mac("LxNotTestable", n(len(d) - len(t)))
         def _kind(x):
             e = " ".join(ast.literal_eval(x).get("failed", {}).values()) if isinstance(x, str) else ""
             if any(k in e for k in ("dtype size changed", "multiarray failed to import", "_ARRAY_API", "compiled using NumPy 1.x")):
@@ -521,7 +567,6 @@ def main() -> None:
                 mac(f"Lx{nm}Own", n(o[dec]["own_failures"])); mac(f"Lx{nm}Dep", n(o[dec]["dependency_failures"]))
                 mac(f"Lx{nm}OwnPct", pct(o[dec]["own_share"], 0))
                 mac(f"Lx{nm}OwnCI", f"[{pct(o[dec]['own_95ci'][0], 0)}, {pct(o[dec]['own_95ci'][1], 0)}]")
-            mac("LxOwnP", pval(o["own_fisher_p"]))
             unk = sum(1 for f in o["failures"] if f["origin"] == "unknown")
             mac("LxOwnN", n(o["capped"]["own_failures"] + o["compatible"]["own_failures"]))
             mac("LxDepN", n(o["capped"]["dependency_failures"] + o["compatible"]["dependency_failures"]))
@@ -544,6 +589,22 @@ def main() -> None:
             mac(nm, f"{100 * d['diff']:.1f}".replace("-", "$-$"))
             mac(f"{nm}CI", f"[{100 * d['diff_95ci'][0]:.1f}, {100 * d['diff_95ci'][1]:.1f}]".replace("-", "$-$"))
             mac(f"{nm}Hi", f"{100 * d['diff_95ci'][1]:.0f}")
+
+    # review 10: end of the GitHub window, follow-up length, derived ratios
+    r10f = ROOT / "results" / "review10.json"
+    if r10f.exists():
+        r10 = json.loads(r10f.read_text(encoding="utf-8"))
+        mac("AdGhEnd", pct(r10["adapted_at_github_window_end"], 0))
+        mac("FollowYears", f"{r10['followup_years']:.1f}")
+    med_main, med_major = float(km["median"]), float(R2["sens_major_caps"]["km"]["median"])
+    mac("MajorShorter", f"{100 * (med_main - med_major) / med_main:.0f}")
+    core_ns = [int(r4["core_threshold"][k]["early_core"].split(" of ")[1]) for k in ("3", "5", "10")]
+    mac("CoreThrMinN", n(min(core_ns))); mac("CoreThrMaxN", n(max(core_ns)))
+    # verbal descriptions used in the text must stay true for the data
+    cap_rate, react_share = float(R1["cap_rate"]), co["reactive"] / F["capped"]
+    assert 0.25 < cap_rate < 1 / 3, "'more than one in four' no longer holds"
+    assert 0.40 <= react_share < 0.50, "'nearly half' no longer holds"
+    assert 4.5 <= med_main / 30.44 < 5.5, "'about five months' no longer holds"
 
     # range of the sensitivity-analysis medians (reference environment, cap definitions,
     # pre-releases, yanked releases, re-introduced caps)
