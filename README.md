@@ -37,6 +37,7 @@ Replication package for the manuscript (under review). The manuscript sources ar
 | `src/review7.py` | Maintenance status of still-capped packages, adjusted GitHub association, post-beta early adaptation |
 | `src/review8.py` | NumPy 2-specific GitHub error strings, origin of runtime failures (static), Holm adjustment for RQ1 and early adaptation |
 | `src/review9.py` | Early adaptation counting only lifts after rc1; 95% CIs of the runtime failure-rate differences |
+| `src/review10.py` | Share of the cohort adapted by the end of the GitHub search window; length of follow-up |
 | `src/runtime_test.py` | Import test under NumPy 1.26.4 vs 2.0.0: Linux/WSL run (all 74 capped + 100 compatible releases, main result; outputs `*_linux`) and Windows run (50 + 50, replication). Installs and imports third-party code; run only in an environment you are willing to use for that, and on WSL set `TMPDIR` to a directory on disk |
 | `src/review4.py` | Supplementary analyses (thresholds, Firth, VIF, stepwise design comparison) |
 | `src/make_numbers.py` | Generates `paper/numbers.tex` |

@@ -46,6 +46,7 @@ python src/review6.py
 python src/review7.py
 python src/review8.py   # uses the shipped runtime_test*.csv; nothing is installed or executed
 python src/review9.py
+python src/review10.py
 # python src/runtime_test.py --n 50                    # Windows; installs and imports third-party packages (cached in data/raw/runtime)
 # TMPDIR=~/rt_tmp python src/runtime_test.py --n 100  # Linux/WSL, main result (cached in data/raw/runtime_linux)
 python -m pytest tests -q                 # golden classification tests
